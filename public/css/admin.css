@@ -1,0 +1,267 @@
+div.remember {
+	margin-top: 7px;
+	color: #969696;
+}
+
+div.remember label {
+	padding-top: 15px;
+}
+
+div.forgot {
+	margin-top: 7px;
+	color: #dadada;
+}
+
+footer {
+    background: url("../img/feature-gradient.png") no-repeat scroll center 100% white;
+    color: #B7B7B7;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+   
+} 
+
+footer a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+table.signup td {
+	padding: 10px;
+}
+
+table.signup .alert {
+	margin-bottom: 0;
+    margin-top: 3px;
+}
+
+table.perms select {
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+table.perms label {
+	margin-right: 10px;
+}
+table a{
+    color: black;
+}
+div.main-container {
+	min-height: 450px;
+}
+.subhead {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #EDEDED 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+   /* border-bottom: 1px solid #D3D3D3;*/
+    color: #0C192E;
+    margin-bottom: 10px;
+    /*text-shadow: 0 1px 0 #FFFFFF;*/
+}
+.subhead-collapse.collapse {
+    height: auto;
+    overflow: visible;
+
+
+}
+.view-login {
+    background-color: #142849;
+    background-image: radial-gradient(circle, #165387, #142849);
+    background-repeat: no-repeat;
+    padding-top: 0;
+}
+.view-login .container {
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -206px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+}
+.view-login .navbar-fixed-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.view-login .navbar-fixed-bottom, .view-login .navbar-fixed-bottom a {
+    color: #FCFCFC;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.view-login .well {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.898) inset;
+    padding-bottom: 0;
+}
+
+.view-login .navbar-fixed-bottom {
+    position: absolute;
+}
+.view-login .input-medium {
+    width: 184px;
+}
+.login .chzn-single {
+    width: 230px !important;
+}
+.login .chzn-container, .login .chzn-drop {
+    max-width: 238px !important;
+    width: 238px !important;
+}
+.small {
+    font-size: 11px;
+}
+#login-ecosy{
+	margin-left: 135px;
+}
+#form-login input{
+	width: 230px;
+    margin-left: 9px;
+
+}
+table {
+  border-collapse: separate;
+/*  border-spacing: 0 5px;
+*/}
+.table td,.table th{
+     text-align: center;   
+}
+thead th {
+ background-color: #dfe7f2;
+color: #000;
+
+}
+
+tbody td {
+  /*background-color: #EEEEEE;*/
+}
+
+/*tr td:first-child,
+tr th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+tr td:last-child,
+tr th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}*/
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+        display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee; 
+        position: relative;
+        padding-left: 50%; 
+    }
+    
+    td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    
+   
+}
+
+/*gioi han kich thuoc input O index.volt hososinhvien*/
+div.siderbar-form select
+{
+width: 175px;
+}
+a {
+    color: #21B384;
+    text-decoration: none;
+}
+.header {
+     background-color: #184A7D;
+    background-image: linear-gradient(to bottom, #17568C, #1A3867);
+    background-repeat: repeat-x;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 26px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+}
+.header  h1 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.navbar-inner {
+    min-height: 0;
+    
+}
+.navbar-inner ul li, .navbar-inner .brand{
+  margin: -6px 3px;
+  font-size: 15px;
+  color: white;
+  
+}
+.navbar-inverse .navbar-inner {
+    background-color: #13294A;
+    background-image: linear-gradient(to bottom, #152D53, #10223E);
+    background-repeat: repeat-x;
+    border-color: #0B172A;
+}
+/*magin logo login*/
+div #element-box img
+{
+    margin-left: 22px;
+    margin-bottom:-19px;
+}
+.unstyled li a{
+    line-height: 23px;
+}
+/*form*/
+form.form-search input{
+  width: 500px;
+}
+form.form-search select{
+    width: 100px; 
+       
+}
+/*div#form-search{
+    margin: 120px 12px;
+}*/
+form.limitForm{
+    height: 0px;
+       margin-right: -180px;
+       float: left;
+       padding-left: 200px;
+
+}
+form select#HienThi{
+     width: 60px;
+     height: 30px; 
+}
+h1.page-title a{
+    color: white;
+}
