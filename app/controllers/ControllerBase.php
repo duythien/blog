@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
 use Phalcon\Mvc\Controller,
 	Phalcon\Mvc\Dispatcher;
@@ -56,5 +56,29 @@ class ControllerBase extends Controller
 			}
 
 		}
+		
+		/**
+		 * Because the .po file is named messages.po, the text domain must be named
+		 * that as well. The second parameter is the base directory to start
+		 * searching in.
+		 */
+		$locality = $this->session->get('language').'.UTF-8';
+		if (defined('LC_MESSAGES')) {
+		    setlocale(LC_ALL, $locality); // Linux
+		} else {
+		    putenv("LC_ALL={$locality}"); // windows
+		}
+		$dir = $_SERVER['DOCUMENT_ROOT'].'/app/lang';
+
+		bindtextdomain('messages',$dir);
+
+		/**
+		 * Tell the application to use this text domain, or messages.mo.
+		 */
+		textdomain('messages');
+
+		         
+
 	}
+	
 }

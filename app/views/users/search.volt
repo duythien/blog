@@ -15,7 +15,7 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
+            <th>Username</th>
             <th>Email</th>
             <th>Profile</th>
             <th>Banned?</th>
@@ -27,14 +27,14 @@
     <tbody>
         <tr>
             <td>{{ user.id }}</td>
-            <td>{{ user.name }}</td>
+            <td>{{ user.username }}</td>
             <td>{{ user.email }}</td>
             <td>{{ user.profile.name }}</td>
             <td>{{ user.banned == 'Y' ? 'Yes' : 'No' }}</td>
             <td>{{ user.suspended == 'Y' ? 'Yes' : 'No' }}</td>
             <td>{{ user.active == 'Y' ? 'Yes' : 'No' }}</td>
-            <td width="12%">{{ link_to("users/edit/" ~ user.id, '<i class="icon-pencil"></i> Edit', "class": "btn") }}</td>
-            <td width="12%">{{ link_to("users/delete/" ~ user.id, '<i class="icon-remove"></i> Delete', "class": "btn") }}</td>
+            <td width="12%">{{ link_to("users/edit/" ~ user.id, '<i class="fa fa-pencil-square-o"></i> Edit', "class": "btn") }}</td>
+            <td width="12%">{{ link_to("users/delete/" ~ user.id, '<i class="fa fa-times"></i> Delete', "class": "btn") }}</td>
         </tr>
     </tbody>
 {% if loop.last %}
@@ -42,10 +42,10 @@
         <tr>
             <td colspan="10" align="right">
                 <div class="btn-group">
-                    {{ link_to("users/search", '<i class="icon-fast-backward"></i> First', "class": "btn") }}
-                    {{ link_to("users/search?page=" ~ page.before, '<i class="icon-step-backward"></i> Previous', "class": "btn ") }}
-                    {{ link_to("users/search?page=" ~ page.next, '<i class="icon-step-forward"></i> Next', "class": "btn") }}
-                    {{ link_to("users/search?page=" ~ page.last, '<i class="icon-fast-forward"></i> Last', "class": "btn") }}
+                    {{ link_to("users/search", '<i class="fa fa-backward"></i> First', "class": "btn") }}
+                    {{ link_to("users/search?page=" ~ page.before, '<i class=" fa fa-step-backward"></i> Previous', "class": "btn ") }}
+                    {{ link_to("users/search?page=" ~ page.next, '<i class="fa fa-step-forward"></i> Next', "class": "btn") }}
+                    {{ link_to("users/search?page=" ~ page.last, '<i class="fa fa-fast-forward"></i> Last', "class": "btn") }}
                     <span class="help-inline">{{ page.current }}/{{ page.total_pages }}</span>
                 </div>
             </td>

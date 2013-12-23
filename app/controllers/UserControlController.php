@@ -1,9 +1,9 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
-use Vokuro\Models\EmailConfirmations,
-	Vokuro\Models\ResetPasswords;
+use Nginx\Models\EmailConfirmations,
+	Nginx\Models\ResetPasswords;
 
 /**
  * UserControlController

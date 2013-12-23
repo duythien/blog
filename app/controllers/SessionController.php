@@ -1,54 +1,57 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
-use Vokuro\Forms\LoginForm,
-	Vokuro\Forms\SignUpForm,
-	Vokuro\Forms\ForgotPasswordForm,
-	Vokuro\Auth\Auth,
-	Vokuro\Auth\Exception as AuthException,
-	Vokuro\Models\Users,
-	Vokuro\Models\ResetPasswords;
+use Nginx\Forms\LoginForm,
+	Nginx\Forms\SignUpForm,
+	Nginx\Forms\ForgotPasswordForm,
+	Nginx\Auth\Auth,
+	Nginx\Auth\Exception as AuthException,
+	Nginx\Models\Users,
+	Nginx\Models\ResetPasswords;
 
 class SessionController extends ControllerBase
 {
 
-	public function initialize()
-	{
-		$this->view->setTemplateBefore('public');
-	}
+	
 
 	public function indexAction()
 	{
-
+		$this->view->disable();
+		return $this->response->redirect();
 	}
-
 	public function signupAction()
 	{
-		$form = new SignUpForm();
+		$form = new SignUpForm(null);
 
-		if ($this->request->isPost()) {
+		$request = $this->request;
+		if ($request->isPost()) {
+			//var_dump($form->isValid($request->getPost()));
+			if ($form->isValid($request->getPost()) != false) {
+				$User = new Users();
+				$user=array(
+					'username' => $request->getPost('username', 'striptags'),
+					'email' => $request->getPost('email','striptags'),
+					'password' => $this->security->hash($request->getPost('password')),
+					'profilesId' => 2,
+					'fullName'	=> $request->getPost('fullName','striptags'),
+					'phone'		=> $request->getPost('phone','int'),
+					'sex'		=> $request->getPost('sex'),
+					'birthday'	=> $request->getPost('birthday'),
+					'cardId'	=> $request->getPost('cardId'),
+					'cityRegion'=>  $request->getPost('cityRegion'),
 
-			if ($form->isValid($this->request->getPost()) != false) {
-
-				$user = new Users();
-
-				$user->assign(array(
-					'name' => $this->request->getPost('name', 'striptags'),
-					'email' => $this->request->getPost('email'),
-					'password' => $this->security->hash($this->request->getPost('password')),
-					'profilesId' => 2
-				));
-
-				if ($user->save()) {
+				);
+				if ($User->save($user)) {
 					return $this->dispatcher->forward(array(
 						'controller' => 'index',
 						'action' => 'index'
 					));
 				}
 
-				$this->flash->error($user->getMessages());
+				$this->flash->error($User->getMessages());
 			}
+			
 
 		}
 
@@ -60,31 +63,31 @@ class SessionController extends ControllerBase
 	 */
 	public function loginAction()
 	{
-
+		
 		$form = new LoginForm();
+		$request = $this->request;
+		$identity = $this->auth->getIdentity();
 
 		try {
 
-			if (!$this->request->isPost()) {
+			if (!$request->isPost()) {
 
 				if ($this->auth->hasRememberMe()) {
 					return $this->auth->loginWithRememberMe();
 				}
+				//check if login without check remember
+				if (is_array($identity)) {
+					return $this->response->redirect('users/');
+				}
 
 			} else {
 
-				if ($form->isValid($this->request->getPost()) == false) {
-					foreach ($form->getMessages() as $message) {
-						$this->flash->error($message);
-					}
-				} else {
-
+				if ($form->isValid($request->getPost()) == true) {
 					$this->auth->check(array(
-						'email' => $this->request->getPost('email'),
-						'password' => $this->request->getPost('password'),
-						'remember' => $this->request->getPost('remember')
+						'email' => $request->getPost('email'),
+						'password' => $request->getPost('password'),
+						'remember' => $request->getPost('remember')
 					));
-
 					return $this->response->redirect('users');
 				}
 			}
@@ -103,15 +106,15 @@ class SessionController extends ControllerBase
 	{
 		$form = new ForgotPasswordForm();
 
-		if ($this->request->isPost()) {
+		if ($request->isPost()) {
 
-			if ($form->isValid($this->request->getPost()) == false) {
+			if ($form->isValid($request->getPost()) == false) {
 				foreach ($form->getMessages() as $message) {
 					$this->flash->error($message);
 				}
 			} else {
 
-				$user = Users::findFirstByEmail($this->request->getPost('email'));
+				$user = Users::findFirstByEmail($request->getPost('email'));
 				if (!$user) {
 					$this->flash->success('There is no account associated to this email');
 				} else {

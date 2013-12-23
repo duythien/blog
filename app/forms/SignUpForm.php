@@ -1,15 +1,18 @@
-<?php
-
-namespace Vokuro\Forms;
+<?php namespace Nginx\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
+	Phalcon\Forms\Element\Select,
+	Phalcon\Forms\Element\Date,
+	Phalcon\Forms\Element\Numeric,
 	Phalcon\Forms\Element\Hidden,
 	Phalcon\Forms\Element\Password,
 	Phalcon\Forms\Element\Submit,
+	Phalcon\Forms\Element\File,
 	Phalcon\Forms\Element\Check,
 	Phalcon\Validation\Validator\PresenceOf,
-	Phalcon\Validation\Validator\Email,
+	Phalcon\Validation\Validator\email,
+	Phalcon\Validation\Validator\Regex,
 	Phalcon\Validation\Validator\Identical,
 	Phalcon\Validation\Validator\StringLength,
 	Phalcon\Validation\Validator\Confirmation;
@@ -20,49 +23,47 @@ class SignUpForm extends Form
 	public function initialize($entity=null, $options=null)
 	{
 
-		$name = new Text('name');
+	if (isset($options['edit']) && $options['edit']) {
+			$id = new Hidden('id');
 
-		$name->setLabel('Name');
+			
+	       
+		} else {
+			$id = new Text('id');
+			
+		}
 
-		$name->addValidators(array(
+				
+		$username = new Text('username',array('placeholder' =>'Tran Duy Thien'));//<input type="text" value="" id="fullName" name="fullName">
+		$username->setLabel('Tên Tài Khoản');//<label for="fullName">fullName</label>
+
+		$username->addValidators(array(
 			new PresenceOf(array(
-				'message' => 'The name is required'
+				'message' => 'Tài khoản không được rỗng'
 			))
 		));
+		$this->add($username);
+				
 
-		$this->add($name);
 
-		//Email
-		$email = new Text('email');
 
-		$email->setLabel('E-Mail');
 
-		$email->addValidators(array(
-			new PresenceOf(array(
-				'message' => 'The e-mail is required'
-			)),
-			new Email(array(
-				'message' => 'The e-mail is not valid'
-			))
-		));
-
-		$this->add($email);
 
 		//Password
 		$password = new Password('password');
 
-		$password->setLabel('Password');
+		$password->setLabel('Mật Khẩu');
 
 		$password->addValidators(array(
 			new PresenceOf(array(
-				'message' => 'The password is required'
+				'message' => 'Mật khẩu không được rỗng'
 			)),
 			new StringLength(array(
 				'min' => 8,
-				'messageMinimum' => 'Password is too short. Minimum 8 characters'
+				'messageMinimum' => 'Mật khẩu phải lớn hơn 8 ký tự'
 			)),
 			new Confirmation(array(
-				'message' => 'Password doesn\'t match confirmation',
+				'message' => 'Mật khẩu không khớp',
 				'with' => 'confirmPassword'
 			))
 		));
@@ -72,7 +73,7 @@ class SignUpForm extends Form
 		//Confirm Password
 		$confirmPassword = new Password('confirmPassword');
 
-		$confirmPassword->setLabel('Confirm Password');
+		$confirmPassword->setLabel('Nhập lại mật khẩu');
 
 		$confirmPassword->addValidators(array(
 			new PresenceOf(array(
@@ -87,12 +88,12 @@ class SignUpForm extends Form
 			'value' => 'yes'
 		));
 
-		$terms->setLabel('Accept terms and conditions');
+		$terms->setLabel('Đồng ý với Điều khoản dịch vụ và chính sách bảo mật của chúng tôi');
 
 		$terms->addValidator(
 			new Identical(array(
 				'value' => 'yes',
-				'message' => 'Terms and conditions must be accepted'
+				'message' => 'Bạn chưa chọn'
 			))
 		);
 
@@ -112,7 +113,7 @@ class SignUpForm extends Form
 
 		//Sign Up
 		$this->add(new Submit('Sign Up', array(
-			'class' => 'btn btn-success'
+			'class' => 'btn btn-primary pull-right'
 		)));
 
 	}
@@ -120,10 +121,10 @@ class SignUpForm extends Form
 	/**
 	 * Prints messages for a specific element
 	 */
-	public function messages($name)
+	public function messages($username)
 	{
-		if ($this->hasMessagesFor($name)) {
-			foreach ($this->getMessagesFor($name) as $message) {
+		if ($this->hasMessagesFor($username)) {
+			foreach ($this->getMessagesFor($username) as $message) {
 				$this->flash->error($message);
 			}
 		}

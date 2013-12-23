@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Auth;
+namespace Nginx\Auth;
 
 class Exception extends \Exception
 {

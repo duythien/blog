@@ -2,6 +2,9 @@
 
 error_reporting(E_ALL);
 
+//setlocale(LC_ALL, 'vi_VN.UTF-8');
+
+
 try {
 
 	/**
@@ -22,11 +25,12 @@ try {
 	/**
 	 * Handle the request
 	 */
-	$application = new \Phalcon\Mvc\Application($di);
+	$application = new Phalcon\Mvc\Application($di);
 
 	echo $application->handle()->getContent();
 
 } catch (Exception $e) {
 	echo $e->getMessage(), '<br>';
 	echo nl2br(htmlentities($e->getTraceAsString()));
+	//phpinfo();
 }

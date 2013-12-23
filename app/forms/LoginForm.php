@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Forms;
+namespace Nginx\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -12,7 +12,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\Email,
 	Phalcon\Validation\Validator\Identical;
 
-use Vokuro\Models\Profiles;
+use Nginx\Models\Profiles;
 
 class LoginForm extends Form
 {
@@ -26,10 +26,10 @@ class LoginForm extends Form
 
 		$email->addValidators(array(
 			new PresenceOf(array(
-				'message' => 'The e-mail is required'
+				'message' => 'Khong duoc rong'
 			)),
 			new Email(array(
-				'message' => 'The e-mail is not valid'
+				'message' => 'Định dạng email không đùng'
 			))
 		));
 
@@ -42,7 +42,7 @@ class LoginForm extends Form
 
 		$password->addValidator(
 			new PresenceOf(array(
-				'message' => 'The password is required'
+				'message' => 'Mat khau khong dung'
 			))
 		);
 
@@ -63,7 +63,7 @@ class LoginForm extends Form
 		$csrf->addValidator(
 			new Identical(array(
 				'value' => $this->security->getSessionToken(),
-				'message' => 'CSRF validation failed'
+				'message' => 'CSRF Khong chuan'
 			))
 		);
 
@@ -72,6 +72,17 @@ class LoginForm extends Form
 		$this->add(new Submit('go', array(
 			'class' => 'btn btn-success'
 		)));
+	}
+	/**
+	 * Prints messages for a specific element
+	 */
+	public function messages($name)
+	{
+		if ($this->hasMessagesFor($name)) {
+			foreach ($this->getMessagesFor($name) as $message) {
+				$this->flash->error($message);
+			}
+		}
 	}
 
 }

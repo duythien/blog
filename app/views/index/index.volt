@@ -1,43 +1,41 @@
 {{ content() }}
+    <div class="flash">
+              {# {% set userLogin= session.get('auth-front')%}
+               {% if userLogin['username'] is defined%}
+              <div class="alert alert-info">
+                  You are currently logged in username: {{userLogin['username']}}
+              </div>
+              {% else %}
+              <div class="alert alert-info">
+                  You are currently not logged in. Please log in to see all your books
+              </div>
+              {% endif %} #}
+    </div>
 
-<header class="jumbotron subhead" id="overview">
-	<div class="hero-unit">
-		<h1>Welcome!</h1>
-		<p class="lead">This is a website secured by Phalcon Framework</p>
-
-		<div align="right">
-      {{ link_to('session/signup', '<i class="icon-ok icon-white"></i> Create an Account', 'class': 'btn btn-primary btn-large') }}
-		</div>
-	</div>
-</header>
-
+  
+{% include 'layouts/baner.volt' %}
 <div class="row">
-
-    <div class="span4">
-      <div class="well">
-      	<h3>Awesome Section</h3>
-      	<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      	<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+  <!-- categories sidebar left -->
+  {% include 'layouts/sidebar.volt'%}
+  <div class="span8">
+      <div class="content">
+        {% for post in page.items %}
+          <h2>{{ link_to('view/' ~ post.id ~ '/' ~ post.slug, post.title|e) }}</h2>
+          <span class="date">{{ date('M d/Y H:i',post.created) }}</span>
+            <span> By <a href="">{{post.userPost}}</a> 
+          </span>
+          <?php echo substr($post->content,0, 560);?>
+          <div class="clear"></div>
+              {% endfor %}
       </div>
-    </div>
 
-    <div class="span4">
-      <h3>Important Stuff</h3>
-      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
-    </div>
-
-    <div class="span4">
-      <h3>Example addresses</h3>
-      <address>
-        <strong>Vokuri, Inc.</strong><br>
-        456 Infinite Loop, Suite 101<br>
-        <abbr title="Phone">P:</abbr> (123) 456-7890
-      </address>
-      <address>
-        <strong>Full Name</strong><br>
-        <a href="mailto:#">vokuro@phalconphp.com</a>
-      </address>
-    </div>
-
-  </div>
+  </div><!-- span8 -->
+</div><!-- end row -->
+<div class="row">
+    <div class="span3">   <ul class="pager">
+  <li>{{ link_to("index?page=" ~ page.before, '&larr; Older') }}
+  </li>
+  <li>{{ link_to("index?page=" ~ page.next, 'Newer &rarr;') }}</li>
+</ul></div>
+<div class="span9"></div>
+</div>

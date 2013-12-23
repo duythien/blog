@@ -1,6 +1,4 @@
-<?php
-
-namespace Vokuro\Controllers;
+<?php namespace Nginx\Controllers;
 
 class AboutController extends ControllerBase
 {

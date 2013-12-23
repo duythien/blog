@@ -1,18 +1,18 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
 use Phalcon\Tag,
 	Phalcon\Mvc\Model\Criteria,
 	Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Vokuro\Forms\ChangePasswordForm,
-	Vokuro\Forms\UsersForm,
-	Vokuro\Models\Users,
-	Vokuro\Models\PasswordChanges;
+use Nginx\Forms\ChangePasswordForm,
+	Nginx\Forms\UsersForm,
+	Nginx\Models\Users,
+	Nginx\Models\PasswordChanges;
 
 /**
- * Vokuro\Controllers\UsersController
+ * Nginx\Controllers\UsersController
  *
  * CRUD to manage users
  */
@@ -40,7 +40,7 @@ class UsersController extends ControllerBase
 	{
 		$numberPage = 1;
 		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Vokuro\Models\Users', $this->request->getPost());
+			$query = Criteria::fromInput($this->di, 'Nginx\Models\Users', $this->request->getPost());
 			$this->persistent->searchParams = $query->getParams();
 		} else {
 			$numberPage = $this->request->getQuery("page", "int");
@@ -79,7 +79,7 @@ class UsersController extends ControllerBase
 			$user = new Users();
 
 			$user->assign(array(
-				'name' => $this->request->getPost('name', 'striptags'),
+				'username' => $this->request->getPost('username', 'striptags'),
 				'profilesId' => $this->request->getPost('profilesId', 'int'),
 				'email' => $this->request->getPost('email', 'email'),
 			));
@@ -113,7 +113,7 @@ class UsersController extends ControllerBase
 		if ($this->request->isPost()) {
 
 			$user->assign(array(
-				'name' => $this->request->getPost('name', 'striptags'),
+				'username' => $this->request->getPost('username', 'striptags'),
 				'profilesId' => $this->request->getPost('profilesId', 'int'),
 				'email' => $this->request->getPost('email', 'email'),
 				'banned' => $this->request->getPost('banned'),

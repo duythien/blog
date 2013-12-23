@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
 class PrivacyController extends ControllerBase
 {

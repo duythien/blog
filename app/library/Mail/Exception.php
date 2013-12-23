@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Mail;
+namespace Nginx\Mail;
 
 class Exception extends \Exception
 {

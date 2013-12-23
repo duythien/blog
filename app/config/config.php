@@ -5,8 +5,8 @@ return new \Phalcon\Config(array(
 		'adapter'     => 'Mysql',
 		'host'        => '127.0.0.1',
 		'username'    => 'root',
-		'password'    => '',
-		'dbname'      => 'vokuro',
+		'password'    => 'qazwsx2013@',
+		'dbname'      => 'blog',
 	),
 	'application' => array(
 		'controllersDir' => __DIR__ . '/../../app/controllers/',
@@ -17,12 +17,12 @@ return new \Phalcon\Config(array(
 		'pluginsDir'     => __DIR__ . '/../../app/plugins/',
 		'cacheDir'       => __DIR__ . '/../../app/cache/',
 		'baseUri'        => '/',
-		'publicUrl'		 => 'vokuro.phalconphp.com',
+		'publicUrl'		 => 'duythien.dev',
 		'cryptSalt'		 => '$9diko$.f#11'
 	),
 	'mail' => array(
-		'fromName' => 'Vokuro',
-		'fromEmail' => 'phosphorum@phalconphp.com',
+		'fromName' => 'fcduythien',
+		'fromEmail' => 'fcduythien@gmail.com',
 		'smtp' => array(
 			'server' => 'smtp.gmail.com',
 			'port' => 587,

@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      {{ link_to(null, 'class': 'brand', 'Vökuró')}}
+      {{ link_to(null, 'class': 'brand', 'Nginx')}}
         <div class="nav-collapse">
 
           <ul class="nav">
@@ -15,14 +15,16 @@
               'Home': null,
               'Users': 'users',
               'Profiles': 'profiles',
-              'Permissions': 'permissions'
+              'Permissions': 'permissions', 
+              'Posts'      : 'posts',
+              'Categories'  : 'categories'
             ] -%}
 
             {%- for key, value in menus %}
               {% if value == dispatcher.getControllerName() %}
-              <li class="active">{{ link_to(value, key) }}</li>
+              <li class="active">{{ link_to(value, t(key)) }}</li>
               {% else %}
-              <li>{{ link_to(value, key) }}</li>
+              <li>{{ link_to(value,t(key)) }}</li>
               {% endif %}
             {%- endfor -%}
 
@@ -42,6 +44,8 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container main-container">
   {{ content() }}
 </div>
+
+{% include 'layouts/footerAdmin.volt'%}

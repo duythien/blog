@@ -31,8 +31,8 @@
             <div class="span4">
 
                 <div class="clearfix">
-                    <label for="name">Name</label>
-                    {{ form.render("name") }}
+                    <label for="username">Username</label>
+                    {{ form.render("username") }}
                 </div>
 
                 <div class="clearfix">

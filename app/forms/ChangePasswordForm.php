@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Forms;
+namespace Nginx\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Password,
@@ -9,7 +9,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\StringLength,
 	Phalcon\Validation\Validator\Confirmation;
 
-use Vokuro\Models\Profiles;
+use Nginx\Models\Profiles;
 
 class ChangePasswordForm extends Form
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
-use Vokuro\Models\Profiles,
-	Vokuro\Models\Permissions;
+use Nginx\Models\Profiles,
+	Nginx\Models\Permissions;
 
 class PermissionsController extends ControllerBase
 {

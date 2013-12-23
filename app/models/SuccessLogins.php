@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Models;
+namespace Nginx\Models;
 
 use Phalcon\Mvc\Model;
 
@@ -33,7 +33,7 @@ class SuccessLogins extends Model
 
 	public function initialize()
 	{
-		$this->belongsTo('usersId', 'Vokuro\Models\Users', 'id', array(
+		$this->belongsTo('usersId', 'Nginx\Models\Users', 'id', array(
 			'alias' => 'user'
 		));
 	}

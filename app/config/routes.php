@@ -1,15 +1,19 @@
 <?php
 
 $router = new Phalcon\Mvc\Router();
+$router->removeExtraSlashes(true);
 
-$router->add('/confirm/{code}/{email}', array(
-	'controller' => 'user_control',
-	'action' => 'confirmEmail'
+$router->add('/login',array(
+				'controller'=>'session',
+				'action'	=>'login',
+			));
+$router->add('/view/{id:[0-9]+}/{slug}', array(
+	'controller' => 'index',
+	'action' => 'show'
 ));
-
-$router->add('/reset-password/{code}/{email}', array(
-	'controller' => 'user_control',
-	'action' => 'resetPassword'
+$router->add("/set-language/{language:[a-zA-Z\_]+}", array(
+    'controller' => 'index',
+    'action' => 'setLanguage'
 ));
 
 return $router;

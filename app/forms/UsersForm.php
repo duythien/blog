@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Forms;
+namespace Nginx\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -12,7 +12,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\PresenceOf,
 	Phalcon\Validation\Validator\Email;
 
-use Vokuro\Models\Profiles;
+use Nginx\Models\Profiles;
 
 class UsersForm extends Form
 {
@@ -29,7 +29,7 @@ class UsersForm extends Form
 
 		$this->add($id);
 
-		$this->add(new Text('name'));
+		$this->add(new Text('username'));
 
 		$this->add(new Text('email'));
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Forms;
+namespace Nginx\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -8,7 +8,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\PresenceOf,
 	Phalcon\Validation\Validator\Email;
 
-use Vokuro\Models\Profiles;
+use Nginx\Models\Profiles;
 
 class ForgotPasswordForm extends Form
 {

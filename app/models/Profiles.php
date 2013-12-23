@@ -1,11 +1,11 @@
 <?php
 
-namespace Vokuro\Models;
+namespace Nginx\Models;
 
 use Phalcon\Mvc\Model;
 
 /**
- * Vokuro\Models\Profiles
+ * Nginx\Models\Profiles
  *
  * All the users registered in the application
  */
@@ -23,14 +23,14 @@ class Profiles extends Model
 
 	public function initialize()
 	{
-		$this->hasMany('id', 'Vokuro\Models\Users', 'profilesId', array(
+		$this->hasMany('id', 'Nginx\Models\Users', 'profilesId', array(
 			'alias' => 'users',
 			'foreignKey' => array(
 				'message' => 'Profile cannot be deleted because it\'s used on Users'
 			)
 		));
 
-		$this->hasMany('id', 'Vokuro\Models\Permissions', 'profilesId', array(
+		$this->hasMany('id', 'Nginx\Models\Permissions', 'profilesId', array(
 			'alias' => 'permissions'
 		));
 	}

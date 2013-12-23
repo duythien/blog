@@ -1,17 +1,15 @@
-<?php
-
-namespace Vokuro\Auth;
+<?php namespace Nginx\Auth;
 
 use Phalcon\Mvc\User\Component,
-	Vokuro\Models\Users,
-	Vokuro\Models\RememberTokens,
-	Vokuro\Models\SuccessLogins,
-	Vokuro\Models\FailedLogins;
+	Nginx\Models\Users,
+	Nginx\Models\RememberTokens,
+	Nginx\Models\SuccessLogins,
+	Nginx\Models\FailedLogins;
 
 /**
- * Vokuro\Auth\Auth
+ * Nginx\Auth\Auth
  *
- * Manages Authentication/Identity Management in Vokuro
+ * Manages Authentication/Identity Management in Nginx
  */
 class Auth extends Component
 {
@@ -51,7 +49,7 @@ class Auth extends Component
 
 		$this->session->set('auth-identity', array(
 			'id' => $user->id,
-			'name' => $user->name,
+			'username' => $user->username,
 			'profile' => $user->profile->name
 		));
 	}
@@ -59,7 +57,7 @@ class Auth extends Component
 	/**
 	 * Creates the remember me environment settings the related cookies and generating tokens
 	 *
-	 * @param Vokuro\Models\Users $user
+	 * @param Nginx\Models\Users $user
 	 */
 	public function saveSuccessLogin($user)
 	{
@@ -114,7 +112,7 @@ class Auth extends Component
 	/**
 	 * Creates the remember me environment settings the related cookies and generating tokens
 	 *
-	 * @param Vokuro\Models\Users $user
+	 * @param Nginx\Models\Users $user
 	 */
 	public function createRememberEnviroment(Users $user)
 	{
@@ -178,14 +176,14 @@ class Auth extends Component
 						//Register identity
 						$this->session->set('auth-identity', array(
 							'id' => $user->id,
-							'name' => $user->name,
+							'username' => $user->username,
 							'profile' => $user->profile->name
 						));
 
 						//Register the successful login
 						$this->saveSuccessLogin($user);
 
-						return $this->response->redirect('users');
+						return $this->response->redirect('users/auth');
 					}
 				}
 
@@ -202,7 +200,7 @@ class Auth extends Component
 	/**
 	 * Checks if the user is banned/inactive/suspended
 	 *
-	 * @param Vokuro\Models\Users $user
+	 * @param Nginx\Models\Users $user
 	 */
 	public function checkUserFlags(Users $user)
 	{
@@ -237,7 +235,7 @@ class Auth extends Component
 	public function getName()
 	{
 		$identity = $this->session->get('auth-identity');
-		return $identity['name'];
+		return $identity['username'];
 	}
 
 	/**
@@ -271,8 +269,8 @@ class Auth extends Component
 
 		$this->session->set('auth-identity', array(
 			'id' => $user->id,
-			'name' => $user->name,
-			'profile' => $user->profile->name
+			'username' => $user->username,
+			'profile' => $user->profile->username
 		));
 
 	}
@@ -280,7 +278,7 @@ class Auth extends Component
 	/**
 	 * Get the entity related to user in the active identity
 	 *
-	 * @return \Vokuro\Models\Users
+	 * @return \Nginx\Models\Users
 	 */
 	public function getUser()
 	{

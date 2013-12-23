@@ -1,6 +1,6 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
 class TermsController extends ControllerBase
 {

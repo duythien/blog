@@ -9,11 +9,13 @@ use Phalcon\DI\FactoryDefault,
 	Phalcon\Mvc\View\Engine\Volt as VoltEngine,
 	Phalcon\Mvc\Model\Metadata\Files as MetaDataAdapter,
 	Phalcon\Session\Adapter\Files as SessionAdapter,
-	Phalcon\Flash\Direct as Flash;
+	Phalcon\Flash\Direct as Flash,
+	Phalcon\Events\Manager as EventsManager;
 
-use Vokuro\Auth\Auth,
-	Vokuro\Acl\Acl,
-	Vokuro\Mail\Mail;
+use Nginx\Auth\Auth,
+	Nginx\Acl\Acl,
+	Nginx\Mail\Mail,
+	Nginx\Elements;
 
 /**
  * The FactoryDefault Dependency Injector automatically register the right services providing a full stack framework
@@ -52,6 +54,10 @@ $di->set('view', function() use ($config) {
 				'compiledPath' => $config->application->cacheDir . 'volt/',
 				'compiledSeparator' => '_'
 			));
+			//load function php
+						$compiler = $volt->getCompiler();
+						//define variable translate
+						$compiler->addFunction('t', '_');
 
 			return $volt;
 		}
@@ -64,22 +70,43 @@ $di->set('view', function() use ($config) {
  * Database connection is created based in the parameters defined in the configuration file
  */
 $di->set('db', function() use ($config) {
-	return new DbAdapter(array(
+	/*return new DbAdapter(array(
 		'host' => $config->database->host,
 		'username' => $config->database->username,
 		'password' => $config->database->password,
-		'dbname' => $config->database->dbname
-	));
+		'dbname' => $config->database->dbname,
+		'charset'=> 'utf8'
+	));*/
+	$eventsManager = new EventsManager();
+
+    	$logger = new Phalcon\Logger\Adapter\File(__DIR__ ."/../log/debug.log");
+		//Listen all the database events
+    	$eventsManager->attach('db', function($event, $connection) use ($logger) {
+	        if ($event->getType() == 'beforeQuery') {
+	            $logger->log($connection->getSQLStatement(), Phalcon\Logger::ERROR);
+	        }
+    	});
+    	$connection = new DbAdapter(array(
+			'host' => $config->database->host,
+			'username' => $config->database->username,
+			'password' => $config->database->password,
+			'dbname' => $config->database->dbname,
+			'charset'=> 'utf8'
+		));
+		//Assign the eventsManager to the db adapter instance
+	    $connection->setEventsManager($eventsManager);
+
+		return $connection;
 });
 
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise
  */
-$di->set('modelsMetadata', function() use ($config) {
+/*$di->set('modelsMetadata', function() use ($config) {
 	return new MetaDataAdapter(array(
 		'metaDataDir' => $config->application->cacheDir . 'metaData/'
 	));
-});
+});*/
 
 /**
  * Start the session the first time some component request the session service
@@ -104,7 +131,7 @@ $di->set('crypt', function() use ($config) {
  */
 $di->set('dispatcher', function() {
 	$dispatcher = new Dispatcher();
-	$dispatcher->setDefaultNamespace('Vokuro\Controllers');
+	$dispatcher->setDefaultNamespace('Nginx\Controllers');
 	return $dispatcher;
 });
 
@@ -145,4 +172,8 @@ $di->set('mail', function() {
  */
 $di->set('acl', function() {
 	return new Acl();
+});
+
+$di->set('elements',function(){
+	return new Elements();
 });

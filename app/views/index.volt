@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Welcome to Vökuró</title>
-		<link href="//netdna.bootstrapcdn.com/bootswatch/2.3.1/united/bootstrap.min.css" rel="stylesheet">
-		{{ stylesheet_link('css/style.css') }}
-	</head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Eduapps</title>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic,400italic,500italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+ <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">	
+    {{ stylesheet_link('css/bootstrap.css') }}
+    {{ stylesheet_link('css/bootstrap-responsive.css') }}
+	{{stylesheet_link ('css/style.css')}} 
+	{{stylesheet_link ('css/dart.css')}} 		
+ 	{#<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js">
+	</script>
+ 	#}
+
+
+ 	{{javascript_include('js/jquery.min.js')}}
+ 	{{javascript_include('js/bootstrap.min.js')}}
+
+ 	</head>
 	<body>
 
 		{{ content() }}
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 	</body>
+		
+
 </html>

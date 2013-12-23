@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.27, for Win32 (x86)
 --
--- Host: localhost    Database: vokuro
+-- Host: localhost    Database: Nginx
 -- ------------------------------------------------------
 -- Server version	5.5.27
 

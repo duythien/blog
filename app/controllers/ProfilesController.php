@@ -1,16 +1,16 @@
 <?php
 
-namespace Vokuro\Controllers;
+namespace Nginx\Controllers;
 
 use Phalcon\Tag,
 	Phalcon\Mvc\Model\Criteria,
 	Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Vokuro\Forms\ProfilesForm,
-	Vokuro\Models\Profiles;
+use Nginx\Forms\ProfilesForm,
+	Nginx\Models\Profiles;
 
 /**
- * Vokuro\Controllers\ProfilesController
+ * Nginx\Controllers\ProfilesController
  *
  * CRUD to manage profiles
  */
@@ -38,7 +38,7 @@ class ProfilesController extends ControllerBase
 	{
 		$numberPage = 1;
 		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Vokuro\Models\Profiles', $this->request->getPost());
+			$query = Criteria::fromInput($this->di, 'Nginx\Models\Profiles', $this->request->getPost());
 			$this->persistent->searchParams = $query->getParams();
 		} else {
 			$numberPage = $this->request->getQuery("page", "int");

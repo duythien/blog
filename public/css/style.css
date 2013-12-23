@@ -1,48 +1,244 @@
+body{
+     font-family : 'Ubuntu', sans-serif;
+         font-weight:;
+}
 div.remember {
-	margin-top: 7px;
-	color: #969696;
+    margin-top: 7px;
+    color: #969696;
 }
 
 div.remember label {
-	padding-top: 15px;
+    padding-top: 15px;
 }
 
 div.forgot {
-	margin-top: 7px;
-	color: #dadada;
+    margin-top: 7px;
+    color: #dadada;
 }
-
+div.center {
+    text-align: center;
+}
 footer {
     background: url("../img/feature-gradient.png") no-repeat scroll center 100% white;
     color: #B7B7B7;
     font-size: 12px;
     padding: 30px 0;
+    margin-top: 95px;
     text-align: center;
 }
 
 footer a {
-	margin-left: 10px;
-	margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#footerAdmin {
+    background: url("../img/feature-gradient.png") no-repeat scroll center 100% white;
+    color: #B7B7B7;
+    font-size: 12px;
+    padding: 6px 0;
+    text-align: center;
+}
+
+#footerAdmin a {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 table.signup td {
-	padding: 10px;
+    padding: 10px;
 }
 
 table.signup .alert {
-	margin-bottom: 0;
+    margin-bottom: 0;
     margin-top: 3px;
 }
 
 table.perms select {
-	margin-top: 5px;
-	margin-right: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 table.perms label {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 div.main-container {
-	min-height: 450px;
+    min-height: 450px;
 }
+form#search-form{
+    height: 0px;
+    margin: 6px 14px;
+}#books .row {
+    margin-bottom: 20px;
+}
+.splash-block {
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.splash-block .span6:first-child {
+    text-align: center;
+}
+.splash-block h1 {
+    color: #3E3E3E;
+    font-size: 40px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+}
+.splash-block h1 sup {
+    color: #AC2F3C;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+}
+.splash-block h2 {
+    color: #929292;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.splash-block ul.bubbles {
+    list-style: none outside none;
+    margin: 30px 0 0;
+    padding: 0;
+}
+.splash-block .bubbles li {
+    -moz-box-sizing: border-box;
+    color: #444444;
+    float: left;
+    height: 85px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 16.5%;
+}
+.splash-block .bubbles li a {
+    color: #444444;
+}
+.splash-block .bubbles li i {
+    font-size: 36px;
+}
+.splash-block .bubbles li p {
+    font-family: Lato;
+    font-size: 15px;
+    font-style: italic;
+}
+.splash-block .bubbles li:nth-child(2n+1) {
+    background-color: #F6F6F6;
+}
+.error_page {
+    margin-top: 40px;
+}
+.error_page p {
+    font-size: 1.3em;
+    line-height: 110%;
+}
+.error_page i {
+    font-size: 120px;
+}
+.book h4 {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+}
+.book h4 a {
+    text-decoration: none;
+}
+.coverimage {
+    height: 185px;
+    text-align: center;
+    width: 100%;
+}
+.coverimage img {
+    border: 1px solid #E2E2E2;
+    height: 100%;
+}
+.coverimage .default-cover {
+    background-color: #ECECEC;
+    border: 1px solid #E2E2E2;
+    height: 100%;
+    max-width: 150px;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.coverimage .default-cover i {
+    color: #CCCCCC;
+    display: inline-block;
+    font-size: 80px;
+    margin-top: 30%;
+}
+#tags .list a {
+    color: #434343;
+}
+#tags .list a.active {
+    color: #4C79A8;
+}
+.list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.list .list-item {
+    border-bottom: 1px solid #E0E0E0;
+    margin: 0;
+    padding: 0;
+}
+.list .list-item a {
+    color: #333333;
+    display: block;
+    padding: 13px 10px;
+}
+.list .list-item a i.fa-chevron-right {
+    color: #D1D1D1;
+    float: right;
+}
+.list .list-item a:hover {
+    color: #2C7DB1;
+}
+.list .list-item a:hover i.fa-chevron-right{
+    color: #333333;
+}
+a:link{text-decoration:none;} 
+.list .list-item:nth-child(2n) {
+    background-color: #F6F6F6;
+}
+.list .list-item:last-child {
+    border-bottom: medium none;
+}
+.list.medium {
+    font-size: 16px;
+}
+.list.medium .list-item a {
+    padding: 12px 15px;
+}
+.list.large {
+    font-size: 18px;
+}
+.list.large .list-item a {
+    padding: 15px 10px;
+}
+/*logo in private*/
+.subhead {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #EDEDED 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+   /* border-bottom: 1px solid #D3D3D3;*/
+    color: #0C192E;
+    margin-bottom: 10px;
+    /*text-shadow: 0 1px 0 #FFFFFF;*/
+}
+.subhead-collapse.collapse {
+    height: auto;
+    overflow: visible;
+}
+
+div.content p {
+
+font-size:  18px;
+ line-height: 1.5em;
+ color: #444;
+}
+ a{
+    color: #444;
+}
+

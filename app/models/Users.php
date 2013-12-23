@@ -1,63 +1,73 @@
-<?php
-
-namespace Vokuro\Models;
+<?php namespace Nginx\Models;
 
 use Phalcon\Mvc\Model,
 	Phalcon\Mvc\Model\Validator\Uniqueness;
 
 /**
- * Vokuro\Models\Users
+ * Eduapps\Models\Users
  *
  * All the users registered in the application
  */
 class Users extends Model
 {
-	/**
-	 * @var integer
-	 */
-	public $id;
 
-	/**
-	 * @var string
-	 */
-	public $name;
-
-	/**
-	 * @var string
-	 */
-	public $email;
-
-	/**
-	 * @var string
-	 */
-	public $password;
-
-	/**
-	 * @var string
-	 */
-	public $mustChangePassword;
-
-	/**
-	 * @var string
-	 */
-	public $profilesId;
-
-	/**
-	 * @var string
-	 */
-	public $banned;
-
-	/**
-	 * @var string
-	 */
-	public $suspended;
-
-	/**
-	 * @var string
-	 */
-	public $active;
-
-	/**
+    /**
+     *
+     * @var integer
+     */
+    public $id;
+     
+    /**
+     *
+     * @var string
+     */
+    public $username;
+     
+    /**
+     *
+     * @var string
+     */
+    public $email;
+     
+    /**
+     *
+     * @var string
+     */
+    public $password;
+     
+    /**
+     *
+     * @var string
+     */
+    public $mustChangePassword;
+     
+    /**
+     *
+     * @var integer
+     */
+    public $profilesId;
+     
+   
+     
+    /**
+     *
+     * @var string
+     */
+    public $banned;
+     
+    /**
+     *
+     * @var string
+     */
+    public $suspended;
+     
+    /**
+     *
+     * @var string
+     */
+    public $active;
+     
+    /**
 	 * Before create the user assign a password
 	 */
 	public function beforeValidationOnCreate()
@@ -80,13 +90,14 @@ class Users extends Model
 		}
 
 		//The account must be confirmed via e-mail
-		$this->active = 'N';
+		$this->active = 'Y';
 
 		//The account is not suspended by default
 		$this->suspended = 'N';
 
 		//The account is not banned by default
 		$this->banned = 'N';
+      
 	}
 
 	/**
@@ -117,41 +128,44 @@ class Users extends Model
 		$this->validate(new Uniqueness(
 			array(
 				"field"   => "email",
-				"message" => "The email is already registered"
+				"message" => "E-mail đã tồn tại!"
 			)
 		));
-
-		return $this->validationHasFailed() != true;
+		if ($this->validationHasFailed() == true) {
+            return false;
+        }
+		//return $this->validationHasFailed() != true;
 	}
 
 	public function initialize()
 	{
 
-		$this->belongsTo('profilesId', 'Vokuro\Models\Profiles', 'id', array(
+		$this->belongsTo('profilesId', 'Nginx\Models\Profiles', 'id', array(
 			'alias' => 'profile',
 			'reusable' => true
 		));
 
-		$this->hasMany('id', 'Vokuro\Models\SuccessLogins', 'usersId', array(
+		$this->hasMany('id', 'Nginx\Models\SuccessLogins', 'usersId', array(
 			'alias' => 'successLogins',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'
 			)
 		));
 
-		$this->hasMany('id', 'Vokuro\Models\PasswordChanges', 'usersId', array(
+		$this->hasMany('id', 'Nginx\Models\PasswordChanges', 'usersId', array(
 			'alias' => 'passwordChanges',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'
 			)
 		));
 
-		$this->hasMany('id', 'Vokuro\Models\ResetPasswords', 'usersId', array(
+		$this->hasMany('id', 'Nginx\Models\ResetPasswords', 'usersId', array(
 			'alias' => 'resetPasswords',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'
 			)
 		));
 	}
+   
 
 }

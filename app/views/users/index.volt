@@ -1,7 +1,7 @@
 {{ content() }}
 
 <div align="right">
-    {{ link_to("users/create", "<i class='icon-plus-sign'></i> Create Users", "class": "btn btn-primary") }}
+    {{ link_to("users/create", "<i class='fa fa-plus-circle'></i> Create Users", "class": "btn btn-primary") }}
 </div>
 
 <form method="post" action="{{ url("users/search") }}" autocomplete="off">
@@ -16,8 +16,8 @@
         </div>
 
         <div class="clearfix">
-            <label for="name">Name</label>
-            {{ form.render("name") }}
+            <label for="username">Uername</label>
+            {{ form.render("username") }}
         </div>
 
         <div class="clearfix">
