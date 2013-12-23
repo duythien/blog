@@ -1,5 +1,5 @@
-Blog project
-==========
+Blog project Multi-lingual Support
+==================================
 
 Phalcon PHP is a web framework delivered as a C extension providing high
 performance and lower resource consumption.
@@ -18,6 +18,8 @@ set in the configuration (app/config/config.php)
 
 * Http extension (pecl.php.net/package/pecl_http)
 * Curl extension (http://php.net/manual/en/book.curl.php)
+*Linux users that compile PHP --with-gettext=shared should include
+	extension=gettext.so(php.ini), if have use XAMP default enable gettext
 
 NOTE
 ----
@@ -51,7 +53,13 @@ Element in project
 I use (Acl, Auth, Security) in vokuro project https://github.com/phalcon/vokuro	
 I use editor CKeditor in post content, prettify highlight http://code.google.com/p/google-code-prettify/
 I use bootrsap 2.3.2 frontend and backend
-
+How to use
+http://localhost/login
+	username:admin
+	pass	:eduapp!@#$%
+Thank You
+---------
+Thank you Phalcon forum suport, and more...
 License
 -------
 Blog is open-sourced software licensed under the New BSD License.
