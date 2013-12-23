@@ -56,9 +56,9 @@ I use editor CKeditor in post content, prettify highlight http://code.google.com
 I use bootrsap 2.3.2 frontend and backend
 How to use project
 http://localhost/login
-	username:admin
+	username:admin@gmail.com
 	pass	:eduapp!@#$%
-	
+
 Thank You
 ---------
 Thank you Phalcon forum suport, and more...
