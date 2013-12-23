@@ -63,14 +63,15 @@ class ControllerBase extends Controller
 		 * searching in.
 		 */
 		$locality = $this->session->get('language').'.UTF-8';
+		$this->session->get('language');
 		if (defined('LC_MESSAGES')) {
 		    setlocale(LC_ALL, $locality); // Linux
 		} else {
 		    putenv("LC_ALL={$locality}"); // windows
 		}
-		$dir = $_SERVER['DOCUMENT_ROOT'].'/app/lang';
+		//ho $dir = $_SERVER['DOCUMENT_ROOT'].'/app/lang';
 
-		bindtextdomain('messages',$dir);
+		bindtextdomain('messages','../app/lang');
 
 		/**
 		 * Tell the application to use this text domain, or messages.mo.
