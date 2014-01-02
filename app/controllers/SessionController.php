@@ -1,14 +1,14 @@
 <?php
 
-namespace Nginx\Controllers;
+namespace Duythien\Controllers;
 
-use Nginx\Forms\LoginForm,
-	Nginx\Forms\SignUpForm,
-	Nginx\Forms\ForgotPasswordForm,
-	Nginx\Auth\Auth,
-	Nginx\Auth\Exception as AuthException,
-	Nginx\Models\Users,
-	Nginx\Models\ResetPasswords;
+use Duythien\Forms\LoginForm,
+	Duythien\Forms\SignUpForm,
+	Duythien\Forms\ForgotPasswordForm,
+	Duythien\Auth\Auth,
+	Duythien\Auth\Exception as AuthException,
+	Duythien\Models\Users,
+	Duythien\Models\ResetPasswords;
 
 class SessionController extends ControllerBase
 {

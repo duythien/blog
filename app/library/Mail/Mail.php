@@ -1,17 +1,17 @@
 <?php
 
-namespace Nginx\Mail;
+namespace Duythien\Mail;
 
 use Phalcon\Mvc\User\Component,
 	Swift_Message as Message,
 	Swift_SmtpTransport as Smtp,
-	Nginx\Models\Users,
+	Duythien\Models\Users,
 	Phalcon\Mvc\View;
 
 
 
 /**
- * Nginx\Mail\Mail
+ * Duythien\Mail\Mail
  *
  * Sends e-mails based on pre-defined templates
  */

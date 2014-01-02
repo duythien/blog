@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Controllers;
+namespace Duythien\Controllers;
 
 class PrivacyController extends ControllerBase
 {

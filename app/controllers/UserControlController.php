@@ -1,9 +1,9 @@
 <?php
 
-namespace Nginx\Controllers;
+namespace Duythien\Controllers;
 
-use Nginx\Models\EmailConfirmations,
-	Nginx\Models\ResetPasswords;
+use Duythien\Models\EmailConfirmations,
+	Duythien\Models\ResetPasswords;
 
 /**
  * UserControlController

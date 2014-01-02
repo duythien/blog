@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Models;
+namespace Duythien\Models;
 
 use Phalcon\Mvc\Model;
 
@@ -33,7 +33,7 @@ class Permissions extends Model
 
 	public function initialize()
 	{
-		$this->belongsTo('profilesId', 'Nginx\Models\Profiles', 'id', array(
+		$this->belongsTo('profilesId', 'Duythien\Models\Profiles', 'id', array(
 			'alias' => 'profile'
 		));
 	}

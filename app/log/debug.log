@@ -2234,3 +2234,1274 @@
 [Sun, 22 Dec 13 21:20:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
 [Sun, 22 Dec 13 21:20:04 -0900][ERROR] DESCRIBE `categories`
 [Sun, 22 Dec 13 21:20:04 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 22 Dec 13 22:58:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Sun, 22 Dec 13 22:58:40 -0900][ERROR] DESCRIBE `posts`
+[Sun, 22 Dec 13 22:58:40 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 22 Dec 13 22:58:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Sun, 22 Dec 13 22:58:40 -0900][ERROR] DESCRIBE `categories`
+[Sun, 22 Dec 13 22:58:40 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 22 Dec 13 22:58:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Sun, 22 Dec 13 22:58:47 -0900][ERROR] DESCRIBE `posts`
+[Sun, 22 Dec 13 22:58:47 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 22 Dec 13 22:58:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Sun, 22 Dec 13 22:58:47 -0900][ERROR] DESCRIBE `categories`
+[Sun, 22 Dec 13 22:58:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 22 Dec 13 23:08:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Sun, 22 Dec 13 23:08:32 -0900][ERROR] DESCRIBE `posts`
+[Sun, 22 Dec 13 23:08:32 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 22 Dec 13 23:08:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Sun, 22 Dec 13 23:08:32 -0900][ERROR] DESCRIBE `categories`
+[Sun, 22 Dec 13 23:08:32 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 22 Dec 13 23:08:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Sun, 22 Dec 13 23:08:37 -0900][ERROR] DESCRIBE `posts`
+[Sun, 22 Dec 13 23:08:37 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 22 Dec 13 23:08:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Sun, 22 Dec 13 23:08:37 -0900][ERROR] DESCRIBE `categories`
+[Sun, 22 Dec 13 23:08:37 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 22 Dec 13 23:09:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Sun, 22 Dec 13 23:09:10 -0900][ERROR] DESCRIBE `posts`
+[Sun, 22 Dec 13 23:09:10 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 22 Dec 13 23:09:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Sun, 22 Dec 13 23:09:10 -0900][ERROR] DESCRIBE `categories`
+[Sun, 22 Dec 13 23:09:10 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:14:29 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:14:29 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:14:29 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:14:29 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:14:29 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:14:29 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:14:41 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:15:51 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:15:51 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:15:51 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:15:51 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:15:51 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:15:51 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:15:55 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:15:55 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:15:55 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:15:55 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:15:55 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:15:55 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:15:59 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:15:59 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:15:59 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:15:59 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:16:00 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:16:00 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:16:32 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:16:32 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:16:32 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:16:32 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:16:32 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:16:32 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:27:18 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:27:18 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:27:18 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:27:19 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:27:19 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:27:19 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:27:54 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:27:54 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:27:54 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:27:54 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:27:54 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:27:54 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] SELECT COUNT(*) AS `rowcount` FROM `categories` WHERE `categories`.`id` = :0
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] UPDATE `posts` SET `title` = ?, `content` = ?, `categoriesId` = ?, `slug` = ?, `tags` = ?, `created` = ?, `numberViews` = ?, `userPost` = ? WHERE `id` = ?
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts_views'
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] DESCRIBE `posts_views`
+[Mon, 23 Dec 13 14:27:59 +0000][ERROR] INSERT INTO `posts_views` (`postsId`, `ipaddress`) VALUES (?, ?)
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] DESCRIBE `users`
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`email` = :0 LIMIT 1
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] DESCRIBE `success_logins`
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 14:28:19 +0000][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 14:39:54 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:39:54 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:39:54 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:39:54 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:39:54 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:39:54 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:40:57 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:40:57 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:40:57 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:40:57 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:40:57 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:40:57 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:41:01 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:41:01 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:41:01 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:41:01 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:41:01 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:41:01 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:46:11 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:46:11 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:46:11 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:46:11 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:46:11 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:46:11 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:46:15 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:46:15 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:46:15 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:46:15 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:46:15 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:46:15 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 14:46:17 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 14:46:17 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 14:46:17 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 14:46:17 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 14:46:17 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 14:46:17 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:49:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:49:14 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:49:14 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:49:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:49:14 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:49:14 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:49:15 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:49:17 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:49:17 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:49:17 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:49:17 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:49:17 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:49:17 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:20:07 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:20:07 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:20:07 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:20:07 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:20:07 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:20:07 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:20:10 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:20:10 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:20:10 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:20:10 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:20:10 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:20:10 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:20:13 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:20:13 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:20:13 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:20:13 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:20:13 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:20:13 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:20:20 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:20:20 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:20:20 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:20:20 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:20:20 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:20:20 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:20:24 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:20:24 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:20:24 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:20:24 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:20:24 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:20:24 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:20:40 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:20:40 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:20:40 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:20:40 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:20:40 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:20:40 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:29:48 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:29:48 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:29:48 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:29:48 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:29:48 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:29:48 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:29:55 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:29:55 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:29:55 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:29:55 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:29:55 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:29:55 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:29:57 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:29:57 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:29:57 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:29:57 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:29:57 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:29:57 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:49:45 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:49:45 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:49:45 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:49:45 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:49:45 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:49:45 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:49:53 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:49:53 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:49:53 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:49:53 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:49:53 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:49:53 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:50:02 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:50:02 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:50:02 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:50:02 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:50:02 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:50:02 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:50:33 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:50:33 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:50:33 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:50:33 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:50:33 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:50:33 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:50:51 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:50:51 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:50:51 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:50:51 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:50:51 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:50:51 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:51:05 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:51:05 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:51:05 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:51:05 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:51:05 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:51:05 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:51:15 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:51:15 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:51:15 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:51:15 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:51:15 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:51:15 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:52:30 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:52:30 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:52:30 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:52:30 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:52:30 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:52:30 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:52:33 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:52:34 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:52:34 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:52:34 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:52:34 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:52:34 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:52:40 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:52:40 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:52:40 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:52:40 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:52:40 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:52:40 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:53:06 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:53:06 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:53:06 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:53:06 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:53:06 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:53:06 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:53:58 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:53:58 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:53:58 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:53:58 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:53:58 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:53:58 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:54:27 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:54:27 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:54:27 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:54:27 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:54:27 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:54:27 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:54:38 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:54:38 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:54:38 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:54:38 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:54:38 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:54:38 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:58:25 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:58:25 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:58:25 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:58:25 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:58:25 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:58:25 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 15:58:36 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 15:58:36 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 15:58:36 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 15:58:36 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 15:58:36 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 15:58:36 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:00:31 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:00:31 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:00:31 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:00:31 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:00:31 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:00:31 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:02:54 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:02:54 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:02:54 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:02:54 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:02:54 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:02:54 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:03:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:03:04 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:03:04 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:03:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:03:04 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:03:04 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:03:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:03:36 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:03:36 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:03:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:03:36 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:03:36 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:03:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:03:47 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:03:47 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:03:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:03:47 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:03:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:04:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:04:24 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:04:24 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:04:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:04:24 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:04:24 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:04:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:04:33 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:04:33 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:04:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:04:33 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:04:33 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:04:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:04:40 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:04:40 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:04:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:04:40 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:04:40 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:04:42 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:04:42 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:04:42 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:04:42 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:04:42 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:04:42 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:05:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:05:03 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:05:03 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:05:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:05:03 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:05:03 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:05:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:05:08 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:05:08 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:05:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:05:08 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:05:08 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:05:27 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:05:27 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:05:27 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:05:27 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:05:27 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:05:27 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:05:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:05:32 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:05:32 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:05:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:05:32 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:05:32 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:05:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:05:47 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:05:47 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:05:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:05:47 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:05:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:06:10 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:06:10 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:06:10 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:06:10 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:06:10 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:06:10 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:06:18 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:06:18 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:06:18 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:06:18 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:06:18 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:06:18 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:06:22 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:06:22 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:06:22 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:06:22 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:06:22 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:06:22 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:06:28 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:06:28 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:06:28 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:06:28 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:06:28 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:06:28 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:06:34 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:06:34 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:06:34 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:06:34 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:06:34 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:06:34 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:07:01 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:07:01 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:07:01 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:07:01 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:07:01 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:07:01 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 16:07:35 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 16:07:35 +0000][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 16:07:35 +0000][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 16:07:35 +0000][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 16:07:35 +0000][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 16:07:35 +0000][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:03 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:03 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:03 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:03 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:03 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:03 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:10 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:10 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:10 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:10 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:10 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:10 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:13 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:13 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:13 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:13 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:13 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:13 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:14 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:14 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:14 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:14 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:14 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:14 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:36 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:36 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:36 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:36 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:36 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:36 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:39 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:39 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:39 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:39 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:39 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:39 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:44 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:44 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:44 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:44 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:44 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:44 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:48 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:48 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:48 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:48 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:48 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:48 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:10:59 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:10:59 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:10:59 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:10:59 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:10:59 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:10:59 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:11:33 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:11:33 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:11:33 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:11:33 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:11:33 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:11:33 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:12:02 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:12:02 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:12:02 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:12:02 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:12:02 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:12:02 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:12:07 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:12:07 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:12:07 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:12:07 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:12:07 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:12:07 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:12:22 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:12:22 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:12:22 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:12:22 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:12:22 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:12:22 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:36:05 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:36:05 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:36:05 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:36:05 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:36:05 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:36:05 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 05:36:29 -1100][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 05:36:32 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 05:36:32 -1100][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 05:36:32 -1100][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 05:36:32 -1100][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 05:36:32 -1100][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 05:36:32 -1100][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 07:50:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 07:50:44 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 07:50:44 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 07:50:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 07:50:44 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 07:50:44 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:53:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:53:37 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:53:37 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:53:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:53:37 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:53:37 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:53:38 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:53:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] DESCRIBE `users`
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`email` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] DESCRIBE `success_logins`
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:45 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:53:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:54:31 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:54:32 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:54:37 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:54:38 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:54:40 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `categories` WHERE `categories`.`id` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] UPDATE `posts` SET `title` = ?, `content` = ?, `categoriesId` = ?, `slug` = ?, `tags` = ?, `created` = ?, `numberViews` = ?, `userPost` = ? WHERE `id` = ?
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 20:55:00 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:55:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:55:03 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:55:03 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:55:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:55:03 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:55:03 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:55:09 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:55:09 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:55:09 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:55:09 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 20:57:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:57:38 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:57:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:57:38 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 20:57:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:57:49 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:57:49 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:57:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:57:49 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:57:49 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 20:58:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:58:15 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:58:15 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:58:15 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 20:59:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:59:18 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:59:18 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 20:59:18 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 20:59:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 20:59:29 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 20:59:29 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 20:59:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 20:59:29 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 20:59:29 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:00:07 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:00:07 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:00:07 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:00:07 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:00:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:00:32 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:00:32 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:00:32 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:03:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:03:08 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:03:08 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:03:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:03:08 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:03:08 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:03:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:03:34 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:03:34 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:03:34 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:05:20 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:05:20 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:05:20 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:05:20 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:05:20 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:05:20 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:05:26 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:05:26 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:05:26 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:05:26 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:07:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:07:33 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:07:33 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:07:33 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:07:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:07:44 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:07:44 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:07:44 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:07:53 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:07:53 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:07:53 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:07:53 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:16:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:16:10 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:16:10 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:16:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:16:10 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:16:10 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:16:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:16:15 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:16:15 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Mon, 23 Dec 13 21:16:15 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Mon, 23 Dec 13 21:16:21 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:22 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] DESCRIBE `profiles`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] DESCRIBE `permissions`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:16:24 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:16:31 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:16:31 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:16:31 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:16:31 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:16:31 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:16:31 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:23:42 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:23:42 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:23:42 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:23:42 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:23:42 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:23:42 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:24:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:24:11 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:24:11 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:24:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:24:11 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:24:11 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:24:26 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:24:26 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:24:26 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:24:26 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:24:26 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:24:26 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:24:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:24:29 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:24:29 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:24:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:24:29 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:24:29 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Mon, 23 Dec 13 21:24:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Mon, 23 Dec 13 21:24:33 -0900][ERROR] DESCRIBE `posts`
+[Mon, 23 Dec 13 21:24:33 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Mon, 23 Dec 13 21:24:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Mon, 23 Dec 13 21:24:33 -0900][ERROR] DESCRIBE `categories`
+[Mon, 23 Dec 13 21:24:33 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 26 Dec 13 19:54:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 26 Dec 13 19:54:56 -0900][ERROR] DESCRIBE `posts`
+[Thu, 26 Dec 13 19:54:56 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 26 Dec 13 19:54:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 26 Dec 13 19:54:56 -0900][ERROR] DESCRIBE `categories`
+[Thu, 26 Dec 13 19:54:56 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 26 Dec 13 19:55:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 26 Dec 13 19:55:14 -0900][ERROR] DESCRIBE `posts`
+[Thu, 26 Dec 13 19:55:14 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 26 Dec 13 19:55:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 26 Dec 13 19:55:14 -0900][ERROR] DESCRIBE `categories`
+[Thu, 26 Dec 13 19:55:14 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 26 Dec 13 21:06:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 26 Dec 13 21:06:41 -0900][ERROR] DESCRIBE `posts`
+[Thu, 26 Dec 13 21:06:41 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 26 Dec 13 21:06:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 26 Dec 13 21:06:41 -0900][ERROR] DESCRIBE `categories`
+[Thu, 26 Dec 13 21:06:41 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 26 Dec 13 21:06:43 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 26 Dec 13 21:06:43 -0900][ERROR] DESCRIBE `posts`
+[Thu, 26 Dec 13 21:06:43 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 26 Dec 13 21:06:43 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 26 Dec 13 21:06:43 -0900][ERROR] DESCRIBE `categories`
+[Thu, 26 Dec 13 21:06:43 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 26 Dec 13 21:06:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 26 Dec 13 21:06:47 -0900][ERROR] DESCRIBE `posts`
+[Thu, 26 Dec 13 21:06:47 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Thu, 26 Dec 13 21:06:47 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Wed, 01 Jan 14 19:52:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:52:36 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:52:36 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:52:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:52:36 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:52:36 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:52:46 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:52:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:52:48 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:52:48 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:52:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:52:48 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:52:48 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:52:57 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:52:57 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:52:57 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Wed, 01 Jan 14 19:52:57 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] DESCRIBE `users`
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`email` = :0 LIMIT 1
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] DESCRIBE `success_logins`
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] DESCRIBE `profiles`
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] DESCRIBE `profiles`
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] DESCRIBE `permissions`
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:40 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] DESCRIBE `profiles`
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] DESCRIBE `permissions`
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:53:51 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] DESCRIBE `profiles`
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] DESCRIBE `permissions`
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Wed, 01 Jan 14 19:53:53 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] DESCRIBE `profiles`
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] DESCRIBE `permissions`
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:53:55 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] DESCRIBE `profiles`
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] DESCRIBE `permissions`
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `categories` WHERE `categories`.`id` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] UPDATE `posts` SET `title` = ?, `content` = ?, `categoriesId` = ?, `slug` = ?, `tags` = ?, `created` = ?, `numberViews` = ?, `userPost` = ? WHERE `id` = ?
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Wed, 01 Jan 14 19:53:58 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:54:01 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:54:01 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:54:01 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:54:01 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:54:01 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:54:01 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:06 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:06 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:06 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:07 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:11 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:11 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:11 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:11 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:15 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:15 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:15 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:15 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:15 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:45 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:45 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:45 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:48 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:48 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:48 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:48 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:55 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:55 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:55 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:55 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:55:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:55:58 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:55:58 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:55:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:55:58 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:55:58 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:59:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:59:56 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:59:56 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:59:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:59:56 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:59:56 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 19:59:59 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 19:59:59 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 19:59:59 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 19:59:59 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 19:59:59 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 19:59:59 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:00:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:00:00 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:00:00 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:00:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:00:00 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:00:00 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:00:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:00:05 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:00:05 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:00:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:00:05 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:00:05 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:02:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:02:38 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:02:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:02:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:02:38 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:02:38 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:02:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:02:44 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:02:44 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:02:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:02:44 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:02:44 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:04:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:04:18 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:04:18 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:04:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:04:18 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:04:18 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:04:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:04:28 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:04:28 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:04:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:04:28 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:04:28 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:04:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:04:45 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:04:45 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:04:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:04:45 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:04:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:04:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:04:52 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:04:52 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:04:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:04:52 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:04:52 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:05:39 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:05:39 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:05:39 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:05:39 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:05:39 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:05:39 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:08:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:08:11 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:08:11 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:08:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:08:11 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:08:11 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:08:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:08:33 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:08:33 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:08:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:08:33 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:08:33 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:51:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:51:38 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:51:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:51:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:51:38 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:51:38 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:51:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:51:41 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:51:41 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:51:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:51:41 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:51:41 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:51:46 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:51:46 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:51:46 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:51:46 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:51:46 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:51:46 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:51:57 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:51:57 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:51:57 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:51:57 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:51:57 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:51:57 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:52:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:52:45 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:52:45 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:52:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:52:45 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:52:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:52:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:52:49 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:52:49 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:52:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:52:49 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:52:49 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:03 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:03 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:03 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:03 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:04 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:04 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:04 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:04 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:08 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:08 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:08 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:08 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:09 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:09 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:09 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:09 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:09 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:09 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:30 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:53:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:53:36 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:53:36 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:53:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:53:36 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:53:36 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:54:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:54:36 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:54:36 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:54:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:54:36 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:54:36 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:54:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:54:41 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:54:41 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:54:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:54:41 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:54:41 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:55:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:55:47 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:55:47 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:55:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:55:47 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:55:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:55:51 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:55:51 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:55:51 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:55:51 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:55:51 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:55:51 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:56:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:56:04 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:56:04 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:56:04 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:56:04 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:56:04 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:56:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:56:49 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:56:49 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:56:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:56:49 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:56:49 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 20:56:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 20:56:55 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 20:56:55 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 20:56:55 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 20:56:55 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 20:56:55 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 21:00:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 21:00:45 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 21:00:45 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 21:00:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 21:00:45 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 21:00:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 21:30:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 21:30:14 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 21:30:14 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 21:30:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 21:30:14 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 21:30:14 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 21:30:17 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 21:30:17 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 21:30:17 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 21:30:17 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 21:30:17 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 21:30:17 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 21:30:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 21:30:24 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 21:30:24 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 21:30:24 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 21:30:24 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 21:30:24 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 21:34:27 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 21:34:27 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 21:34:27 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 21:34:27 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 21:34:27 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 21:34:27 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`

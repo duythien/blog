@@ -1,4 +1,4 @@
-<?php namespace Nginx;
+<?php namespace Duythien;
 
 use Phalcon\Mvc\User\Component,
     Phalcon\Forms\Form;   

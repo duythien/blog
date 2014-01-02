@@ -1,16 +1,16 @@
 <?php
 
-namespace Nginx\Controllers;
+namespace Duythien\Controllers;
 
 use Phalcon\Tag,
 	Phalcon\Mvc\Model\Criteria,
 	Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Nginx\Forms\ProfilesForm,
-	Nginx\Models\Profiles;
+use Duythien\Forms\ProfilesForm,
+	Duythien\Models\Profiles;
 
 /**
- * Nginx\Controllers\ProfilesController
+ * Duythien\Controllers\ProfilesController
  *
  * CRUD to manage profiles
  */
@@ -38,7 +38,7 @@ class ProfilesController extends ControllerBase
 	{
 		$numberPage = 1;
 		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Nginx\Models\Profiles', $this->request->getPost());
+			$query = Criteria::fromInput($this->di, 'Duythien\Models\Profiles', $this->request->getPost());
 			$this->persistent->searchParams = $query->getParams();
 		} else {
 			$numberPage = $this->request->getQuery("page", "int");

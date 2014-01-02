@@ -1,10 +1,14 @@
-<?php namespace Nginx\Controllers;
+<?php namespace Duythien\Controllers;
 use Phalcon\Tag,
     Phalcon\Mvc\Model\Criteria,
     Phalcon\Paginator\Adapter\Model as Paginator;
-use Nginx\Forms\LoginForm,
-	Nginx\Forms\PostsForm,
-    Nginx\Models\Posts;
+use Duythien\Forms\LoginForm,
+	Duythien\Forms\PostsForm,
+    Duythien\Models\Posts;
+
+/**
+ * This is post page in backend.
+ */
 class PostsController extends ControllerBase
 {
 	public function initialize()
@@ -23,7 +27,7 @@ class PostsController extends ControllerBase
         $searchParams = null;
         $numberPage = 1;
         if ($request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'Nginx\Models\Posts', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'Duythien\Models\Posts', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
         } 

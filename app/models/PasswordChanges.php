@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Models;
+namespace Duythien\Models;
 
 use Phalcon\Mvc\Model;
 
@@ -47,7 +47,7 @@ class PasswordChanges extends Model
 
 	public function initialize()
 	{
-		$this->belongsTo('usersId', 'Nginx\Models\Users', 'id', array(
+		$this->belongsTo('usersId', 'Duythien\Models\Users', 'id', array(
 			'alias' => 'user'
 		));
 	}

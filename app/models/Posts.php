@@ -1,4 +1,4 @@
-<?php namespace Nginx\Models;
+<?php namespace Duythien\Models;
 
 use Phalcon\Mvc\Model;
 class Posts extends Model
@@ -113,14 +113,14 @@ class Posts extends Model
     }
     public function initialize()
     {
-        $this->belongsTo('categoriesId','Nginx\Models\Categories','id',array(
+        $this->belongsTo('categoriesId','Duythien\Models\Categories','id',array(
         'alias' => 'Categories',
         'reusable' => true
         ));
-        $this->hasMany('id', 'Nginx\Models\PostsViews', 'postsId', array(
+        $this->hasMany('id', 'Duythien\Models\PostsViews', 'postsId', array(
             'alias' => 'views'
         ));
-        $this->belongsTo('categoriesId', 'Nginx\Models\Categories', 'id', array(
+        $this->belongsTo('categoriesId', 'Duythien\Models\Categories', 'id', array(
             'alias' => 'category',
             'reusable' => true,
             'foreignKey' => array(

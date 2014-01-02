@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Forms;
+namespace Duythien\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Password,
@@ -9,7 +9,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\StringLength,
 	Phalcon\Validation\Validator\Confirmation;
 
-use Nginx\Models\Profiles;
+use Duythien\Models\Profiles;
 
 class ChangePasswordForm extends Form
 {

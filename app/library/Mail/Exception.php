@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Mail;
+namespace Duythien\Mail;
 
 class Exception extends \Exception
 {

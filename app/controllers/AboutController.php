@@ -1,4 +1,4 @@
-<?php namespace Nginx\Controllers;
+<?php namespace Duythien\Controllers;
 
 class AboutController extends ControllerBase
 {

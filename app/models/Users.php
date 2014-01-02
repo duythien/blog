@@ -1,4 +1,4 @@
-<?php namespace Nginx\Models;
+<?php namespace Duythien\Models;
 
 use Phalcon\Mvc\Model,
 	Phalcon\Mvc\Model\Validator\Uniqueness;
@@ -140,26 +140,26 @@ class Users extends Model
 	public function initialize()
 	{
 
-		$this->belongsTo('profilesId', 'Nginx\Models\Profiles', 'id', array(
+		$this->belongsTo('profilesId', 'Duythien\Models\Profiles', 'id', array(
 			'alias' => 'profile',
 			'reusable' => true
 		));
 
-		$this->hasMany('id', 'Nginx\Models\SuccessLogins', 'usersId', array(
+		$this->hasMany('id', 'Duythien\Models\SuccessLogins', 'usersId', array(
 			'alias' => 'successLogins',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'
 			)
 		));
 
-		$this->hasMany('id', 'Nginx\Models\PasswordChanges', 'usersId', array(
+		$this->hasMany('id', 'Duythien\Models\PasswordChanges', 'usersId', array(
 			'alias' => 'passwordChanges',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'
 			)
 		));
 
-		$this->hasMany('id', 'Nginx\Models\ResetPasswords', 'usersId', array(
+		$this->hasMany('id', 'Duythien\Models\ResetPasswords', 'usersId', array(
 			'alias' => 'resetPasswords',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'

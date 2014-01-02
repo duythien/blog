@@ -1,11 +1,13 @@
-<?php namespace Nginx\Controllers;
+<?php namespace Duythien\Controllers;
 
 use Phalcon\Tag,
     Phalcon\Mvc\Model\Criteria,
     Phalcon\Paginator\Adapter\Model as Paginator;
-use Nginx\Forms\CategoriesForm,
-    Nginx\Models\Categories;
-
+use Duythien\Forms\CategoriesForm,
+    Duythien\Models\Categories;
+/**
+ * This is categories in backend,edit, add,delete....
+ */
 class CategoriesController extends ControllerBase
 {
 
@@ -25,7 +27,7 @@ class CategoriesController extends ControllerBase
         $searchParams = null;
         $numberPage = 1;
         if ($request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'Nginx\Models\Categories', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'Duythien\Models\Categories', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
         } 

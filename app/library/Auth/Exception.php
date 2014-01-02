@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Auth;
+namespace Duythien\Auth;
 
 class Exception extends \Exception
 {

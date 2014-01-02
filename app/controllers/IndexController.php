@@ -1,10 +1,13 @@
-<?php namespace Nginx\Controllers;
+<?php namespace Duythien\Controllers;
 
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Nginx\Models\Categories,
-	Nginx\Models\Posts,
-    Nginx\Models\PostsViews;
+use Duythien\Models\Categories,
+	Duythien\Models\Posts,
+    Duythien\Models\PostsViews;
 
+/**
+ * Display in frontend
+ */
 class IndexController extends ControllerBase
 {
 
@@ -83,6 +86,15 @@ class IndexController extends ControllerBase
         } else {
             return $this->response->redirect();
         }
+    }
+    /**
+     * list post via category
+     * 
+     */
+    public function categoryAction($categoryId, $slug, $offset=0)
+    {
+        echo "categoryAction";
+        $this->view->disable();
     }
 
     public function initialize()

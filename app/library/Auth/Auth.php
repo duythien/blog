@@ -1,15 +1,15 @@
-<?php namespace Nginx\Auth;
+<?php namespace Duythien\Auth;
 
 use Phalcon\Mvc\User\Component,
-	Nginx\Models\Users,
-	Nginx\Models\RememberTokens,
-	Nginx\Models\SuccessLogins,
-	Nginx\Models\FailedLogins;
+	Duythien\Models\Users,
+	Duythien\Models\RememberTokens,
+	Duythien\Models\SuccessLogins,
+	Duythien\Models\FailedLogins;
 
 /**
- * Nginx\Auth\Auth
+ * Duythien\Auth\Auth
  *
- * Manages Authentication/Identity Management in Nginx
+ * Manages Authentication/Identity Management in Duythien
  */
 class Auth extends Component
 {
@@ -57,7 +57,7 @@ class Auth extends Component
 	/**
 	 * Creates the remember me environment settings the related cookies and generating tokens
 	 *
-	 * @param Nginx\Models\Users $user
+	 * @param Duythien\Models\Users $user
 	 */
 	public function saveSuccessLogin($user)
 	{
@@ -112,7 +112,7 @@ class Auth extends Component
 	/**
 	 * Creates the remember me environment settings the related cookies and generating tokens
 	 *
-	 * @param Nginx\Models\Users $user
+	 * @param Duythien\Models\Users $user
 	 */
 	public function createRememberEnviroment(Users $user)
 	{
@@ -200,7 +200,7 @@ class Auth extends Component
 	/**
 	 * Checks if the user is banned/inactive/suspended
 	 *
-	 * @param Nginx\Models\Users $user
+	 * @param Duythien\Models\Users $user
 	 */
 	public function checkUserFlags(Users $user)
 	{
@@ -278,7 +278,7 @@ class Auth extends Component
 	/**
 	 * Get the entity related to user in the active identity
 	 *
-	 * @return \Nginx\Models\Users
+	 * @return \Duythien\Models\Users
 	 */
 	public function getUser()
 	{

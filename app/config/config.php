@@ -3,9 +3,9 @@
 return new \Phalcon\Config(array(
 	'database' => array(
 		'adapter'     => 'Mysql',
-		'host'        => '127.0.0.1',
-		'username'    => 'root',
-		'password'    => 'qazwsx2013@',
+		'host'        => '127.0.0.1',//127.13.71.2
+		'username'    => 'root',//admin97vXfuX
+		'password'    => 'qazwsx2013@',//j4AAWBCXz5Tb
 		'dbname'      => 'blog',
 	),
 	'application' => array(

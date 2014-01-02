@@ -1,4 +1,4 @@
-<?php namespace Nginx\Forms;
+<?php namespace Duythien\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,

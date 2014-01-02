@@ -1,9 +1,9 @@
 <?php
 
-namespace Nginx\Controllers;
+namespace Duythien\Controllers;
 
-use Nginx\Models\Profiles,
-	Nginx\Models\Permissions;
+use Duythien\Models\Profiles,
+	Duythien\Models\Permissions;
 
 class PermissionsController extends ControllerBase
 {

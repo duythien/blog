@@ -1,18 +1,18 @@
 <?php
 
-namespace Nginx\Controllers;
+namespace Duythien\Controllers;
 
 use Phalcon\Tag,
 	Phalcon\Mvc\Model\Criteria,
 	Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Nginx\Forms\ChangePasswordForm,
-	Nginx\Forms\UsersForm,
-	Nginx\Models\Users,
-	Nginx\Models\PasswordChanges;
+use Duythien\Forms\ChangePasswordForm,
+	Duythien\Forms\UsersForm,
+	Duythien\Models\Users,
+	Duythien\Models\PasswordChanges;
 
 /**
- * Nginx\Controllers\UsersController
+ * Duythien\Controllers\UsersController
  *
  * CRUD to manage users
  */
@@ -40,7 +40,7 @@ class UsersController extends ControllerBase
 	{
 		$numberPage = 1;
 		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Nginx\Models\Users', $this->request->getPost());
+			$query = Criteria::fromInput($this->di, 'Duythien\Models\Users', $this->request->getPost());
 			$this->persistent->searchParams = $query->getParams();
 		} else {
 			$numberPage = $this->request->getQuery("page", "int");

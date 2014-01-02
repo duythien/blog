@@ -1,6 +1,6 @@
 <?php
 
-namespace Nginx\Forms;
+namespace Duythien\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -12,7 +12,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\PresenceOf,
 	Phalcon\Validation\Validator\Email;
 
-use Nginx\Models\Profiles;
+use Duythien\Models\Profiles;
 
 class ProfilesForm extends Form
 {

@@ -1,4 +1,4 @@
-<?php namespace Nginx\Models;
+<?php namespace Duythien\Models;
 
 use \Phalcon\Mvc\Model;
 class Categories extends Model
@@ -33,7 +33,7 @@ class Categories extends Model
      */
     public function initialize()
     {
-        $this->hasMany('id','Nginx\Models\Posts','categoriesId',array(
+        $this->hasMany('id','Duythien\Models\Posts','categoriesId',array(
         'alias' => 'Posts',
         'foreignKey' => array(
                 'message' => 'Profile cannot be deleted because it\'s used on Posts'

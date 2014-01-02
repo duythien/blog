@@ -1,6 +1,6 @@
-<?php namespace Nginx\Controllers;
+<?php namespace Duythien\Controllers;
 
-use \Nginx\Models\Posts;
+use \Duythien\Models\Posts;
 class ShowController extends ControllerBase
 {
 	public function indexAction()

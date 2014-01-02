@@ -14,11 +14,24 @@ msgstr  "Project-Id-Version: tutplus.vn Example Translations 0.0.1\n"
         "MIME-Version: 1.0\n"
         "Content-Type: text/plain; charset=UTF-8\n"
         "Content-Transfer-Encoding: 8bit\n"
-#top menu topmenu.volt
+#top menu topmenu.volt frontend
 #, php-format
-msgid   "Users"
-msgstr  "Tai Khoan"
-msgid 	"Profiles"
-msgstr 	"Thong tin"
-msgid "About"
-msgstr "Ve Chung toi"
+msgid 	"Users"
+msgstr 	"Thành viên"
+msgid 	"Contact"
+msgstr 	"Liên Hệ"
+msgid 	"About"
+msgstr 	"Về Tôi"
+msgid  	"Log In/Sign Up"
+msgstr 	"Đăng ký/Đăng nhập"
+
+#top menu backend
+#, php-format	
+msgid 	"Home"
+msgstr 	"Trang Chủ"
+msgid 	"Permissions"
+msgstr 	"Phân Quyền"
+msgid 	"Posts"
+msgstr 	"Bài đăng"
+msgid 	"Categories"
+msgstr 	"Danh mục"
