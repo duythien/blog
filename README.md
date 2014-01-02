@@ -61,7 +61,7 @@ http://localhost/login
 	pass	:eduapp!@#$%
 Note
 ------
-If problem css change 'baseUri' in config
+I am use Nginx webserver, If problem css change 'baseUri' in config
 Thank You
 ---------
 Thank you Phalcon forum suport, and more...
