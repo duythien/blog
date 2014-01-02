@@ -54,12 +54,14 @@ I use (Acl, Auth, Security) in vokuro project https://github.com/phalcon/vokuro
 I use editor CKeditor in post content, prettify highlight http://code.google.com/p/google-code-prettify/
 
 I use bootrsap 2.3.2 frontend and backend
-How to use project
+How to use project:
 http://localhost/login
 
 	username:admin@gmail.com
 	pass	:eduapp!@#$%
-
+Note
+------
+If problem css change 'baseUri' in config
 Thank You
 ---------
 Thank you Phalcon forum suport, and more...
