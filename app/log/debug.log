@@ -3505,3 +3505,33 @@
 [Wed, 01 Jan 14 21:34:27 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
 [Wed, 01 Jan 14 21:34:27 -0900][ERROR] DESCRIBE `categories`
 [Wed, 01 Jan 14 21:34:27 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 22:14:39 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 22:14:41 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 22:14:41 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 22:14:41 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 22:14:41 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 22:14:41 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 22:14:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 22:14:45 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 22:14:45 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 22:14:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 22:14:45 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 22:14:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 22:14:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 22:14:52 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 22:14:52 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 22:14:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 22:14:52 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 22:14:52 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 22:14:57 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 22:14:57 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 22:14:57 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 22:14:57 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 22:14:57 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 22:14:57 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Wed, 01 Jan 14 22:15:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Wed, 01 Jan 14 22:15:05 -0900][ERROR] DESCRIBE `posts`
+[Wed, 01 Jan 14 22:15:05 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Wed, 01 Jan 14 22:15:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Wed, 01 Jan 14 22:15:05 -0900][ERROR] DESCRIBE `categories`
+[Wed, 01 Jan 14 22:15:05 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`

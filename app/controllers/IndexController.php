@@ -91,7 +91,7 @@ class IndexController extends ControllerBase
      * list post via category
      * 
      */
-    public function categoryAction($categoryId, $slug, $offset=0)
+    public function categoryAction($categoryId, $slug)
     {
         echo "categoryAction";
         $this->view->disable();
