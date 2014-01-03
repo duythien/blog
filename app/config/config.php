@@ -7,6 +7,7 @@ return new \Phalcon\Config(array(
 		'username'    => 'root',//admin97vXfuX
 		'password'    => 'qazwsx2013@',//j4AAWBCXz5Tb
 		'dbname'      => 'blog',
+
 	),
 	'application' => array(
 		'controllersDir' => __DIR__ . '/../../app/controllers/',
@@ -15,8 +16,9 @@ return new \Phalcon\Config(array(
 		'viewsDir'       => __DIR__ . '/../../app/views/',
 		'libraryDir'     => __DIR__ . '/../../app/library/',
 		'pluginsDir'     => __DIR__ . '/../../app/plugins/',
-		'cacheDir'       => __DIR__ . '/../../app/cache/',
+		'cacheDir'       => __DIR__ . '/../../app/cache/volt/',
 		'baseUri'        => '/',
+		'debug'       	 => '1',
 		'publicUrl'		 => 'duythien.dev',
 		'cryptSalt'		 => '$9diko$.f#11'
 	),
@@ -31,8 +33,5 @@ return new \Phalcon\Config(array(
 			'password' => '',
 		)
 	),
-	'amazon' => array(
-		'AWSAccessKeyId' => "",
-		'AWSSecretKey' => ""
-	)
+	
 ));

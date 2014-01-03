@@ -49,15 +49,20 @@ $di->set('view', function() use ($config) {
 		'.volt' => function($view, $di) use ($config) {
 
 			$volt = new VoltEngine($view, $di);
-
-			$volt->setOptions(array(
-				'compiledPath' => $config->application->cacheDir . 'volt/',
+			$voltOptions = array(
+				'compiledPath' => $config->application->cacheDir,
 				'compiledSeparator' => '_'
-			));
+			);
+			//debug
+			if ('1' != $config->application->debug) {
+                    $voltOptions['compileAlways'] = true;
+            }
+			$volt->setOptions($voltOptions);
+
 			//load function php
-						$compiler = $volt->getCompiler();
-						//define variable translate
-						$compiler->addFunction('t', '_');
+			$compiler = $volt->getCompiler();
+			//define variable translate
+			$compiler->addFunction('t', '_');
 
 			return $volt;
 		}

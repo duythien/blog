@@ -18,11 +18,13 @@ class PostsController extends ControllerBase
 
     public function indexAction()
     {
+
         $this->persistent->conditions = null;
         $this->view->form = new PostsForm();
     }
     public function searchAction()
     {
+        
         $request = $this->request;
         $searchParams = null;
         $numberPage = 1;

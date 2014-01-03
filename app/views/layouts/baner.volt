@@ -10,7 +10,7 @@
             <li><a href="/about"><i class="fa fa-code fa-3x"></i><p>Code</p></a></li>
             <li><a href="/about"><i class="fa fa-comment fa-3x"></i><p>Comment</p></a></li>
             <li><a href="/about"><i class="fa fa-terminal fa-3x"></i><p>Fork</p></a></li>
-            <li><a href="/about"><i class="fa fa-github fa-3x"></i><p>Source</p></a></li>
+            <li><a href="http://github.com/duythien/blog"><i class="fa fa-github fa-3x"></i><p>Source</p></a></li>
           </ul>
         </div>
   </div>

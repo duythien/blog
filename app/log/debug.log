@@ -3535,3 +3535,621 @@
 [Wed, 01 Jan 14 22:15:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
 [Wed, 01 Jan 14 22:15:05 -0900][ERROR] DESCRIBE `categories`
 [Wed, 01 Jan 14 22:15:05 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 00:05:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 00:05:11 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 00:05:11 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 00:05:11 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 00:05:11 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 00:05:11 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 17:58:49 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`email` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] DESCRIBE `success_logins`
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:58:56 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users`
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:01 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DESCRIBE `success_logins`
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `success_logins` WHERE `success_logins`.`usersId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='password_changes'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DESCRIBE `password_changes`
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `password_changes` WHERE `password_changes`.`usersId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='reset_passwords'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DESCRIBE `reset_passwords`
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `reset_passwords` WHERE `reset_passwords`.`usersId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] DELETE FROM `users` WHERE `id` = ?
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:06 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users`
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:25 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] DESCRIBE `success_logins`
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `success_logins` WHERE `success_logins`.`usersId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:28 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users`
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 17:59:34 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users`
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:00:10 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] DESCRIBE `success_logins`
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `success_logins` WHERE `success_logins`.`usersId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:00:14 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] DESCRIBE `users`
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] DESCRIBE `success_logins`
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `success_logins` WHERE `success_logins`.`usersId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:01:23 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:02:35 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:44 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:05:45 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:05:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:05:48 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:06:05 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:06:34 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:06:48 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:06:52 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:07:16 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:07:38 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:07:52 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:09:45 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:09:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:09:47 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:09:47 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:09:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:09:47 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:09:48 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:10:19 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` LIMIT 1
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 18:15:00 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` LIMIT 1
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 18:17:58 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:06:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:06:28 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:06:28 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:06:28 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:06:28 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:06:28 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:07:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:07:34 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:07:34 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:07:34 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:07:34 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:07:34 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:07:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:07:49 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:07:49 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:07:49 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:07:49 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:07:49 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:07:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:07:58 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:07:58 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:07:58 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:07:58 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:07:58 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:08:22 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:08:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:08:33 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:08:33 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:08:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:08:33 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:08:33 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:08:37 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:08:37 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:08:37 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 19:08:37 -0900][ERROR] SELECT COUNT(*) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Thu, 02 Jan 14 19:22:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:19 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:45 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` LIMIT 1
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 19:22:47 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` LIMIT 1
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 19:24:08 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:24:18 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:25:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:25:03 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:25:03 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:25:03 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:25:03 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:25:03 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:18 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` LIMIT 1
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 19:25:33 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:33:23 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:33:23 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:33:23 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:33:23 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:33:23 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:33:23 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:33:42 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:33:42 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:33:42 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:33:42 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:33:42 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:33:42 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:39:17 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:39:17 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:39:17 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:39:17 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:39:17 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:39:17 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:26 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:42:29 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` ORDER BY `posts`.`created` DESC
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 19:42:32 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] DESCRIBE `profiles`
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT `profiles`.`id`, `profiles`.`name`, `profiles`.`active` FROM `profiles` WHERE `profiles`.`active` = 'Y'
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] DESCRIBE `permissions`
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:35 -0900][ERROR] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Thu, 02 Jan 14 19:42:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='posts'
+[Thu, 02 Jan 14 19:42:36 -0900][ERROR] DESCRIBE `posts`
+[Thu, 02 Jan 14 19:42:36 -0900][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userPost` FROM `posts` WHERE `posts`.`id` = 5 LIMIT 1
+[Thu, 02 Jan 14 19:42:36 -0900][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='categories'
+[Thu, 02 Jan 14 19:42:36 -0900][ERROR] DESCRIBE `categories`
+[Thu, 02 Jan 14 19:42:36 -0900][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
