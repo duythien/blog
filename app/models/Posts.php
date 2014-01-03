@@ -91,8 +91,6 @@ class Posts extends Model
          * Register a new activity
          */
         if ($this->id > 0) {
-
-           
             /**
              * Update the total of posts related to a category
              */
@@ -113,15 +111,11 @@ class Posts extends Model
     }
     public function initialize()
     {
-        $this->belongsTo('categoriesId','Duythien\Models\Categories','id',array(
-        'alias' => 'Categories',
-        'reusable' => true
-        ));
         $this->hasMany('id', 'Duythien\Models\PostsViews', 'postsId', array(
             'alias' => 'views'
         ));
         $this->belongsTo('categoriesId', 'Duythien\Models\Categories', 'id', array(
-            'alias' => 'category',
+            'alias' => 'Categories',
             'reusable' => true,
             'foreignKey' => array(
                 'message' => 'The category is not valid'
