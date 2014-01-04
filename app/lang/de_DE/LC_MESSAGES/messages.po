@@ -24,6 +24,21 @@ msgid 	"About"
 msgstr 	"Về Tôi"
 msgid  	"Log In/Sign Up"
 msgstr 	"Đăng ký/Đăng nhập"
+msgid 	"Donate"
+msgstr 	"Quyên góp"
+msgid 	"Source"
+msgstr 	"Mã nguôn"
+msgid 	"Watch"
+msgstr 	"Xem"
+msgid 	"Comment"
+msgstr 	"Bình luận"
+msgid 	"Welcome to You"
+msgstr 	"Xin chào bạn"
+msgid 	"The new learning environment from"
+msgstr 	"Môi trường học tập mới"
+msgid 	"Read"
+msgstr	"Đọc"
+
 
 #top menu backend
 #, php-format	

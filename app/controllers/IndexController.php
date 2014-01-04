@@ -70,11 +70,12 @@ class IndexController extends ControllerBase
 
         $this->view->post = $post;
 
-
     }
+    /**
+     * Change the language, reload translations if needed
+     */
     public function setLanguageAction($language='')
     {
-        //Change the language, reload translations if needed
         if ($language == 'en_US' || $language == 'de_DE') {
             $this->session->set('language', $language);
         }

@@ -18,7 +18,7 @@ return new \Phalcon\Config(array(
 		'pluginsDir'     => __DIR__ . '/../../app/plugins/',
 		'cacheDir'       => __DIR__ . '/../../app/cache/volt/',
 		'baseUri'        => '/',
-		'debug'       	 => '1',
+		'debug'       	 => '0',
 		'publicUrl'		 => 'duythien.dev',
 		'cryptSalt'		 => '$9diko$.f#11'
 	),

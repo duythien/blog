@@ -56,23 +56,17 @@ class ControllerBase extends Controller
 			}
 
 		}
-		
 		/**
-		 * Because the .po file is named messages.po, the text domain must be named
-		 * that as well. The second parameter is the base directory to start
-		 * searching in.
+		 * set langguage
 		 */
 		$locality = $this->session->get('language').'.UTF-8';
-		$this->session->get('language');
 		if (defined('LC_MESSAGES')) {
 		    setlocale(LC_ALL, $locality); // Linux
-		} else {
+		}
+		else {
 		    putenv("LC_ALL={$locality}"); // windows
 		}
-		//ho $dir = $_SERVER['DOCUMENT_ROOT'].'/app/lang';
-
 		bindtextdomain('messages','../app/lang');
-
 		/**
 		 * Tell the application to use this text domain, or messages.mo.
 		 */
