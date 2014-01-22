@@ -330,3 +330,12 @@ pre code {
     padding: 0;
     white-space: pre-wrap;
 }
+.header-logo{
+    background: url("../img/logo.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 82px;
+    left: 141px;
+    position: absolute;
+    top: 40px;
+    width: 82px;
+}

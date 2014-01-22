@@ -29,7 +29,7 @@
             <td>{{ post.id }}</td>
             <td>{{ post.title }}</td>
             <td>{{ post.userPost }}</td>
-            <td>{{ post.categories.name }}</td>
+            <td>{{ post.category.name }}</td>
             <td>{{ post.tags }}</td>
             <td>{{ post.created}}</td>
             <td width="12%">{{ link_to("posts/edit/" ~ post.id, '<i class="fa fa-pencil-square-o"></i> Edit', "class": "btn") }}</td>

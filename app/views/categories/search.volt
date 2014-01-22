@@ -17,7 +17,7 @@
             <th>Id</th>
             <th>Name</th>
             <th>Slug</th>
-            <th> numberPost </th>
+            <th>numberPost </th>
             <th>Confirmed?</th>
         </tr>
     </thead>

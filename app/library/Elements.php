@@ -14,7 +14,7 @@ class Elements extends Component
     private $_headerMenu = array(
         'pull-left' => array(
             'index' => array(
-                'caption' => '<img alt="Logo-small" src="/img/logofront.png"/>',
+                'caption' => '<img alt="Logo-small" src="/img/logo-title.png"/>',
                 'action' => ''
             ),
         ),

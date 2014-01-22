@@ -115,7 +115,7 @@ class Posts extends Model
             'alias' => 'views'
         ));
         $this->belongsTo('categoriesId', 'Duythien\Models\Categories', 'id', array(
-            'alias' => 'Categories',
+            'alias' => 'category',
             'reusable' => true,
             'foreignKey' => array(
                 'message' => 'The category is not valid'

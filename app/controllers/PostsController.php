@@ -5,7 +5,10 @@ use Phalcon\Tag,
 use Duythien\Forms\LoginForm,
 	Duythien\Forms\PostsForm,
     Duythien\Models\Posts;
+use \Michelf\MarkdownExtra,
+    \Michelf\Markdown;
 
+require_once '../vendor/markdown/Markdown.inc.php';
 /**
  * This is post page in backend.
  */
@@ -67,12 +70,14 @@ class PostsController extends ControllerBase
             if ($form->isValid($request->getPost()) == true) {
                 $post = new Posts();
                 $title = $request->getPost('title');
+                //translate markdown into html
+                $content = Markdown::defaultTransform($request->getPost('content'));
                 $post->assign(array(
                     'title'     => $title,
                     'categoriesId'=>$request->getPost('categoriesId'),
                     'tags'      =>$request->getPost('tags'),
                     'slug'      =>$this->tag->friendlyTitle($this->normalizeChars($title)),
-                    'content'   =>$request->getPost('content'),
+                    'content'   =>$content,
                     'userPost'  =>$userId['username'],
                 ));
                 if ($post->save() ==true) {
@@ -99,7 +104,7 @@ class PostsController extends ControllerBase
         if ($request->isPost()) {
             if ($form->isValid($request->getPost()) ==true) {
                 $userId =  $this->auth->getIdentity();
-
+                $content = Markdown::defaultTransform($request->getPost('content'));
                 $title = $request->getPost('title');
                 $post->assign(array(
                     'id'        => $id,
@@ -107,7 +112,7 @@ class PostsController extends ControllerBase
                     'categoriesId'=>$request->getPost('categoriesId'),
                     'tags'      =>$request->getPost('tags'),
                     'slug'      =>$this->tag->friendlyTitle($this->normalizeChars($title)),
-                    'content'   =>$request->getPost('content'),
+                    'content'   => $content,
                     'userPost'  =>$userId['username'],
                     'numberViews' =>$post->numberViews
                 ));

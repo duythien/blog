@@ -10,9 +10,7 @@
                   You are currently not logged in. Please log in to see all your books
               </div>
               {% endif %} #}
-    </div>
-
-  
+    </div>  
 {% include 'layouts/baner.volt' %}
 <div class="row">
   <!-- categories sidebar left -->
@@ -22,7 +20,7 @@
         {% for post in page.items %}
           <h2>{{ link_to('view/' ~ post.id ~ '/' ~ post.slug, post.title|e) }}</h2>
           <span class="date">{{ date('M d/Y H:i',post.created) }}</span>
-            <span> By <a href="">{{post.userPost}}</a> 
+            <span> {{('By')}} <a href="">{{post.userPost}}</a>, {{t('Views')}}: {{post.numberViews}}
           </span>
           <?php echo substr($post->content,0, 560);?>
           <div class="clear"></div>

@@ -7,7 +7,7 @@
       </li>
         <?php foreach ($categories as $category) { ?>
           <li class="list-item">
-            <?php echo Phalcon\Tag::linkTo(array('category/' . $category->id . '/' . $category->slug, '<i class="fa fa-chevron-right"></i>' . $category->name)); ?>
+            <?php echo Phalcon\Tag::linkTo(array('category/' . $category->id . '/' . $category->slug, '<i class="fa fa-chevron-right"></i>' . _($category->name))); ?>
             
       
           </li>

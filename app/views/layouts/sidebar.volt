@@ -7,7 +7,7 @@
       </li>
         {% for category in categories %}
           <li class="list-item">
-            {{link_to('category/' ~ category.id ~ '/'~category.slug,'<i class="fa fa-chevron-right"></i>'~category.name)}}
+            {{link_to('category/' ~ category.id ~ '/'~category.slug,'<i class="fa fa-chevron-right"></i>' ~ t(category.name))}}
             
       
           </li>

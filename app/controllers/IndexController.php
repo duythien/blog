@@ -27,6 +27,7 @@ class IndexController extends ControllerBase
 
 		$this->view->page = $paginator->getPaginate();
     	$this->view->categories = Categories::find();
+        //$this->view->tet = array('1','2');
         
         
     }

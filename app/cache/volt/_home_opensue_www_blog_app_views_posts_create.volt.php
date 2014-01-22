@@ -1,26 +1,26 @@
-{{javascript_include('markdown/js/jquery.pagedown-bootstrap.combined.min.js')}}
-{{stylesheet_link ('markdown/css/jquery.pagedown-bootstrap.css')}} 
+<?php echo Phalcon\Tag::javascriptInclude('markdown/js/jquery.pagedown-bootstrap.combined.min.js'); ?>
+<?php echo Phalcon\Tag::stylesheetLink('markdown/css/jquery.pagedown-bootstrap.css'); ?> 
 
-{{form()}}
+<?php echo Phalcon\Tag::form(array()); ?>
 <div class="hero-unit">
         <h1 style="font-size:38px" class="center">Post pages</h1>
         	<div class="form-group">
-    			<label>{{t('Titles')}}</label>
-    			{{ form.render('title') }}
-          {{form.messages('title')}}
+    			<label><?php echo _('Titles'); ?></label>
+    			<?php echo $form->render('title'); ?>
+          <?php echo $form->messages('title'); ?>
  			 </div>
  			<div class="form-group">
  				<label class="control-label">Categories and tag</label>
 					
-							{{form.render('categoriesId')}}
-							              {{form.render('tags')}}
+							<?php echo $form->render('categoriesId'); ?>
+							              <?php echo $form->render('tags'); ?>
  			</div>
     <div>
     <p>
-      {{form.render('content')}}
+      <?php echo $form->render('content'); ?>
     </p>
       <div>
-      	  {{ submit_button('Save','class':'btn btn-primary') }}
+      	  <?php echo Phalcon\Tag::submitButton(array('Save', 'class' => 'btn btn-primary')); ?>
       </div>
           
 </div>

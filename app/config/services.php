@@ -24,6 +24,7 @@ $di = new FactoryDefault();
 
 /**
  * Register the global configuration as config
+ * print_r($this->config->application['publicUrl']);
  */
 $di->set('config', $config);
 
