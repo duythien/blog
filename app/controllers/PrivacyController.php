@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
 class PrivacyController extends ControllerBase
 {

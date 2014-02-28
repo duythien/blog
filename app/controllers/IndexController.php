@@ -1,9 +1,9 @@
-<?php namespace Duythien\Controllers;
+<?php namespace Phalconvn\Controllers;
 
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Duythien\Models\Categories,
-	Duythien\Models\Posts,
-    Duythien\Models\PostsViews;
+use Phalconvn\Models\Categories,
+	Phalconvn\Models\Posts,
+    Phalconvn\Models\PostsViews;
 
 /**
  * Display in frontend
@@ -27,7 +27,6 @@ class IndexController extends ControllerBase
 
 		$this->view->page = $paginator->getPaginate();
     	$this->view->categories = Categories::find();
-        //$this->view->tet = array('1','2');
         
         
     }
@@ -47,30 +46,55 @@ class IndexController extends ControllerBase
         $viewed = PostsViews::count(array(
                 'postsId = ?0 AND ipaddress = ?1',
                 'bind' => array($id, $ipAddress)
-            ));
-            /** A view is stored by ipaddress **/
-            if (!$viewed) {
+        ));
+        /** A view is stored by ipaddress **/
+        if (!$viewed) {
 
-                /**
-                 * Increase the number of views in the post
-                 */
-                $post->numberViews++;
+            /**
+             * Increase the number of views in the post
+             */
+            $post->numberViews++;
 
-                $postView = new PostsViews();
-                /**
-                 * update numberViews in table post ORM
-                 */
-                $postView->post = $post;
-                $postView->ipaddress = $ipAddress;
-                if (!$postView->save()) {
-                    foreach ($postView->getMessages() as $message) {
-                        $this->flash->error($message);
-                    }
+            $postView = new PostsViews();
+            /**
+             * update numberViews in table post ORM
+             */
+            $postView->post = $post;
+            $postView->ipaddress = $ipAddress;
+            if (!$postView->save()) {
+                foreach ($postView->getMessages() as $message) {
+                    $this->flash->error($message);
                 }
             }
+        }
 
         $this->view->post = $post;
 
+    }
+    /**
+     * list post via category 
+     */
+    public function categoryAction($categoryId, $slug)
+    {
+        $category = Categories::findFirstById($categoryId);
+        if (!$category) {
+            $this->flashSession->notice('The category doesn\'t exist');
+            return $this->response->redirect();
+        }
+        $numberPage =1;
+        if ($this->request->getQuery("page", "int")){
+            $numberPage = $this->request->getQuery("page", "int");
+        }
+        $posts      = Posts::find("categoriesId = '$categoryId'");
+        $paginator = new Paginator(array(
+            "data" => $posts,
+            "limit"=> 10,
+            "page" => $numberPage
+        ));
+
+        $this->view->page = $paginator->getPaginate();
+        $this->view->categories = Categories::find();
+        
     }
     /**
      * Change the language, reload translations if needed
@@ -89,15 +113,7 @@ class IndexController extends ControllerBase
             return $this->response->redirect();
         }
     }
-    /**
-     * list post via category
-     * 
-     */
-    public function categoryAction($categoryId, $slug)
-    {
-        echo "categoryAction";
-        $this->view->disable();
-    }
+
 
     public function initialize()
     {

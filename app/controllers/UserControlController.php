@@ -1,9 +1,9 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
-use Duythien\Models\EmailConfirmations,
-	Duythien\Models\ResetPasswords;
+use Phalconvn\Models\EmailConfirmations,
+	Phalconvn\Models\ResetPasswords;
 
 /**
  * UserControlController

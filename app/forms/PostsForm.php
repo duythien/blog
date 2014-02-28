@@ -1,5 +1,5 @@
 <?php
-namespace Duythien\Forms;
+namespace Phalconvn\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -14,7 +14,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\Identical,
 	Phalcon\Validation\Validator\StringLength,
 	Phalcon\Validation\Validator\Confirmation;
-use Duythien\Models\Categories;
+use Phalconvn\Models\Categories;
 class PostsForm extends Form
 {
 	public function initialize($entity=null, $options=null)

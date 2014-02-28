@@ -6,10 +6,10 @@ $loader = new \Phalcon\Loader();
  * We're a registering a set of directories taken from the configuration file
  */
 $loader->registerNamespaces(array(
-	'Duythien\Models' => $config->application->modelsDir,
-	'Duythien\Controllers' => $config->application->controllersDir,
-	'Duythien\Forms' => $config->application->formsDir,
-	'Duythien' => $config->application->libraryDir
+	'Phalconvn\Models' => $config->application->modelsDir,
+	'Phalconvn\Controllers' => $config->application->controllersDir,
+	'Phalconvn\Forms' => $config->application->formsDir,
+	'Phalconvn' => $config->application->libraryDir
 ));
 
 $loader->register();

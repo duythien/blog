@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Mail;
+namespace Phalconvn\Mail;
 
 class Exception extends \Exception
 {

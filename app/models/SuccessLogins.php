@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Models;
+namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model;
 
@@ -33,7 +33,7 @@ class SuccessLogins extends Model
 
 	public function initialize()
 	{
-		$this->belongsTo('usersId', 'Duythien\Models\Users', 'id', array(
+		$this->belongsTo('usersId', 'Phalconvn\Models\Users', 'id', array(
 			'alias' => 'user'
 		));
 	}

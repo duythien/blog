@@ -1,4 +1,4 @@
-<?php namespace Duythien\Models;
+<?php namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model;
 class Posts extends Model
@@ -54,9 +54,9 @@ class Posts extends Model
      
     /**
      *
-     * @var string
+     * @var integer
      */
-    public $userPost;
+    public $userId;
      
     
 
@@ -111,10 +111,14 @@ class Posts extends Model
     }
     public function initialize()
     {
-        $this->hasMany('id', 'Duythien\Models\PostsViews', 'postsId', array(
+        $this->hasMany('id', 'Phalconvn\Models\PostsViews', 'postsId', array(
             'alias' => 'views'
         ));
-        $this->belongsTo('categoriesId', 'Duythien\Models\Categories', 'id', array(
+        $this->belongsTo('userId','Phalconvn\Models\Users','id',array(
+            'alias' => 'userPost'
+        ));
+
+        $this->belongsTo('categoriesId', 'Phalconvn\Models\Categories', 'id', array(
             'alias' => 'category',
             'reusable' => true,
             'foreignKey' => array(

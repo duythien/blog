@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Forms;
+namespace Phalconvn\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Password,
@@ -9,7 +9,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\StringLength,
 	Phalcon\Validation\Validator\Confirmation;
 
-use Duythien\Models\Profiles;
+use Phalconvn\Models\Profiles;
 
 class ChangePasswordForm extends Form
 {

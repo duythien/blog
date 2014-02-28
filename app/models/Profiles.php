@@ -1,11 +1,11 @@
 <?php
 
-namespace Duythien\Models;
+namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model;
 
 /**
- * Duythien\Models\Profiles
+ * Phalconvn\Models\Profiles
  *
  * All the users registered in the application
  */
@@ -23,14 +23,14 @@ class Profiles extends Model
 
 	public function initialize()
 	{
-		$this->hasMany('id', 'Duythien\Models\Users', 'profilesId', array(
+		$this->hasMany('id', 'Phalconvn\Models\Users', 'profilesId', array(
 			'alias' => 'users',
 			'foreignKey' => array(
 				'message' => 'Profile cannot be deleted because it\'s used on Users'
 			)
 		));
 
-		$this->hasMany('id', 'Duythien\Models\Permissions', 'profilesId', array(
+		$this->hasMany('id', 'Phalconvn\Models\Permissions', 'profilesId', array(
 			'alias' => 'permissions'
 		));
 	}

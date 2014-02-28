@@ -336,6 +336,12 @@ pre code {
     height: 82px;
     left: 141px;
     position: absolute;
-    top: 40px;
+    top: 80px;
     width: 82px;
+}
+.number-posts{
+    float: right;
+}
+div.clearfix #title{
+    width: 200px;
 }

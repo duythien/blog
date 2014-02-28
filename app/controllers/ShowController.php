@@ -1,6 +1,6 @@
-<?php namespace Duythien\Controllers;
+<?php namespace Phalconvn\Controllers;
 
-use \Duythien\Models\Posts;
+use \Phalconvn\Models\Posts;
 class ShowController extends ControllerBase
 {
 	public function indexAction()

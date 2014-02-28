@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Forms;
+namespace Phalconvn\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -12,7 +12,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\PresenceOf,
 	Phalcon\Validation\Validator\Email;
 
-use Duythien\Models\Profiles;
+use Phalconvn\Models\Profiles;
 
 class UsersForm extends Form
 {
@@ -30,6 +30,7 @@ class UsersForm extends Form
 		$this->add($id);
 
 		$this->add(new Text('username'));
+		$this->add(new Text('fullName'));
 
 		$this->add(new Text('email'));
 

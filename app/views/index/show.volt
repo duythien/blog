@@ -19,8 +19,12 @@
   <div class="span1"></div>
   <div class="span10">
         <ul class="pager">
-        <li class="previous">{{ link_to("index", '&larr; Back') }} </li>
-        <li class="next">{{ link_to("index", 'Newer &rarr;') }} </li>
+          {% set back = post.id - 1 %}
+          {% set next = post.id + 1 %}  
+
+        <li class="previous">{{ link_to('view/' ~ back ~ '/back', '&larr; Back') }} </li>
+        <li class="next">{{ link_to('view/' ~ next ~ '/next', 'Newer &rarr;') }} 
+        </li>
 
         </ul>
   </div>

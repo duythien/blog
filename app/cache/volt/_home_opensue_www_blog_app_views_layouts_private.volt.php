@@ -6,10 +6,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <?php echo Phalcon\Tag::linkTo(array(null, 'class' => 'brand', 'Duythien')); ?>
+      <?php echo Phalcon\Tag::linkTo(array(null, 'class' => 'brand', 'Phalconvn')); ?>
         <div class="nav-collapse">
 
-          <ul class="nav"><?php $menus = array('Home' => null, 'Users' => 'users', 'Profiles' => 'profiles', 'Permissions' => 'permissions', 'Posts' => 'posts', 'Categories' => 'categories'); ?><?php foreach ($menus as $key => $value) { ?>
+          <ul class="nav"><?php $menus = array('Home' => null, 'Users' => 'users', 'Profiles' => 'profiles', 'Permissions' => 'permissions', 'Posts' => 'posts', 'Categories' => 'categories', 'File Store' => 'filestore'); ?><?php foreach ($menus as $key => $value) { ?>
               <?php if ($value == $this->dispatcher->getControllerName()) { ?>
               <li class="active"><?php echo Phalcon\Tag::linkTo(array($value, _($key))); ?></li>
               <?php } else { ?>
@@ -40,10 +40,10 @@
 </div>
 <div id="footerAdmin" class="navbar navbar-fixed-bottom hidden-phone">
 
-Made with love by the Ecosy Team
+Made with love by the Phalcon VN Team
 
     <?php echo Phalcon\Tag::linkTo(array('privacy', 'Privacy Policy')); ?>
     <?php echo Phalcon\Tag::linkTo(array('terms', 'Terms')); ?>
 
-© 2013 Ecosy Team.
+© <?php echo date('Y'); ?> Phalcon VNTeam.
 </div>

@@ -1,4 +1,4 @@
-<?php namespace Duythien\Models;
+<?php namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model,
 	Phalcon\Mvc\Model\Validator\Uniqueness;
@@ -140,26 +140,32 @@ class Users extends Model
 	public function initialize()
 	{
 
-		$this->belongsTo('profilesId', 'Duythien\Models\Profiles', 'id', array(
+		$this->belongsTo('profilesId', 'Phalconvn\Models\Profiles', 'id', array(
 			'alias' => 'profile',
 			'reusable' => true
 		));
-
-		$this->hasMany('id', 'Duythien\Models\SuccessLogins', 'usersId', array(
+		$this->hasMany('id', 'Phalconvn\Models\Posts', 'userId', array(
+			'alias' => 'posts',
+			'foreignKey' => array(
+				'message' => 'User cannot be deleted because article has not for '
+			)
+		));
+		$this->hasMany('id', 'Phalconvn\Models\SuccessLogins', 'usersId', array(
 			'alias' => 'successLogins',
 			'foreignKey' => array(
-				'message' => 'User cannot be deleted because he/she has activity in the system'
+				'message' => 'User acannot be deleted because he/she has activity in the system'
 			)
 		));
 
-		$this->hasMany('id', 'Duythien\Models\PasswordChanges', 'usersId', array(
+
+		$this->hasMany('id', 'Phalconvn\Models\PasswordChanges', 'usersId', array(
 			'alias' => 'passwordChanges',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'
 			)
 		));
 
-		$this->hasMany('id', 'Duythien\Models\ResetPasswords', 'usersId', array(
+		$this->hasMany('id', 'Phalconvn\Models\ResetPasswords', 'usersId', array(
 			'alias' => 'resetPasswords',
 			'foreignKey' => array(
 				'message' => 'User cannot be deleted because he/she has activity in the system'

@@ -16,14 +16,16 @@
     <h2>Create a User</h2>
 
     <div class="clearfix">
+        <label for="name">Full Name</label>
+        {{ form.render("fullName") }}
+    </div>
+    <div class="clearfix">
         <label for="name">UserName</label>
-        {{ form.render("username") }}
         {{ form.render("username") }}
     </div>
 
     <div class="clearfix">
         <label for="email">E-Mail</label>
-        {{ form.render("email") }}
         {{ form.render("email") }}
     </div>
 

@@ -1,10 +1,10 @@
-<?php namespace Duythien\Controllers;
+<?php namespace Phalconvn\Controllers;
 use Phalcon\Tag,
     Phalcon\Mvc\Model\Criteria,
     Phalcon\Paginator\Adapter\Model as Paginator;
-use Duythien\Forms\LoginForm,
-	Duythien\Forms\PostsForm,
-    Duythien\Models\Posts;
+use Phalconvn\Forms\LoginForm,
+	Phalconvn\Forms\PostsForm,
+    Phalconvn\Models\Posts;
 use \Michelf\MarkdownExtra,
     \Michelf\Markdown;
 
@@ -32,7 +32,7 @@ class PostsController extends ControllerBase
         $searchParams = null;
         $numberPage = 1;
         if ($request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'Duythien\Models\Posts', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'Phalconvn\Models\Posts', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
         } 
@@ -50,7 +50,7 @@ class PostsController extends ControllerBase
                 "action" => "index"
             ));
         }
-
+       // echo $posts->posts->id;
         $paginator = new Paginator(array(
             "data" => $posts,
             "limit" => 10,

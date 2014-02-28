@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(E_ALL);
-
+//ini_set('display_errors', 0);
 //setlocale(LC_ALL, 'vi_VN.UTF-8');
 
 
@@ -39,7 +39,7 @@ try {
 	$response->setStatusCode(404, "Not Found");
 
 	//Set the content of the response
-	$response->setContent("Sorry, the page doesn't exist");
+	$response->setContent("Sorry,My Website  in maintenance.");
 
 	//Send response to the client
 	$response->send();*/

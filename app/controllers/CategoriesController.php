@@ -1,10 +1,10 @@
-<?php namespace Duythien\Controllers;
+<?php namespace Phalconvn\Controllers;
 
 use Phalcon\Tag,
     Phalcon\Mvc\Model\Criteria,
     Phalcon\Paginator\Adapter\Model as Paginator;
-use Duythien\Forms\CategoriesForm,
-    Duythien\Models\Categories;
+use Phalconvn\Forms\CategoriesForm,
+    Phalconvn\Models\Categories;
 /**
  * This is categories in backend,edit, add,delete....
  */
@@ -27,7 +27,7 @@ class CategoriesController extends ControllerBase
         $searchParams = null;
         $numberPage = 1;
         if ($request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'Duythien\Models\Categories', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'Phalconvn\Models\Categories', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
         } 

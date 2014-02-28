@@ -1,11 +1,11 @@
 <div class="row splash-block">
-        <div class="span6">
+        <div class="span6 pull-left">
           <a href="/en/" class="header-logo"></a>
           <h1>{{t('Phalcon VN')}} <sup>Beta</sup></h1>
-          <h2>{{t('The new learning environment from')}} ;)</h2>
+          <h2>{{t('Tat ca moi thu ma ban can ')}} :)   </h2>
         </div>
-        <div class="span6">
-          <ul class="nav nav-tabs">
+        <div class="span6 hidden-phone">
+          <ul class="nav nav-tabs pull-right">
             <li><a href="https://www.digitalocean.com/?refcode=b6bc40f90fc0"><i class="fa fa-linux fa-3x"></i><p>{{t('Read')}}</p></a></li>
             <li><a href="http://www.cashcrate.com/5164937"><i class="fa fa-play fa-3x"></i><p>{{t('Watch')}}</p></a></li>
             <li><a href="https://www.digitalocean.com/?refcode=b6bc40f90fc0"><i class="fa fa-code fa-3x"></i><p>{{t('Code')}}</p></a></li>

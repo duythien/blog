@@ -1,4 +1,4 @@
-<?php namespace Duythien\Forms;
+<?php namespace Phalconvn\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,

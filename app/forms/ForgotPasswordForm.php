@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Forms;
+namespace Phalconvn\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -8,7 +8,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\PresenceOf,
 	Phalcon\Validation\Validator\Email;
 
-use Duythien\Models\Profiles;
+use Phalconvn\Models\Profiles;
 
 class ForgotPasswordForm extends Form
 {

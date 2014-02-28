@@ -13,13 +13,13 @@ Thanks.
 
 Requirements
 ------------
+
 This application uses Github as authentication system, you need a client id and secret id
 set in the configuration (app/config/config.php)
 
 * Http extension (pecl.php.net/package/pecl_http)
 * Curl extension (http://php.net/manual/en/book.curl.php)
-*Linux users that compile PHP --with-gettext=shared should include
-	extension=gettext.so(php.ini), if have use XAMP default enable gettext
+* Linux users that compile PHP --with-gettext=shared should include extension=gettext.so(php.ini), if have use XAMP default enable gettext
 
 NOTE
 ----
@@ -51,7 +51,7 @@ Tests
 Element in project
 ------------------
 I use (Acl, Auth, Security) in vokuro project https://github.com/phalcon/vokuro	
-I use editor CKeditor in post content, prettify highlight http://code.google.com/p/google-code-prettify/
+I use editor Markdown in post content,
 
 I use bootrsap 2.3.2 frontend and backend
 How to use project:

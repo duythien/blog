@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
 use Phalcon\Mvc\Controller,
 	Phalcon\Mvc\Dispatcher;

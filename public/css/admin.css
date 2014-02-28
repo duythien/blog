@@ -106,8 +106,8 @@ div.main-container {
 .small {
     font-size: 11px;
 }
-#login-ecosy{
-	margin-left: 135px;
+#login-phalconvn{
+	margin-left: 235px;
 }
 #form-login input{
 	width: 230px;
@@ -234,7 +234,7 @@ a {
 /*magin logo login*/
 div #element-box img
 {
-    margin-left: 22px;
+    margin-left: 75px;
     margin-bottom:-19px;
 }
 .unstyled li a{

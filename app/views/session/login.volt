@@ -30,8 +30,8 @@
 		</div><!-- End Content -->
 	</div><!-- end contaner -->
 	<div class="navbar navbar-fixed-bottom hidden-phone">
-	    <p class="pull-right">&copy; Your Devcorp! Site hosted with CloudAccess.net 2013</p>
+	    <p class="pull-right">&copy; Your Phalcon VN! Site hosted with CloudAccess.net 2013</p>
 	    <a title="Phalcon is free software released under the GNU General Public License."
-	     href="" id="login-ecosy">Devcorp!&reg;</a>
+	     href="" id="login-phalconvn">Phalcon VN!&reg;</a>
 	    <a class="pull-left" href=""><i class="fa fa-share"></i> Go to site home page</a>
 	</div>

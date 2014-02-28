@@ -1,15 +1,15 @@
-<?php namespace Duythien\Auth;
+<?php namespace Phalconvn\Auth;
 
 use Phalcon\Mvc\User\Component,
-	Duythien\Models\Users,
-	Duythien\Models\RememberTokens,
-	Duythien\Models\SuccessLogins,
-	Duythien\Models\FailedLogins;
+	Phalconvn\Models\Users,
+	Phalconvn\Models\RememberTokens,
+	Phalconvn\Models\SuccessLogins,
+	Phalconvn\Models\FailedLogins;
 
 /**
- * Duythien\Auth\Auth
+ * Phalconvn\Auth\Auth
  *
- * Manages Authentication/Identity Management in Duythien
+ * Manages Authentication/Identity Management in Phalconvn
  */
 class Auth extends Component
 {
@@ -57,7 +57,7 @@ class Auth extends Component
 	/**
 	 * Creates the remember me environment settings the related cookies and generating tokens
 	 *
-	 * @param Duythien\Models\Users $user
+	 * @param Phalconvn\Models\Users $user
 	 */
 	public function saveSuccessLogin($user)
 	{
@@ -112,7 +112,7 @@ class Auth extends Component
 	/**
 	 * Creates the remember me environment settings the related cookies and generating tokens
 	 *
-	 * @param Duythien\Models\Users $user
+	 * @param Phalconvn\Models\Users $user
 	 */
 	public function createRememberEnviroment(Users $user)
 	{
@@ -183,7 +183,7 @@ class Auth extends Component
 						//Register the successful login
 						$this->saveSuccessLogin($user);
 
-						return $this->response->redirect('users/auth');
+						return $this->response->redirect('users');
 					}
 				}
 
@@ -200,7 +200,7 @@ class Auth extends Component
 	/**
 	 * Checks if the user is banned/inactive/suspended
 	 *
-	 * @param Duythien\Models\Users $user
+	 * @param Phalconvn\Models\Users $user
 	 */
 	public function checkUserFlags(Users $user)
 	{
@@ -278,7 +278,7 @@ class Auth extends Component
 	/**
 	 * Get the entity related to user in the active identity
 	 *
-	 * @return \Duythien\Models\Users
+	 * @return \Phalconvn\Models\Users
 	 */
 	public function getUser()
 	{

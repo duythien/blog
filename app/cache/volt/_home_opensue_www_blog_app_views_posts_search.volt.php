@@ -5,10 +5,9 @@
         <?php echo Phalcon\Tag::linkTo(array('posts/index', '&larr; Go Back')); ?>
     </li>
     <li class="pull-right">
-        <?php echo Phalcon\Tag::linkTo(array('posts/create', 'Create Posts', 'class' => 'btn btn-primary')); ?>
+        <?php echo Phalcon\Tag::linkTo(array('posts/create', '<i class=\'fa fa-plus-circle\'></i>' . _('Create Post'), 'class' => 'btn btn-primary')); ?>
     </li>
 </ul>
-
 <?php $v26674716581iterated = false; ?><?php $v26674716581iterator = $page->items; $v26674716581incr = 0; $v26674716581loop = new stdClass(); $v26674716581loop->length = count($v26674716581iterator); $v26674716581loop->index = 1; $v26674716581loop->index0 = 1; $v26674716581loop->revindex = $v26674716581loop->length; $v26674716581loop->revindex0 = $v26674716581loop->length - 1; ?><?php foreach ($v26674716581iterator as $post) { ?><?php $v26674716581loop->first = ($v26674716581incr == 0); $v26674716581loop->index = $v26674716581incr + 1; $v26674716581loop->index0 = $v26674716581incr; $v26674716581loop->revindex = $v26674716581loop->length - $v26674716581incr; $v26674716581loop->revindex0 = $v26674716581loop->length - ($v26674716581incr + 1); $v26674716581loop->last = ($v26674716581incr == ($v26674716581loop->length - 1)); ?><?php $v26674716581iterated = true; ?>
 <?php if ($v26674716581loop->first) { ?>
 <table class="table table-bordered table-striped" align="center">
@@ -28,10 +27,10 @@
         <tr>
             <td><?php echo $post->id; ?></td>
             <td><?php echo $post->title; ?></td>
-            <td><?php echo $post->userPost; ?></td>
+            <td><?php echo $post->userPost->username; ?></td>
             <td><?php echo $post->category->name; ?></td>
             <td><?php echo $post->tags; ?></td>
-            <td><?php echo $post->created; ?></td>
+            <td><?php echo date('M d/Y H:i', $post->created); ?></td>
             <td width="12%"><?php echo Phalcon\Tag::linkTo(array('posts/edit/' . $post->id, '<i class="fa fa-pencil-square-o"></i> Edit', 'class' => 'btn')); ?></td>
             <td width="12%"><?php echo Phalcon\Tag::linkTo(array('posts/delete/' . $post->id, '<i class="fa fa-times"></i> Delete', 'class' => 'btn')); ?></td>
         </tr>

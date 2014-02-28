@@ -1,18 +1,18 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
 use Phalcon\Tag,
 	Phalcon\Mvc\Model\Criteria,
 	Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Duythien\Forms\ChangePasswordForm,
-	Duythien\Forms\UsersForm,
-	Duythien\Models\Users,
-	Duythien\Models\PasswordChanges;
+use Phalconvn\Forms\ChangePasswordForm,
+	Phalconvn\Forms\UsersForm,
+	Phalconvn\Models\Users,
+	Phalconvn\Models\PasswordChanges;
 
 /**
- * Duythien\Controllers\UsersController
+ * Phalconvn\Controllers\UsersController
  *
  * CRUD to manage users
  */
@@ -40,7 +40,7 @@ class UsersController extends ControllerBase
 	{
 		$numberPage = 1;
 		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Duythien\Models\Users', $this->request->getPost());
+			$query = Criteria::fromInput($this->di, 'Phalconvn\Models\Users', $this->request->getPost());
 			$this->persistent->searchParams = $query->getParams();
 		} else {
 			$numberPage = $this->request->getQuery("page", "int");
@@ -79,9 +79,11 @@ class UsersController extends ControllerBase
 			$user = new Users();
 
 			$user->assign(array(
-				'username' => $this->request->getPost('username', 'striptags'),
-				'profilesId' => $this->request->getPost('profilesId', 'int'),
-				'email' => $this->request->getPost('email', 'email'),
+				'username'  => $this->request->getPost('username', 'striptags'),
+				'fullName'	=> $this->request->getPost('fullName'),
+				'profilesId'=> $this->request->getPost('profilesId', 'int'),
+				'email' 	=> $this->request->getPost('email', 'email'),
+				'password' 	=> $this->security->hash($this->request->getPost('username')),
 			));
 
 			if (!$user->save()) {

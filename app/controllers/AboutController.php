@@ -1,4 +1,4 @@
-<?php namespace Duythien\Controllers;
+<?php namespace Phalconvn\Controllers;
 
 class AboutController extends ControllerBase
 {

@@ -1,11 +1,11 @@
-<?php namespace Duythien\Acl;
+<?php namespace Phalconvn\Acl;
 
 use Phalcon\Mvc\User\Component,
 	Phalcon\Acl\Adapter\Memory as AclMemory,
 	Phalcon\Acl\Role as AclRole,
 	Phalcon\Acl\Resource as AclResource,
-	Duythien\Models\Users,
-	Duythien\Models\Profiles;
+	Phalconvn\Models\Users,
+	Phalconvn\Models\Profiles;
 
 /**
  * Eduapps\Acl\Acl
@@ -23,7 +23,9 @@ class Acl extends Component
 		'profiles' => array('index', 'search', 'edit', 'create', 'delete'),
 		'permissions' => array('index'),
 		'posts' => array('index','search','create','edit','delete'),
-		'categories' => array('search','create','edit','delete'),
+		'categories' => array('index','search','create','edit','delete'),
+		'filestore' => array('index','search','create','edit','delete'),
+
 		
 	);
 

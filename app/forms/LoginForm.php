@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Forms;
+namespace Phalconvn\Forms;
 
 use Phalcon\Forms\Form,
 	Phalcon\Forms\Element\Text,
@@ -12,7 +12,7 @@ use Phalcon\Forms\Form,
 	Phalcon\Validation\Validator\Email,
 	Phalcon\Validation\Validator\Identical;
 
-use Duythien\Models\Profiles;
+use Phalconvn\Models\Profiles;
 
 class LoginForm extends Form
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
-use Duythien\Models\Profiles,
-	Duythien\Models\Permissions;
+use Phalconvn\Models\Profiles,
+	Phalconvn\Models\Permissions;
 
 class PermissionsController extends ControllerBase
 {

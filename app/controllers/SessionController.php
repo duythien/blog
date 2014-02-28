@@ -1,14 +1,14 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
-use Duythien\Forms\LoginForm,
-	Duythien\Forms\SignUpForm,
-	Duythien\Forms\ForgotPasswordForm,
-	Duythien\Auth\Auth,
-	Duythien\Auth\Exception as AuthException,
-	Duythien\Models\Users,
-	Duythien\Models\ResetPasswords;
+use Phalconvn\Forms\LoginForm,
+	Phalconvn\Forms\SignUpForm,
+	Phalconvn\Forms\ForgotPasswordForm,
+	Phalconvn\Auth\Auth,
+	Phalconvn\Auth\Exception as AuthException,
+	Phalconvn\Models\Users,
+	Phalconvn\Models\ResetPasswords;
 
 class SessionController extends ControllerBase
 {
@@ -77,7 +77,7 @@ class SessionController extends ControllerBase
 				}
 				//check if login without check remember
 				if (is_array($identity)) {
-					return $this->response->redirect('users/');
+					return $this->response->redirect('posts');
 				}
 
 			} else {
@@ -88,7 +88,7 @@ class SessionController extends ControllerBase
 						'password' => $request->getPost('password'),
 						'remember' => $request->getPost('remember')
 					));
-					return $this->response->redirect('users');
+					return $this->response->redirect('posts');
 				}
 			}
 

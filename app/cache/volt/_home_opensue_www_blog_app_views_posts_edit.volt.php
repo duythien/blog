@@ -14,14 +14,21 @@
         <label class="control-label">Categories and tag</label>
           
               <?php echo $form->render('categoriesId'); ?>
-                            <?php echo $form->render('tags'); ?>
+              <?php echo $form->render('tags'); ?>
       </div>
     <div>
     <p>
       <?php echo $form->render('content'); ?>
     </p>
       <div>
-          <?php echo Phalcon\Tag::submitButton(array('Save', 'class' => 'btn btn-primary')); ?>
+          <ul class="pager">
+            <li class="previous pull-left">
+                <?php echo Phalcon\Tag::linkTo(array('posts/index', '&larr; Go Back')); ?>
+            </li>
+            <li class="pull-right">
+              <?php echo Phalcon\Tag::submitButton(array('Save', 'class' => 'btn btn-primary')); ?>
+            </li>
+          </ul>
       </div>
           
 </div>

@@ -20,7 +20,15 @@
       <?php echo $form->render('content'); ?>
     </p>
       <div>
-      	  <?php echo Phalcon\Tag::submitButton(array('Save', 'class' => 'btn btn-primary')); ?>
+      	  
+          <ul class="pager">
+            <li class="previous pull-left">
+                <?php echo Phalcon\Tag::linkTo(array('posts/index', '&larr; Go Back')); ?>
+            </li>
+            <li class="pull-right">
+              <?php echo Phalcon\Tag::submitButton(array('Save', 'class' => 'btn btn-primary')); ?>
+            </li>
+          </ul>
       </div>
           
 </div>

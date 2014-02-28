@@ -13,14 +13,22 @@
  				<label class="control-label">Categories and tag</label>
 					
 							{{form.render('categoriesId')}}
-							              {{form.render('tags')}}
+							{{form.render('tags')}}
  			</div>
     <div>
     <p>
       {{form.render('content')}}
     </p>
       <div>
-      	  {{ submit_button('Save','class':'btn btn-primary') }}
+      	  
+          <ul class="pager">
+            <li class="previous pull-left">
+                {{ link_to("posts/index", "&larr; Go Back") }}
+            </li>
+            <li class="pull-right">
+              {{ submit_button('Save','class':'btn btn-primary') }}
+            </li>
+          </ul>
       </div>
           
 </div>

@@ -1,4 +1,4 @@
-<?php namespace Duythien\Models;
+<?php namespace Phalconvn\Models;
 
 
 use Phalcon\Mvc\Model;
@@ -25,7 +25,7 @@ class PostsViews extends Model
      
      public function initialize()
     {
-        $this->belongsTo('postsId', 'Duythien\Models\Posts', 'id', array(
+        $this->belongsTo('postsId', 'Phalconvn\Models\Posts', 'id', array(
             'alias' => 'post'
         ));
     }

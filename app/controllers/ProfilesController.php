@@ -1,16 +1,16 @@
 <?php
 
-namespace Duythien\Controllers;
+namespace Phalconvn\Controllers;
 
 use Phalcon\Tag,
 	Phalcon\Mvc\Model\Criteria,
 	Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Duythien\Forms\ProfilesForm,
-	Duythien\Models\Profiles;
+use Phalconvn\Forms\ProfilesForm,
+	Phalconvn\Models\Profiles;
 
 /**
- * Duythien\Controllers\ProfilesController
+ * Phalconvn\Controllers\ProfilesController
  *
  * CRUD to manage profiles
  */
@@ -38,7 +38,7 @@ class ProfilesController extends ControllerBase
 	{
 		$numberPage = 1;
 		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Duythien\Models\Profiles', $this->request->getPost());
+			$query = Criteria::fromInput($this->di, 'Phalconvn\Models\Profiles', $this->request->getPost());
 			$this->persistent->searchParams = $query->getParams();
 		} else {
 			$numberPage = $this->request->getQuery("page", "int");

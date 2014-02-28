@@ -1,6 +1,6 @@
 <?php
 
-namespace Duythien\Auth;
+namespace Phalconvn\Auth;
 
 class Exception extends \Exception
 {

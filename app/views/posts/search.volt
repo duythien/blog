@@ -5,10 +5,9 @@
         {{ link_to("posts/index", "&larr; Go Back") }}
     </li>
     <li class="pull-right">
-        {{ link_to("posts/create", "Create Posts", "class": "btn btn-primary") }}
+        {{ link_to("posts/create", "<i class='fa fa-plus-circle'></i>" ~ t('Create Post'), "class": "btn btn-primary") }}
     </li>
 </ul>
-
 {% for post in page.items %}
 {% if loop.first %}
 <table class="table table-bordered table-striped" align="center">
@@ -28,10 +27,10 @@
         <tr>
             <td>{{ post.id }}</td>
             <td>{{ post.title }}</td>
-            <td>{{ post.userPost }}</td>
+            <td>{{ post.userPost.username }}</td>
             <td>{{ post.category.name }}</td>
             <td>{{ post.tags }}</td>
-            <td>{{ post.created}}</td>
+            <td>{{ date('M d/Y H:i',post.created)}}</td>
             <td width="12%">{{ link_to("posts/edit/" ~ post.id, '<i class="fa fa-pencil-square-o"></i> Edit', "class": "btn") }}</td>
             <td width="12%">{{ link_to("posts/delete/" ~ post.id, '<i class="fa fa-times"></i> Delete', "class": "btn") }}</td>
         </tr>

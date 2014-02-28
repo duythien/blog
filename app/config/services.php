@@ -12,10 +12,10 @@ use Phalcon\DI\FactoryDefault,
 	Phalcon\Flash\Direct as Flash,
 	Phalcon\Events\Manager as EventsManager;
 
-use Duythien\Auth\Auth,
-	Duythien\Acl\Acl,
-	Duythien\Mail\Mail,
-	Duythien\Elements;
+use Phalconvn\Auth\Auth,
+	Phalconvn\Acl\Acl,
+	Phalconvn\Mail\Mail,
+	Phalconvn\Elements;
 
 /**
  * The FactoryDefault Dependency Injector automatically register the right services providing a full stack framework
@@ -137,7 +137,7 @@ $di->set('crypt', function() use ($config) {
  */
 $di->set('dispatcher', function() {
 	$dispatcher = new Dispatcher();
-	$dispatcher->setDefaultNamespace('Duythien\Controllers');
+	$dispatcher->setDefaultNamespace('Phalconvn\Controllers');
 	return $dispatcher;
 });
 

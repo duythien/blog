@@ -4,10 +4,10 @@
 </div>
 <div id="footerAdmin" class="navbar navbar-fixed-bottom hidden-phone">
 
-Made with love by the Ecosy Team
+Made with love by the Phalcon VN Team
 
     {{ link_to("privacy", "Privacy Policy") }}
     {{ link_to("terms", "Terms") }}
 
-© 2013 Ecosy Team.
+© {{date('Y')}} Phalcon VNTeam.
 </div>
