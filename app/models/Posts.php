@@ -100,10 +100,10 @@ class Posts extends Model
     }
     public function beforeDelete()
     {
-       // $id = $this->getDI()->getSession()->get('auth-identity');
+        //$id = $this->getDI()->getSession()->get('auth-identity');
         $id = $_SESSION['auth-identity'];
         if ($this->userId != $id['id']) {
-            echo "The Post is not owen, it can't be deleted";
+            echo "The Post is not owner, it can't be deleted";
             return false;
         }
         return true;
