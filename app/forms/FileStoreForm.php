@@ -59,6 +59,15 @@ class FileStoreForm extends Form
 		));*/
 		$this->add($fileData);       
         
+        //render if action is edit
+        $fileDataEdit = new File('fileDataEdit');
+		$fileDataEdit->setLabel(('Document upload'));
+		/*$fileData->addValidators(array(
+			new PresenceOf(array(
+				'message' =>_('Document file required')
+				))
+		));*/
+		$this->add($fileDataEdit); 
        
         $categories = new Select('categoriesId',Categories::find(),array(
 			'using'=>array('id','name'),

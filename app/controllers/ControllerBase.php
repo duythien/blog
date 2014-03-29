@@ -56,9 +56,8 @@ class ControllerBase extends Controller
 			}
 
 		}
-		/**
-		 * set langguage
-		 */
+		
+		//set language
 		$locality = $this->session->get('language').'.UTF-8';
 		if (defined('LC_MESSAGES')) {
 		    setlocale(LC_ALL, $locality); // Linux
@@ -67,9 +66,8 @@ class ControllerBase extends Controller
 		    putenv("LC_ALL={$locality}"); // windows
 		}
 		bindtextdomain('messages','../app/lang');
-		/**
-		 * Tell the application to use this text domain, or messages.mo.
-		 */
+		
+		//Tell the application to use this text domain, or messages.mo.
 		textdomain('messages');
 
 		         

@@ -37,7 +37,7 @@ class PermissionsController extends ControllerBase
 						$permission->save();
 					}
 
-					$this->flash->success('Permissions were updated with success');
+					$this->flash->success(_('Permissions were updated with success'));
 				}
 
 				//Rebuild the ACL with

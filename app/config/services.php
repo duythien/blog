@@ -179,7 +179,13 @@ $di->set('mail', function() {
 $di->set('acl', function() {
 	return new Acl();
 });
-
+/**
+*Render elements menu html
+*/
 $di->set('elements',function(){
 	return new Elements();
 });
+if (PHALCONDEBUG == true) {
+   
+    $debugWidget = new \PDW\DebugWidget($di);
+}

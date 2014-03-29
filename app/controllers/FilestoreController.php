@@ -66,15 +66,17 @@ class FilestoreController extends  ControllerBase
 
 	            foreach ($request->getUploadedFiles() as $file) {
 					$fileStore->assign(array(
-							'fileName' 		=> $request->getPost('fileName'),
-							'description'	=> $request->getPost('description'),
-							'categoriesId'	=> $request->getPost('categoriesId'),
-							'userId'		=> $userId['id'],
-							'mimeType'		=> $file->getType(),
-							'fileData'		=> file_get_contents($file->getTempName())
-					));
-					if ($fileStore->save() ==true) {
-	                    $this->flash->success(_("Add Document success"));
+                            'id'        => $id,
+                            'fileName'      => $file->getName(),
+                            'fileCaption'   => $request->getPost('fileCaption'),
+                            'description'   => $request->getPost('description'),
+                            'categoriesId'  => $request->getPost('categoriesId'),
+                            'userId'        => $userId['id'],
+                            'mimeType'      => $file->getType(),
+                            'fileData'      => file_get_contents($file->getTempName())
+                    ));
+					if ($fileStore->update() ==true) {
+	                    $this->flash->success(_("Update Document success"));
 	                    Tag::resetInput();
 	                    return $this->dispatcher->forward(array('action' => 'index'));
                		 } 

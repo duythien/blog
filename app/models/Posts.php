@@ -98,6 +98,16 @@ class Posts extends Model
             $this->category->save();
         }
     }
+    public function beforeDelete()
+    {
+       // $id = $this->getDI()->getSession()->get('auth-identity');
+        $id = $_SESSION['auth-identity'];
+        if ($this->userId != $id['id']) {
+            echo "The Post is not owen, it can't be deleted";
+            return false;
+        }
+        return true;
+    }
 
    /**
      * Validate that emails are unique across users

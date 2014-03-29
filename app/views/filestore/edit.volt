@@ -9,12 +9,7 @@
         {{ submit_button("Save", "class": "btn btn-success") }}
     </li>
 </ul>
-<?php
-// Content-type must come before Content-disposition
- /* header('Content-length: ' );
-  header("Content-type:");
-  header("Content-disposition: ");*/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-?>
+
 <div class="well">
     <div class="heading">
         <h4 class="form-heading">{{t('Add Document')}}</h4>
@@ -32,13 +27,13 @@
                     </div>
                 </div>
                 
-                <!-- <div class="control-group">
-                   {#{form.label('fileData')}}
+                 <div class="control-group">
+                   {{form.label('fileDataEdit')}}
                     <div class="controls">
-                    {{form.render('fileData')}}
-                    {{form.messages('fileData')}#}
+                    {{form.render('fileDataEdit')}}
+                    {{form.messages('fileDataEdit')}}
                     </div>
-                </div> -->
+                </div> 
                 
             </div>
         </div>

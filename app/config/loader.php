@@ -9,7 +9,7 @@ $loader->registerNamespaces(array(
 	'Phalconvn\Models' => $config->application->modelsDir,
 	'Phalconvn\Controllers' => $config->application->controllersDir,
 	'Phalconvn\Forms' => $config->application->formsDir,
-	'Phalconvn' => $config->application->libraryDir
+	'Phalconvn' => $config->application->libraryDir,
 ));
 
 $loader->register();

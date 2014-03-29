@@ -5,8 +5,10 @@ error_reporting(E_ALL);
 //setlocale(LC_ALL, 'vi_VN.UTF-8');
 
 
+
 try {
 
+	include __DIR__ . "/../vendor/PDW/DebugWidget.php";
 	/**
 	 * Read the configuration
 	 */
@@ -26,7 +28,7 @@ try {
 	 * Handle the request
 	 */
 	$application = new Phalcon\Mvc\Application($di);
-
+	
 	echo $application->handle()->getContent();
 
 } catch (Exception $e) {

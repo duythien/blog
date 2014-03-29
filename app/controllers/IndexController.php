@@ -13,7 +13,8 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-    	$numberPage =1;
+        //$this->elements->getMenu();
+        $numberPage =1;
     	if ($this->request->getQuery("page", "int")){
     		$numberPage = $this->request->getQuery("page", "int");
     	}
@@ -101,6 +102,8 @@ class IndexController extends ControllerBase
      */
     public function setLanguageAction($language='')
     {
+        //set default language de_De
+        $this->session->set('language', 'de_DE');
         if ($language == 'en_US' || $language == 'de_DE') {
             $this->session->set('language', $language);
         }
@@ -114,7 +117,12 @@ class IndexController extends ControllerBase
         }
     }
 
-
+    /**
+    * Download document
+    */
+    public function downloadAction(){
+        
+    }
     public function initialize()
     {
     	$this->view->setTemplateBefore('public');

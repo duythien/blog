@@ -1,9 +1,10 @@
 <?php
+defined('PHALCONDEBUG') || define('PHALCONDEBUG', true);
 
 return new \Phalcon\Config(array(
 	'database' => array(
 		'adapter'     => 'Mysql',
-		'host'        => '127.0.0.1',//127.13.71.2
+		'host'        => 'localhost',//127.13.71.2
 		'username'    => 'root',//admin97vXfuX
 		'password'    => 'qazwsx2013@',//j4AAWBCXz5Tb
 		'dbname'      => 'blog',
@@ -16,8 +17,9 @@ return new \Phalcon\Config(array(
 		'viewsDir'       => __DIR__ . '/../../app/views/',
 		'libraryDir'     => __DIR__ . '/../../app/library/',
 		'pluginsDir'     => __DIR__ . '/../../app/plugins/',
+		'debug'     	 => __DIR__ . '/../../vendor/PWD/',
 		'cacheDir'       => __DIR__ . '/../../app/cache/volt/',
-		'baseUri'        => '/',
+		'baseUri'        => '/blog/',
 		'debug'       	 => '0',
 		'publicUrl'		 => 'duythien.dev',
 		'cryptSalt'		 => '$9diko$.f#11'
