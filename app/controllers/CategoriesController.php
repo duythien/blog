@@ -41,7 +41,7 @@ class CategoriesController extends ControllerBase
         } 
         $Categories = Categories::find($parameters);
         if (count($Categories) == 0) {
-            $this->flash->notice("The search did not find any Categories");
+            $this->flash->notice(_("The search did not find any Categories"));
             return $this->dispatcher->forward(array(
                 "action" => "index"
             ));
@@ -69,7 +69,7 @@ class CategoriesController extends ControllerBase
                     'slug'      =>$request->getPost('slug'),
                 ));
                 if ($categories->save() ==true) {
-                    $this->flash->success("Add categories success");
+                    $this->flash->success(_("Add categories success"));
                     Tag::resetInput();
                     return $this->dispatcher->forward(array('action' => 'index'));
                 } 
@@ -80,6 +80,7 @@ class CategoriesController extends ControllerBase
         }
         $this->view->form = $form;
     }
+
     public function editAction($id)
     {
         $categories = Categories::findFirst($id);
@@ -98,7 +99,7 @@ class CategoriesController extends ControllerBase
                
             ));
             if ($categories->update()==true) {
-                $this->flash->success("Cập nhật thành công ");
+                $this->flash->success(_("Update sucess post"));
                 Tag::resetInput();
                 return $this->dispatcher->forward(array('action' => 'index'));
             }
@@ -113,14 +114,14 @@ class CategoriesController extends ControllerBase
 
         $categories = Categories::findFirstById($id);
         if (!$categories) {
-            $this->flash->error("Ucategories was not found");
+            $this->flash->error(_("Ucategories was not found"));
             return $this->dispatcher->forward(array('action' => 'index'));
         }
 
         if (!$categories->delete()) {
             $this->flash->error($categories->getMessages());
         } else {
-            $this->flash->success("Categories was deleted");
+            $this->flash->success(_("Categories was deleted"));
         }
 
         return $this->dispatcher->forward(array('action' => 'index'));

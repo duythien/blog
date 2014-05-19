@@ -9,12 +9,12 @@
       <?php echo $this->tag->linkTo(array(null, 'class' => 'brand', 'Phalconvn')); ?>
         <div class="nav-collapse">
 
-          <ul class="nav"><?php $menus = array('Home' => null, 'Users' => 'users', 'Profiles' => 'profiles', 'Permissions' => 'permissions', 'Posts' => 'posts', 'Categories' => 'categories', 'File Store' => 'filestore'); ?><?php $v42321927891iterator = $menus; $v42321927891incr = 0; $v42321927891loop = new stdClass(); $v42321927891loop->length = count($v42321927891iterator); $v42321927891loop->index = 1; $v42321927891loop->index0 = 1; $v42321927891loop->revindex = $v42321927891loop->length; $v42321927891loop->revindex0 = $v42321927891loop->length - 1; ?><?php foreach ($v42321927891iterator as $key => $value) { ?><?php $v42321927891loop->first = ($v42321927891incr == 0); $v42321927891loop->index = $v42321927891incr + 1; $v42321927891loop->index0 = $v42321927891incr; $v42321927891loop->revindex = $v42321927891loop->length - $v42321927891incr; $v42321927891loop->revindex0 = $v42321927891loop->length - ($v42321927891incr + 1); $v42321927891loop->last = ($v42321927891incr == ($v42321927891loop->length - 1)); ?>
+          <ul class="nav"><?php $menus = array('Home' => null, 'Users' => 'users', 'Profiles' => 'profiles', 'Permissions' => 'permissions', 'Posts' => 'posts', 'Categories' => 'categories', 'File Store' => 'filestore'); ?><?php foreach ($menus as $key => $value) { ?>
               <?php if ($value == $this->dispatcher->getControllerName()) { ?>
               <li class="active"><?php echo $this->tag->linkTo(array($value, _($key))); ?></li>
               <?php } else { ?>
               <li><?php echo $this->tag->linkTo(array($value, _($key))); ?></li>
-              <?php } ?><?php $v42321927891incr++; } ?></ul>
+              <?php } ?><?php } ?></ul>
 
         <ul class="nav pull-right">
           <li class="dropdown">

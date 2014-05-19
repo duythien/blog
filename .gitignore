@@ -1,0 +1,15 @@
+.hg/
+.hgignore
+.DS_Store
+app/cache/volt/*.php
+public/.DS_Store
+app/cache/views/cache-*
+app/cache/views/forum-cache-*
+app/cache/metaData/*.php
+/nbproject/
+tests/_log/*
+vendor/
+.idea/
+composer.lock
+composer.phar
+app/config/config.php

@@ -81,7 +81,7 @@ class PostsController extends ControllerBase
                     'userPost'  =>$userId['username'],
                 ));
                 if ($post->save() ==true) {
-                    $this->flash->success("Add Post success");
+                    $this->flash->success(_("Add Post success"));
                     Tag::resetInput();
                     return $this->dispatcher->forward(array('action' => 'index'));
                 } 
@@ -96,7 +96,7 @@ class PostsController extends ControllerBase
     {
         $post = Posts::findFirst($id);
         if ($post ==false) {
-            $this->flash->error("Post was not found");
+            $this->flash->error(_("Post was not found"));
             return $this->dispatcher->forward(array('action' => 'index'));
         }
         $request = $this->request;
@@ -117,7 +117,7 @@ class PostsController extends ControllerBase
                     'numberViews' =>$post->numberViews
                 ));
                 if ($post->update()==true) {
-                    $this->flash->success("Cập nhật thành công ");
+                    $this->flash->success(_("Update success"));
                     Tag::resetInput();
                     return $this->dispatcher->forward(array('action' => 'index'));
                 }
@@ -132,14 +132,14 @@ class PostsController extends ControllerBase
 
         $post = Posts::findFirstById($id);
         if (!$post) {
-            $this->flash->error("post was not found");
+            $this->flash->error(_("Post was not found"));
             return $this->dispatcher->forward(array('action' => 'index'));
         }
 
         if (!$post->delete()) {
             $this->flash->error($post->getMessages());
         } else {
-            $this->flash->success("Post was deleted");
+            $this->flash->success(_("Post was deleted"));
         }
 
         return $this->dispatcher->forward(array('action' => 'index'));
