@@ -21,13 +21,7 @@ set in the configuration (app/config/config.php)
 * Curl extension (http://php.net/manual/en/book.curl.php)
 * Linux users that compile PHP --with-gettext=shared should include extension=gettext.so(php.ini), if have use XAMP default enable gettext
 
-NOTE
-----
-The master branch will always contain the latest stable version. If you wish
-to check older versions or newer ones currently under development, please
-switch to the relevant branch.
-
-Required version: >= 0.9.0
+Phalcon extension > 0.9
 
 Get Started
 -----------
@@ -45,15 +39,15 @@ Then you'll need to create the database and initialize schema:
     echo 'CREATE DATABASE blog' | mysql -u root
     cat schemas/blog.sql | mysql -u root blog
 
-Tests
------
-   
-Element in project
-------------------
-I use (Acl, Auth, Security) in vokuro project https://github.com/phalcon/vokuro	
-I use editor Markdown in post content,
+Install vendor use composer
 
-I use bootrsap 2.3.2 frontend and backend
+	composer install
+
+Element in project & Tests   
+------------------
+I use (Acl, Auth, Security) in [vokuro](https://github.com/phalcon/vokuro) project 	and I use editor Markdown in post content, also  used bootrsap 2.3.2 frontend and backend
+
+
 How to use project:
 http://localhost/login
 
@@ -65,6 +59,7 @@ I am use Nginx webserver, If problem css change 'baseUri' in config
 Thank You
 ---------
 Thank you Phalcon forum suport, and more...
+
 License
 -------
-Blog is open-sourced software licensed under the New BSD License.
+Blog is open-sourced software licensed under the New Apache License.
