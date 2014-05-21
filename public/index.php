@@ -1,5 +1,17 @@
 <?php
-
+/*
+ +--------------------------------------------------------------------------+
+ | Blog Create by  Phalcon VietNam                                     		|
+ +--------------------------------------------------------------------------+
+ | Copyright (c) 2013-2014 Phalcon VietNam Team and contributors            |
+ +--------------------------------------------------------------------------+
+ | This source file is subject the Apache license, that is bundled with     |
+ | this package in the file LICENSE, and is available through the           |
+ | world-wide-web at the following url:                                     |
+ | https://www.apache.org/licenses/LICENSE-2.0.html                         |
+ |                                                                          |        
+ +--------------------------------------------------------------------------+
+*/
 error_reporting(E_ALL);
 //ini_set('display_errors', 0);
 //setlocale(LC_ALL, 'vi_VN.UTF-8');

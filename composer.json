@@ -12,11 +12,11 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "aws/aws-sdk-php": "~2.5",
-    	"phalcon/incubator": "1.3.0.*@dev",
-        "phpunit/phpunit": "4.2.*@dev",
-        "codeception/codeception": "1.8.*@dev",
-        "squizlabs/php_codesniffer": "dev-master"
+    	"phpunit/phpunit": "3.7.*",
+        "squizlabs/php_codesniffer": "1.*",
+        "codeception/codeception": "*",
+        "phalcon/incubator": "dev-master",
+        "michelf/php-markdown": "1.4.1"
 
     }
 }

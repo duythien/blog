@@ -75,8 +75,7 @@ class Elements extends Component
                 if ($controller=="search") {
                 echo $option['caption'];
                 }
-                else
-                {
+                else{
                 echo \Phalcon\Tag::linkTo($controller.'/'.$option['action'], _($option['caption']));
                 }
                 echo '</li>';
@@ -88,6 +87,4 @@ class Elements extends Component
         echo '</div>';
 
     }
-   
-   
 }
