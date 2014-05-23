@@ -6,7 +6,8 @@ use Phalconvn\Models\Categories,
     Phalconvn\Models\PostsViews;
 
 /**
- * Display in frontend
+ * Display al post in frontend
+ * 
  */
 class IndexController extends ControllerBase
 {
@@ -32,8 +33,8 @@ class IndexController extends ControllerBase
         
     }
     /**
-     * [showAction view signle page]
-     * 
+     * Display single page
+     * @return [object] [Todo]
      */
     public function showAction()
     {
@@ -48,18 +49,13 @@ class IndexController extends ControllerBase
                 'postsId = ?0 AND ipaddress = ?1',
                 'bind' => array($id, $ipAddress)
         ));
-        /** A view is stored by ipaddress **/
+        
+        //A view is stored by ipaddress
         if (!$viewed) {
-
-            /**
-             * Increase the number of views in the post
-             */
+            //Increase the number of views in the post
             $post->numberViews++;
-
             $postView = new PostsViews();
-            /**
-             * update numberViews in table post ORM
-             */
+            //Update numberViews in table post ORM
             $postView->post = $post;
             $postView->ipaddress = $ipAddress;
             if (!$postView->save()) {
@@ -73,7 +69,10 @@ class IndexController extends ControllerBase
 
     }
     /**
-     * list post via category 
+     * Displays post by category
+     * @param  [int] $categoryId    [description category id]
+     * @param  [string] $slug       [description slug seo]
+     * @return [array]              [list all object ]
      */
     public function categoryAction($categoryId, $slug)
     {
@@ -99,6 +98,7 @@ class IndexController extends ControllerBase
     }
     /**
      * Change the language, reload translations if needed
+     * Default language de_De
      */
     public function setLanguageAction($language='')
     {
@@ -112,7 +112,8 @@ class IndexController extends ControllerBase
         $referer = $this->request->getHTTPReferer();
         if (strpos($referer, $this->request->getHttpHost()."/")!==false) {
             return $this->response->setHeader("Location", $referer);
-        } else {
+        }
+        else {
             return $this->response->redirect();
         }
     }
@@ -120,7 +121,8 @@ class IndexController extends ControllerBase
     /**
     * Download document
     */
-    public function downloadAction(){
+    public function downloadAction()
+    {
         
     }
     public function initialize()
