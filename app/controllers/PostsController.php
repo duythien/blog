@@ -5,12 +5,13 @@ use Phalcon\Tag,
 use Phalconvn\Forms\LoginForm,
 	Phalconvn\Forms\PostsForm,
     Phalconvn\Models\Posts;
-use \Michelf\MarkdownExtra,
-    \Michelf\Markdown;
+use Michelf\MarkdownExtra,
+    Michelf\Markdown;
 
 require_once '../vendor/michelf/php-markdown/Michelf/Markdown.inc.php';
 /**
  * This is post page in backend.
+ * 
  */
 class PostsController extends ControllerBase
 {
@@ -146,8 +147,8 @@ class PostsController extends ControllerBase
     }
     /**
      * Replace language-specific characters by ASCII-equivalents.
-     * @param string $s
-     * @return string
+     * @param  [string] $s
+     * @return [string]
      */
     public static function normalizeChars($s)
     {
