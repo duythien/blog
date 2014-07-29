@@ -1,11 +1,8 @@
 box: wercker/php
+services:
+  - digitronac/phalconphp@0.5.0
 build:
   steps:
-    - script:
-        name: Install extensions
-        code: |-
-          pecl install memcache
-          pecl install SQLite
     - script:
         name: install dependencies
         code: |-
