@@ -1,6 +1,6 @@
 box: wercker/php
 services:
-  - digitronac/phalconphp@0.5.0
+  - duythien/rethinkdb@0.2.0
 build:
   steps:
     - script:
