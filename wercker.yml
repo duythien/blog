@@ -1,4 +1,4 @@
-box: wercker/php
+box: duythien/phalcon@1.0.0
 services:
   - duythien/rethinkdb@0.2.0
 build:
