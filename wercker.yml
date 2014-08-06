@@ -16,7 +16,7 @@ build:
         name: PHPUnit integration tests
         code: phpunit --configuration phpunit.xml
   #send messages into hipchat
-  after-steps
+  after-steps:
     - hipchat-notify:
         token: xHJ8scOlvz3hatcWsZPahRzFljKjwtpOQPXvkXl5
         room-id: 1089715
