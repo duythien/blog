@@ -19,5 +19,5 @@ build:
   after-steps:
     - hipchat-notify:
         token: G6XTgEF71CFN2HavXs2VCj6QyrhFtubEkAlPb4xu
-        room-id: 1089715
+        room-id: 739722
         from-name: wercker
