@@ -18,6 +18,6 @@ build:
   #send messages into hipchat
   after-steps:
     - hipchat-notify:
-        token: G6XTgEF71CFN2HavXs2VCj6QyrhFtubEkAlPb4xu
+        token: 515331b35c68161893f57ab564580f
         room-id: 739722
         from-name: wercker
