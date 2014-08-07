@@ -5,7 +5,7 @@ build:
   steps:
     - script:
         name: Add php.ini
-        code: echo 'extension=phalcon.so' >> $HOME/.p/versions/$(phpenv version-name)/etc/php.ini
+        code: echo 'extension=phalcon.so' >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
     - script:
         name: install dependencies
         code: composer self-update
