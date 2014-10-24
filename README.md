@@ -1,3 +1,5 @@
+[ ![Codeship Status for duythien/blog](https://www.codeship.io/projects/ced77a40-3d52-0132-1c5e-66923e175028/status)](https://www.codeship.io/projects/43243)
+
 Blog project Multi-lingual Support
 ==================================
 
