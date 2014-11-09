@@ -4,12 +4,12 @@ $router = new Phalcon\Mvc\Router();
 $router->removeExtraSlashes(true);
 
 $router->add('/login',array(
-				'controller'=>'session',
-				'action'	=>'login',
-			));
+                'controller'=>'session',
+                'action'    =>'login',
+            ));
 $router->add('/view/{id:[0-9]+}/{slug}', array(
-	'controller' => 'index',
-	'action' => 'show'
+    'controller' => 'index',
+    'action' => 'show'
 ));
 //set languages
 $router->add("/set-language/{language:[a-zA-Z\_]+}", array(
@@ -18,8 +18,8 @@ $router->add("/set-language/{language:[a-zA-Z\_]+}", array(
 ));
 //display all articles via category
 $router->add('/category/{id:[0-9]+}/{slug}', array(
-	'controller' => 'index',
-	'action' => 'category'
+    'controller' => 'index',
+    'action' => 'category'
 ));
 
 return $router;

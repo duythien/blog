@@ -12681,3 +12681,132 @@
 [Mon, 24 Mar 14 12:25:02 -0400][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT :2
 [Mon, 24 Mar 14 12:25:02 -0400][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT :2
 [Mon, 24 Mar 14 12:25:02 -0400][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT :2
+[Sun, 09 Nov 14 15:29:05 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:05 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:06 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:22 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:22 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:22 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 09 Nov 14 15:29:22 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:22 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:23 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:25 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:25 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:25 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:25 +0700][ERROR] SELECT COUNT(42) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:30 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '1'
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:32 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '9'
+[Sun, 09 Nov 14 15:29:34 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '2'
+[Sun, 09 Nov 14 15:29:36 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:29:41 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` ORDER BY `posts`.`created` DESC
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:43:48 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '2'
+[Sun, 09 Nov 14 15:43:49 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '2'
+[Sun, 09 Nov 14 15:57:35 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '2'
+[Sun, 09 Nov 14 15:57:38 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'categories'
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] DESCRIBE `categories`
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories` WHERE `categories`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`categoriesId` = '1'
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `categories`.`id`, `categories`.`name`, `categories`.`slug`, `categories`.`numberPosts` FROM `categories`
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'users'
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] DESCRIBE `users`
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:39 +0700][ERROR] SELECT `users`.`id`, `users`.`username`, `users`.`email`, `users`.`password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`fullName`, `users`.`banned`, `users`.`suspended`, `users`.`active` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:41 +0700][ERROR] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'posts'
+[Sun, 09 Nov 14 15:57:41 +0700][ERROR] DESCRIBE `posts`
+[Sun, 09 Nov 14 15:57:41 +0700][ERROR] SELECT `posts`.`id`, `posts`.`title`, `posts`.`content`, `posts`.`categoriesId`, `posts`.`slug`, `posts`.`tags`, `posts`.`created`, `posts`.`numberViews`, `posts`.`userId` FROM `posts` WHERE `posts`.`id` = :0 LIMIT 1
+[Sun, 09 Nov 14 15:57:41 +0700][ERROR] SELECT COUNT(42) AS `rowcount` FROM `posts_views` WHERE `posts_views`.`postsId` = :0 AND `posts_views`.`ipaddress` = :1

@@ -3,10 +3,10 @@
 namespace Phalconvn\Mail;
 
 use Phalcon\Mvc\User\Component,
-	Swift_Message as Message,
-	Swift_SmtpTransport as Smtp,
-	Phalconvn\Models\Users,
-	Phalcon\Mvc\View;
+    Swift_Message as Message,
+    Swift_SmtpTransport as Smtp,
+    Phalconvn\Models\Users,
+    Phalcon\Mvc\View;
 
 
 
@@ -18,14 +18,14 @@ use Phalcon\Mvc\User\Component,
 class Mail extends Component
 {
 
-	protected $_transport;
+    protected $_transport;
 
-	protected $_amazonSes;
+    protected $_amazonSes;
 
-	protected $_directSmtp = false;
+    protected $_directSmtp = false;
 
-	public function test()
-	{
+    public function test()
+    {
 
-	}
+    }
 }

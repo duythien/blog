@@ -10,7 +10,7 @@
  | this package in the file LICENSE, and is available through the           |
  | world-wide-web at the following url:                                     |
  | https://www.apache.org/licenses/LICENSE-2.0.html                         |
- |                                                                          |        
+ |                                                                          |
  +--------------------------------------------------------------------------+
 */
 

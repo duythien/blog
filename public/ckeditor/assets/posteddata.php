@@ -25,10 +25,8 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 		</thead>
 <?php
 
-if (!empty($_POST))
-{
-	foreach ( $_POST as $key => $value )
-	{
+if (!empty($_POST)) {
+	foreach ( $_POST as $key => $value ) {
 		if ( ( !is_string($value) && !is_numeric($value) ) || !is_string($key) )
 			continue;
 
@@ -42,7 +40,7 @@ if (!empty($_POST))
 			<td><pre class="samples"><?php echo $value; ?></pre></td>
 		</tr>
 	<?php
-	}
+    }
 }
 ?>
 	</table>

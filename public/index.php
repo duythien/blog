@@ -9,7 +9,7 @@
  | this package in the file LICENSE, and is available through the           |
  | world-wide-web at the following url:                                     |
  | https://www.apache.org/licenses/LICENSE-2.0.html                         |
- |                                                                          |        
+ |                                                                          |
  +--------------------------------------------------------------------------+
 */
 error_reporting(E_ALL);
@@ -20,34 +20,34 @@ error_reporting(E_ALL);
 
 try {
 
-	include __DIR__ . "/../vendor/PDW/DebugWidget.php";
-	/**
+    //include __DIR__ . "/../vendor/PDW/DebugWidget.php";
+    /**
 	 * Read the configuration
 	 */
-	$config = include __DIR__ . "/../app/config/config.php";
+    $config = include __DIR__ . "/../app/config/config.php";
 
-	/**
+    /**
 	 * Read auto-loader
 	 */
-	include __DIR__ . "/../app/config/loader.php";
+    include __DIR__ . "/../app/config/loader.php";
 
-	/**
+    /**
 	 * Read services
 	 */
-	include __DIR__ . "/../app/config/services.php";
+    include __DIR__ . "/../app/config/services.php";
 
-	/**
+    /**
 	 * Handle the request
 	 */
-	$application = new Phalcon\Mvc\Application($di);
-	
-	echo $application->handle()->getContent();
+    $application = new Phalcon\Mvc\Application($di);
+
+    echo $application->handle()->getContent();
 
 } catch (Exception $e) {
-	echo $e->getMessage(), '<br>';
-	echo nl2br(htmlentities($e->getTraceAsString()));
-	//phpinfo();
-	/*$response = new Phalcon\Http\Response();
+    echo $e->getMessage(), '<br>';
+    echo nl2br(htmlentities($e->getTraceAsString()));
+    //phpinfo();
+    /*$response = new Phalcon\Http\Response();
 
 	//Set status code
 	$response->setStatusCode(404, "Not Found");

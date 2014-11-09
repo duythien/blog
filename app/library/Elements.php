@@ -1,7 +1,7 @@
 <?php namespace Phalconvn;
 
 use Phalcon\Mvc\User\Component,
-    Phalcon\Forms\Form;   
+    Phalcon\Forms\Form;
 
 /**
  * Elements
@@ -58,8 +58,7 @@ class Elements extends Component
                 'caption' => 'Log Out',
                 'action' => 'logout'
             );
-        }
-        else {
+        } else {
             unset($this->_headerMenu['pull-right']['users']);
         }
         echo '<div class="nav-collapse">';
@@ -74,8 +73,7 @@ class Elements extends Component
                 }
                 if ($controller=="search") {
                 echo $option['caption'];
-                }
-                else{
+                } else{
                 echo \Phalcon\Tag::linkTo($controller.'/'.$option['action'], _($option['caption']));
                 }
                 echo '</li>';
