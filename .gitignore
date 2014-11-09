@@ -1,7 +1,7 @@
 .hg/
 .hgignore
 .DS_Store
-app/cache/volt/*.php
+app/cache/*
 public/.DS_Store
 app/cache/views/cache-*
 app/cache/views/forum-cache-*
