@@ -1,6 +1,9 @@
-<?php namespace Phalconvn\Models;
+<?php
 
-use \Phalcon\Mvc\Model;
+namespace Phalconvn\Models;
+
+use Phalcon\Mvc\Model;
+
 class Categories extends Model
 {
 
@@ -9,25 +12,25 @@ class Categories extends Model
      * @var integer
      */
     public $id;
-     
+
     /**
      *
      * @var string
      */
     public $name;
-     
+
     /**
      *
      * @var string
      */
     public $slug;
-     
+
     /**
      *
      * @var integer
      */
     public $numberPosts;
-     
+
     /**
      * Independent Column Mapping.
      */
@@ -40,13 +43,13 @@ class Categories extends Model
             )
         ));*/
     }
-    public function columnMap() {
+    public function columnMap()
+    {
         return array(
-            'id' => 'id', 
-            'name' => 'name', 
-            'slug' => 'slug', 
+            'id' => 'id',
+            'name' => 'name',
+            'slug' => 'slug',
             'numberPosts' => 'numberPosts'
         );
     }
-
 }

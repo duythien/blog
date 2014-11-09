@@ -11,31 +11,30 @@ use Phalcon\Mvc\Model;
  */
 class Permissions extends Model
 {
-	/**
+    /**
 	 * @var integer
 	 */
-	public $id;
+    public $id;
 
-	/**
+    /**
 	 * @var integer
 	 */
-	public $profilesId;
+    public $profilesId;
 
-	/**
+    /**
 	 * @var string
 	 */
-	public $resource;
+    public $resource;
 
-	/**
+    /**
 	 * @var string
 	 */
-	public $action;
+    public $action;
 
-	public function initialize()
-	{
-		$this->belongsTo('profilesId', 'Phalconvn\Models\Profiles', 'id', array(
-			'alias' => 'profile'
-		));
-	}
-
+    public function initialize()
+    {
+        $this->belongsTo('profilesId', __NAMESPACE__ . '\Profiles', 'id', array(
+            'alias' => 'profile'
+        ));
+    }
 }

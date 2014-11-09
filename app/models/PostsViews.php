@@ -1,7 +1,8 @@
-<?php namespace Phalconvn\Models;
-
+<?php 
+namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model;
+
 class PostsViews extends Model
 {
 
@@ -10,34 +11,34 @@ class PostsViews extends Model
      * @var integer
      */
     public $id;
-     
+
     /**
      *
      * @var integer
      */
     public $postsId;
-     
+
     /**
      *
      * @var string
      */
     public $ipaddress;
-     
-     public function initialize()
+
+    public function initialize()
     {
-        $this->belongsTo('postsId', 'Phalconvn\Models\Posts', 'id', array(
+        $this->belongsTo('postsId', __NAMESPACE__ . '\Posts', 'id', array(
             'alias' => 'post'
         ));
     }
     /**
      * Independent Column Mapping.
      */
-    public function columnMap() {
+    public function columnMap()
+    {
         return array(
-            'id' => 'id', 
-            'postsId' => 'postsId', 
+            'id' => 'id',
+            'postsId' => 'postsId',
             'ipaddress' => 'ipaddress'
         );
     }
-
 }

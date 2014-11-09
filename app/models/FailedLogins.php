@@ -9,31 +9,31 @@ use Phalcon\Mvc\Model;
  */
 class FailedLogins extends Model
 {
-	/**
+    /**
 	 * @var integer
 	 */
-	public $id;
+    public $id;
 
-	/**
+    /**
 	 * @var integer
 	 */
-	public $usersId;
+    public $usersId;
 
-	/**
+    /**
 	 * @var string
 	 */
-	public $ipAddress;
+    public $ipAddress;
 
-	/**
+    /**
 	 * @var integer
 	 */
-	public $attempted;
+    public $attempted;
 
-	public function initialize()
-	{
-		$this->belongsTo('usersId', 'Phalconvn\Models\Users', 'id', array(
-			'alias' => 'user'
-		));
-	}
+    public function initialize()
+    {
+        $this->belongsTo('usersId', 'Phalconvn\Models\Users', 'id', array(
+            'alias' => 'user'
+        ));
+    }
 
 }

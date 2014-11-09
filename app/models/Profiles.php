@@ -11,28 +11,27 @@ use Phalcon\Mvc\Model;
  */
 class Profiles extends Model
 {
-	/**
+    /**
 	 * @var integer
 	 */
-	public $id;
+    public $id;
 
-	/**
+    /**
 	 * @var string
 	 */
-	public $name;
+    public $name;
 
-	public function initialize()
-	{
-		$this->hasMany('id', 'Phalconvn\Models\Users', 'profilesId', array(
-			'alias' => 'users',
-			'foreignKey' => array(
-				'message' => 'Profile cannot be deleted because it\'s used on Users'
-			)
-		));
+    public function initialize()
+    {
+        $this->hasMany('id', __NAMESPACE__ . '\Users', 'profilesId', array(
+            'alias' => 'users',
+            'foreignKey' => array(
+                'message' => 'Profile cannot be deleted because it\'s used on Users'
+            )
+        ));
 
-		$this->hasMany('id', 'Phalconvn\Models\Permissions', 'profilesId', array(
-			'alias' => 'permissions'
-		));
-	}
-
+        $this->hasMany('id', __NAMESPACE__ . '\Permissions', 'profilesId', array(
+            'alias' => 'permissions'
+        ));
+    }
 }

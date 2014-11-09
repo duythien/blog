@@ -11,45 +11,44 @@ use Phalcon\Mvc\Model;
  */
 class PasswordChanges extends Model
 {
-	/**
+    /**
 	 * @var integer
 	 */
-	public $id;
+    public $id;
 
-	/**
+    /**
 	 * @var integer
 	 */
-	public $usersId;
+    public $usersId;
 
-	/**
+    /**
 	 * @var string
 	 */
-	public $ipAddress;
+    public $ipAddress;
 
-	/**
+    /**
 	 * @var string
 	 */
-	public $userAgent;
+    public $userAgent;
 
-	/**
+    /**
 	 * @var integer
 	 */
-	public $createdAt;
+    public $createdAt;
 
-	/**
+    /**
 	 * Before create the user assign a password
 	 */
-	public function beforeValidationOnCreate()
-	{
-		//Timestamp the confirmaton
-		$this->createdAt = time();
-	}
+    public function beforeValidationOnCreate()
+    {
+        //Timestamp the confirmaton
+        $this->createdAt = time();
+    }
 
-	public function initialize()
-	{
-		$this->belongsTo('usersId', 'Phalconvn\Models\Users', 'id', array(
-			'alias' => 'user'
-		));
-	}
-
+    public function initialize()
+    {
+        $this->belongsTo('usersId', __NAMESPACE__ . '\Users', 'id', array(
+            'alias' => 'user'
+        ));
+    }
 }

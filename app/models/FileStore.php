@@ -1,7 +1,8 @@
-<?php namespace Phalconvn\Models;
+<?php 
+
+namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model;
-
 
 class FileStore extends Model
 {
@@ -11,7 +12,7 @@ class FileStore extends Model
      * @var integer
      */
     public $id;
-     
+
     /**
      *
      * @var string
@@ -23,25 +24,25 @@ class FileStore extends Model
      * @var string
      */
     public $fileCaption;
-     
+
     /**
      *
      * @var string
      */
     public $mimeType;
-     
+
     /**
      *
      * @var string
      */
     public $description;
-     
+
     /**
      *
      * @var string
      */
     public $fileData;
-     
+
     /**
      *
      * @var integer
@@ -57,7 +58,7 @@ class FileStore extends Model
      * @var integer
      */
     public $created;
-     
+
     public function beforeValidationOnCreate()
     {
         $this->created = time();
@@ -73,10 +74,10 @@ class FileStore extends Model
 
     public function initialize()
     {
-        $this->belongsTo('userId','Phalconvn\Models\Users','id',array(
+        $this->belongsTo('userId', __NAMESPACE__ . '\Users', 'id', array(
             'alias' => 'userUpload'
         ));
-        $this->belongsTo('categoriesId', 'Phalconvn\Models\Categories', 'id', array(
+        $this->belongsTo('categoriesId', __NAMESPACE__ . '\Categories', 'id', array(
             'alias' => 'categoryUpload',
             'reusable' => true,
             'foreignKey' => array(
@@ -84,5 +85,4 @@ class FileStore extends Model
             )
         ));
     }
-
 }

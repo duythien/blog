@@ -1,6 +1,8 @@
-<?php namespace Phalconvn\Models;
+<?php 
+namespace Phalconvn\Models;
 
 use Phalcon\Mvc\Model;
+
 class Posts extends Model
 {
 
@@ -9,56 +11,56 @@ class Posts extends Model
      * @var integer
      */
     public $id;
-     
+
     /**
      *
      * @var string
      */
     public $title;
-     
+
     /**
      *
      * @var string
      */
     public $content;
-     
+
     /**
      *
      * @var string
      */
     public $categoriesId;
-     
+
     /**
      *
      * @var string
      */
     public $slug;
-     
+
     /**
      *
      * @var string
      */
     public $tags;
-     
+
     /**
      *
      * @var string
      */
     public $created;
-     
+
     /**
      *
      * @var integer
      */
     public $numberViews;
-     
+
     /**
      *
      * @var integer
      */
     public $userId;
-     
-    
+
+
 
     public function beforeValidationOnCreate()
     {
@@ -121,14 +123,14 @@ class Posts extends Model
     }
     public function initialize()
     {
-        $this->hasMany('id', 'Phalconvn\Models\PostsViews', 'postsId', array(
+        $this->hasMany('id', __NAMESPACE__ . '\PostsViews', 'postsId', array(
             'alias' => 'views'
         ));
-        $this->belongsTo('userId','Phalconvn\Models\Users','id',array(
+        $this->belongsTo('userId', __NAMESPACE__ . '\Users', 'id', array(
             'alias' => 'userPost'
         ));
 
-        $this->belongsTo('categoriesId', 'Phalconvn\Models\Categories', 'id', array(
+        $this->belongsTo('categoriesId', __NAMESPACE__ . '\Categories', 'id', array(
             'alias' => 'category',
             'reusable' => true,
             'foreignKey' => array(
@@ -136,6 +138,4 @@ class Posts extends Model
             )
         ));
     }
-   
-
 }
