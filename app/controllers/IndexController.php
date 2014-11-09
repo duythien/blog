@@ -1,36 +1,38 @@
-<?php namespace Phalconvn\Controllers;
+<?php
+
+namespace Phalconvn\Controllers;
 
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use Phalconvn\Models\Categories,
-	Phalconvn\Models\Posts,
-    Phalconvn\Models\PostsViews;
+use Phalconvn\Models\Categories;
+use Phalconvn\Models\Posts;
+use Phalconvn\Models\PostsViews;
 
 /**
  * Display al post in frontend
- * 
+ *
  */
 class IndexController extends ControllerBase
 {
 
     public function indexAction()
     {
-        //$this->elements->getMenu();
         $numberPage =1;
-    	if ($this->request->getQuery("page", "int")){
-    		$numberPage = $this->request->getQuery("page", "int");
-    	}
-    	$posts 		= Posts::find(array("order" =>"created DESC"));
 
-    	$paginator = new Paginator(array(
-			"data" => $posts,
-			"limit"=> 10,
-			"page" => $numberPage
-		));
+        if ($this->request->getQuery("page", "int")) {
+            $numberPage = $this->request->getQuery("page", "int");
+        }
+        $posts        = Posts::find(array("order" =>"created DESC"));
 
-		$this->view->page = $paginator->getPaginate();
-    	$this->view->categories = Categories::find();
-        
-        
+        $paginator = new Paginator(array(
+            "data" => $posts,
+            "limit"=> 10,
+            "page" => $numberPage
+        ));
+
+        $this->view->page = $paginator->getPaginate();
+        $this->view->categories = Categories::find();
+
+
     }
     /**
      * Display single page
@@ -39,7 +41,7 @@ class IndexController extends ControllerBase
     public function showAction()
     {
         $id  = $this->dispatcher->getParam('id');
-        
+
         $post= Posts::findFirstByid($id);
         if (!$post) {
             return $this->response->redirect("index");
@@ -49,7 +51,7 @@ class IndexController extends ControllerBase
                 'postsId = ?0 AND ipaddress = ?1',
                 'bind' => array($id, $ipAddress)
         ));
-        
+
         //A view is stored by ipaddress
         if (!$viewed) {
             //Increase the number of views in the post
@@ -82,7 +84,7 @@ class IndexController extends ControllerBase
             return $this->response->redirect();
         }
         $numberPage =1;
-        if ($this->request->getQuery("page", "int")){
+        if ($this->request->getQuery("page", "int")) {
             $numberPage = $this->request->getQuery("page", "int");
         }
         $posts      = Posts::find("categoriesId = '$categoryId'");
@@ -94,13 +96,13 @@ class IndexController extends ControllerBase
 
         $this->view->page = $paginator->getPaginate();
         $this->view->categories = Categories::find();
-        
+
     }
     /**
      * Change the language, reload translations if needed
      * Default language de_De
      */
-    public function setLanguageAction($language='')
+    public function setLanguageAction($language = "")
     {
         //set default language de_De
         $this->session->set('language', 'de_DE');
@@ -112,8 +114,7 @@ class IndexController extends ControllerBase
         $referer = $this->request->getHTTPReferer();
         if (strpos($referer, $this->request->getHttpHost()."/")!==false) {
             return $this->response->setHeader("Location", $referer);
-        }
-        else {
+        } else {
             return $this->response->redirect();
         }
     }
@@ -123,12 +124,10 @@ class IndexController extends ControllerBase
     */
     public function downloadAction()
     {
-        
+
     }
     public function initialize()
     {
-    	$this->view->setTemplateBefore('public');
+        $this->view->setTemplateBefore('public');
     }
-    
 }
-

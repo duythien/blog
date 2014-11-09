@@ -2,7 +2,7 @@
 
 use Phalcon\Paginator\Adapter\Model as Paginator;
 use Phalconvn\Models\Categories,
-	Phalconvn\Models\Posts,
+    Phalconvn\Models\Posts,
     Phalconvn\Models\PostsViews;
 
 /**
@@ -19,13 +19,12 @@ class DocumentsController extends ControllerBase
     /**
     * Download document
     */
-    public function downloadAction(){
-        
+    public function downloadAction()
+    {
     }
     public function initialize()
     {
-    	$this->view->setTemplateBefore('public');
+        $this->view->setTemplateBefore('public');
     }
-    
-}
 
+}

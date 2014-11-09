@@ -1,13 +1,17 @@
-<?php namespace Phalconvn\Controllers;
+<?php
 
-use Phalcon\Tag,
-    Phalcon\Mvc\Model\Criteria,
-    Phalcon\Paginator\Adapter\Model as Paginator;
-use Phalconvn\Forms\CategoriesForm,
-    Phalconvn\Models\Categories;
-    
+namespace Phalconvn\Controllers;
+
+use Phalcon\Tag;
+use Phalcon\Mvc\Model\Criteria;
+use Phalcon\Paginator\Adapter\Model as Paginator;
+use Phalconvn\Forms\CategoriesForm;
+use Phalconvn\Models\Categories;
+
 /**
- * This is categories in backend,edit, add,delete....
+ * This is categories in backend,edit, add,delete
+ *
+ * @package Controllers
  */
 class CategoriesController extends ControllerBase
 {
@@ -15,13 +19,15 @@ class CategoriesController extends ControllerBase
 
     public function initialize()
     {
-    	$this->view->setTemplateBefore('private');
+        $this->view->setTemplateBefore('private');
     }
+
     public function indexAction()
     {
         $this->persistent->conditions = null;
         $this->view->form = new CategoriesForm();
     }
+
     public function searchAction()
     {
         $request = $this->request;
@@ -31,14 +37,15 @@ class CategoriesController extends ControllerBase
             $query = Criteria::fromInput($this->di, 'Phalconvn\Models\Categories', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
-        } 
-        else {
+        } else {
             $numberPage = $this->request->getQuery("page", "int");
         }
         $parameters = array('order'=>'id DESC');
+
         if ($this->persistent->searchParams == true) {
             $parameters = $this->persistent->searchParams;
-        } 
+        }
+
         $Categories = Categories::find($parameters);
         if (count($Categories) == 0) {
             $this->flash->notice(_("The search did not find any Categories"));
@@ -72,9 +79,8 @@ class CategoriesController extends ControllerBase
                     $this->flash->success(_("Add categories success"));
                     Tag::resetInput();
                     return $this->dispatcher->forward(array('action' => 'index'));
-                } 
-            $this->flash->error($categories->getMessages());
- 
+                }
+                $this->flash->error($categories->getMessages());
             }
 
         }
@@ -88,23 +94,25 @@ class CategoriesController extends ControllerBase
             $this->flash->error("categories was not found");
             return $this->dispatcher->forward(array('action' => 'index'));
         }
+
         $request = $this->request;
-        $form = new CategoriesForm($categories,array('edit'=>true));
+        $form = new CategoriesForm($categories, array('edit'=>true));
+
         if ($request->isPost()) {
             if ($form->isValid($request->getPost()) ==true) {
-            $categories->assign(array(
-                'id'        => $id,
-                'name'     => $request->getPost('name'),
-                'slug'      =>$request->getPost('slug'),
-               
-            ));
-            if ($categories->update()==true) {
-                $this->flash->success(_("Update sucess post"));
-                Tag::resetInput();
-                return $this->dispatcher->forward(array('action' => 'index'));
+                $categories->assign(array(
+                    'id'        => $id,
+                    'name'     => $request->getPost('name'),
+                    'slug'      =>$request->getPost('slug'),
+
+                ));
+                if ($categories->update()==true) {
+                    $this->flash->success(_("Update sucess post"));
+                    Tag::resetInput();
+                    return $this->dispatcher->forward(array('action' => 'index'));
+                }
+                $this->flash->error($categories->getMessages());
             }
-         $this->flash->error($categories->getMessages());
-        }
         }
 
         $this->view->form = $form;
@@ -126,6 +134,4 @@ class CategoriesController extends ControllerBase
 
         return $this->dispatcher->forward(array('action' => 'index'));
     }
-
 }
-

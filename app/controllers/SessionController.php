@@ -2,148 +2,144 @@
 
 namespace Phalconvn\Controllers;
 
-use Phalconvn\Forms\LoginForm,
-	Phalconvn\Forms\SignUpForm,
-	Phalconvn\Forms\ForgotPasswordForm,
-	Phalconvn\Auth\Auth,
-	Phalconvn\Auth\Exception as AuthException,
-	Phalconvn\Models\Users,
-	Phalconvn\Models\ResetPasswords;
+use Phalconvn\Forms\LoginForm;
+use Phalconvn\Forms\SignUpForm;
+use Phalconvn\Forms\ForgotPasswordForm;
+use Phalconvn\Auth\Auth;
+use Phalconvn\Auth\Exception as AuthException;
+use Phalconvn\Models\Users;
+use Phalconvn\Models\ResetPasswords;
 
 class SessionController extends ControllerBase
 {
 
-	
+    public function indexAction()
+    {
+        $this->view->disable();
+        return $this->response->redirect();
+    }
+    public function signupAction()
+    {
+        $form = new SignUpForm(null);
 
-	public function indexAction()
-	{
-		$this->view->disable();
-		return $this->response->redirect();
-	}
-	public function signupAction()
-	{
-		$form = new SignUpForm(null);
+        $request = $this->request;
+        if ($request->isPost()) {
+            //var_dump($form->isValid($request->getPost()));
+            if ($form->isValid($request->getPost()) != false) {
+                $User = new Users();
+                $user=array(
+                    'username'  => $request->getPost('username', 'striptags'),
+                    'email'     => $request->getPost('email', 'striptags'),
+                    'password'  => $this->security->hash($request->getPost('password')),
+                    'profilesId'=> 2,
+                    'fullName'  => $request->getPost('fullName', 'striptags'),
+                    'phone'     => $request->getPost('phone', 'int'),
+                    'sex'       => $request->getPost('sex'),
+                    'birthday'  => $request->getPost('birthday'),
+                    'cardId'    => $request->getPost('cardId'),
+                    'cityRegion'=>  $request->getPost('cityRegion'),
 
-		$request = $this->request;
-		if ($request->isPost()) {
-			//var_dump($form->isValid($request->getPost()));
-			if ($form->isValid($request->getPost()) != false) {
-				$User = new Users();
-				$user=array(
-					'username' => $request->getPost('username', 'striptags'),
-					'email' => $request->getPost('email','striptags'),
-					'password' => $this->security->hash($request->getPost('password')),
-					'profilesId' => 2,
-					'fullName'	=> $request->getPost('fullName','striptags'),
-					'phone'		=> $request->getPost('phone','int'),
-					'sex'		=> $request->getPost('sex'),
-					'birthday'	=> $request->getPost('birthday'),
-					'cardId'	=> $request->getPost('cardId'),
-					'cityRegion'=>  $request->getPost('cityRegion'),
+                );
+                if ($User->save($user)) {
+                    return $this->dispatcher->forward(array(
+                        'controller' => 'index',
+                        'action' => 'index'
+                    ));
+                }
 
-				);
-				if ($User->save($user)) {
-					return $this->dispatcher->forward(array(
-						'controller' => 'index',
-						'action' => 'index'
-					));
-				}
+                $this->flash->error($User->getMessages());
+            }
 
-				$this->flash->error($User->getMessages());
-			}
-			
 
-		}
+        }
 
-		$this->view->form = $form;
-	}
+        $this->view->form = $form;
+    }
 
-	/**
+    /**
 	 * Starts a session in the admin backend
 	 */
-	public function loginAction()
-	{
-		
-		$form = new LoginForm();
-		$request = $this->request;
-		$identity = $this->auth->getIdentity();
+    public function loginAction()
+    {
 
-		try {
+        $form = new LoginForm();
+        $request = $this->request;
+        $identity = $this->auth->getIdentity();
 
-			if (!$request->isPost()) {
+        try {
 
-				if ($this->auth->hasRememberMe()) {
-					return $this->auth->loginWithRememberMe();
-				}
-				//check if login without check remember
-				if (is_array($identity)) {
-					return $this->response->redirect('posts');
-				}
+            if (!$request->isPost()) {
 
-			} else {
+                if ($this->auth->hasRememberMe()) {
+                    return $this->auth->loginWithRememberMe();
+                }
+                //check if login without check remember
+                if (is_array($identity)) {
+                    return $this->response->redirect('posts');
+                }
 
-				if ($form->isValid($request->getPost()) == true) {
-					$this->auth->check(array(
-						'email' => $request->getPost('email'),
-						'password' => $request->getPost('password'),
-						'remember' => $request->getPost('remember')
-					));
-					return $this->response->redirect('posts');
-				}
-			}
+            } else {
 
-		} catch (AuthException $e) {
-			$this->flash->error($e->getMessage());
-		}
+                if ($form->isValid($request->getPost()) == true) {
+                    $this->auth->check(array(
+                        'email' => $request->getPost('email'),
+                        'password' => $request->getPost('password'),
+                        'remember' => $request->getPost('remember')
+                    ));
+                    return $this->response->redirect('posts');
+                }
+            }
 
-		$this->view->form = $form;
-	}
+        } catch (AuthException $e) {
+            $this->flash->error($e->getMessage());
+        }
 
-	/**
+        $this->view->form = $form;
+    }
+
+    /**
 	 * Shows the forgot password form
 	 */
-	public function forgotPasswordAction()
-	{
-		$form = new ForgotPasswordForm();
+    public function forgotPasswordAction()
+    {
+        $form = new ForgotPasswordForm();
 
-		if ($request->isPost()) {
+        if ($request->isPost()) {
 
-			if ($form->isValid($request->getPost()) == false) {
-				foreach ($form->getMessages() as $message) {
-					$this->flash->error($message);
-				}
-			} else {
+            if ($form->isValid($request->getPost()) == false) {
+                foreach ($form->getMessages() as $message) {
+                    $this->flash->error($message);
+                }
+            } else {
 
-				$user = Users::findFirstByEmail($request->getPost('email'));
-				if (!$user) {
-					$this->flash->success('There is no account associated to this email');
-				} else {
+                $user = Users::findFirstByEmail($request->getPost('email'));
+                if (!$user) {
+                    $this->flash->success('There is no account associated to this email');
+                } else {
 
-					$resetPassword = new ResetPasswords();
-					$resetPassword->usersId = $user->id;
-					if ($resetPassword->save()) {
-						$this->flash->success('Success! Please check your messages for an email reset password');
-					} else {
-						foreach ($resetPassword->getMessages() as $message) {
-							$this->flash->error($message);
-						}
-					}
-				}
-			}
-		}
+                    $resetPassword = new ResetPasswords();
+                    $resetPassword->usersId = $user->id;
+                    if ($resetPassword->save()) {
+                        $this->flash->success('Success! Please check your messages for an email reset password');
+                    } else {
+                        foreach ($resetPassword->getMessages() as $message) {
+                            $this->flash->error($message);
+                        }
+                    }
+                }
+            }
+        }
 
-		$this->view->form = $form;
-	}
+        $this->view->form = $form;
+    }
 
-	/**
+    /**
 	 * Closes the session
 	 */
-	public function logoutAction()
-	{
-		$this->auth->remove();
+    public function logoutAction()
+    {
+        $this->auth->remove();
 
-		return $this->response->redirect('index');
-	}
-
+        return $this->response->redirect('index');
+    }
 }
-

@@ -1,71 +1,74 @@
-<?php namespace Phalconvn\Controllers;
+<?php
 
-use Phalcon\Tag,
-	Phalcon\Mvc\Model\Criteria,
-    Phalcon\Paginator\Adapter\Model as Paginator;
+namespace Phalconvn\Controllers;
 
-use Phalconvn\Forms\FileStoreForm,
-	Phalconvn\Models\FileStore;
-class FilestoreController extends  ControllerBase
+use Phalcon\Tag;
+use Phalcon\Mvc\Model\Criteria;
+use Phalcon\Paginator\Adapter\Model as Paginator;
+
+use Phalconvn\Forms\FileStoreForm;
+use Phalconvn\Models\FileStore;
+
+class FilestoreController extends ControllerBase
 {
 
     public function indexAction()
     {
-    	$this->persistent->conditions = null;
+        $this->persistent->conditions = null;
         $this->view->form = new FileStoreForm();
     }
 
     public function createAction()
     {
-    	$userId	 =  $this->auth->getIdentity();
+        $userId     =  $this->auth->getIdentity();
         $request = $this->request;
-    	$form 	 = new FileStoreForm(null);
-    	if ($request->isPost()) {
-    		if ($form->isValid($request->getPost()) == true && $request->hasFiles() == true) {
+        $form     = new FileStoreForm(null);
+        if ($request->isPost()) {
+            if ($form->isValid($request->getPost()) == true && $request->hasFiles() == true) {
 
-				$fileStore = new FileStore();
+                $fileStore = new FileStore();
 
-	            foreach ($request->getUploadedFiles() as $file) {
+                foreach ($request->getUploadedFiles() as $file) {
                     //var_dump($file);
-					$fileStore->assign(array(
-							'fileName' 		=> $file->getName(),
+                    $fileStore->assign(array(
+                            'fileName'        => $file->getName(),
                             'fileCaption'   => $request->getPost('fileCaption'),
-							'description'	=> $request->getPost('description'),
-							'categoriesId'	=> $request->getPost('categoriesId'),
-							'userId'		=> $userId['id'],
-							'mimeType'		=> $file->getType(),
-							'fileData'		=> file_get_contents($file->getTempName())
-					));
-					if ($fileStore->save() ==true) {
-	                    $this->flash->success(_("Add Document success"));
-	                    Tag::resetInput();
-	                    return $this->dispatcher->forward(array('action' => 'index'));
-               		 } 
-            		$this->flash->error($fileStore->getMessages());
-	            }
-	            
-    		}
-    	}
-    	$this->view->form = $form;
+                            'description'    => $request->getPost('description'),
+                            'categoriesId'    => $request->getPost('categoriesId'),
+                            'userId'        => $userId['id'],
+                            'mimeType'        => $file->getType(),
+                            'fileData'        => file_get_contents($file->getTempName())
+                    ));
+                    if ($fileStore->save() ==true) {
+                        $this->flash->success(_("Add Document success"));
+                        Tag::resetInput();
+                        return $this->dispatcher->forward(array('action' => 'index'));
+                    }
+                    $this->flash->error($fileStore->getMessages());
+                }
+
+            }
+        }
+        $this->view->form = $form;
     }
     public function editAction($id)
     {
-    	$fileStore = FileStore::findFirst($id);
+        $fileStore = FileStore::findFirst($id);
         if ($fileStore ==false) {
             $this->flash->error(_("Document was not found"));
             return $this->dispatcher->forward(array('action' => 'index'));
         }
         $request = $this->request;
-    	$userId	 =  $this->auth->getIdentity();
-    	$form 	 = new FileStoreForm($fileStore,array('edit'=>true));
-    	
-    	if ($request->isPost()) {
-    		if ($form->isValid($request->getPost()) == true && $request->hasFiles() == true) {
+        $userId     =  $this->auth->getIdentity();
+        $form     = new FileStoreForm($fileStore, array('edit'=>true));
 
-				$fileStore = new FileStore();
+        if ($request->isPost()) {
+            if ($form->isValid($request->getPost()) == true && $request->hasFiles() == true) {
 
-	            foreach ($request->getUploadedFiles() as $file) {
-					$fileStore->assign(array(
+                $fileStore = new FileStore();
+
+                foreach ($request->getUploadedFiles() as $file) {
+                    $fileStore->assign(array(
                             'id'        => $id,
                             'fileName'      => $file->getName(),
                             'fileCaption'   => $request->getPost('fileCaption'),
@@ -75,35 +78,34 @@ class FilestoreController extends  ControllerBase
                             'mimeType'      => $file->getType(),
                             'fileData'      => file_get_contents($file->getTempName())
                     ));
-					if ($fileStore->update() ==true) {
-	                    $this->flash->success(_("Update Document success"));
-	                    Tag::resetInput();
-	                    return $this->dispatcher->forward(array('action' => 'index'));
-               		 } 
-            		$this->flash->error($fileStore->getMessages());
-	            }
-	            
-    		}
-    	}
-    	$this->view->form = $form;
+                    if ($fileStore->update() ==true) {
+                        $this->flash->success(_("Update Document success"));
+                        Tag::resetInput();
+                        return $this->dispatcher->forward(array('action' => 'index'));
+                    }
+                    $this->flash->error($fileStore->getMessages());
+                }
+
+            }
+        }
+        $this->view->form = $form;
     }
     public function searchAction()
     {
-    	$request = $this->request;
+        $request = $this->request;
         $searchParams = null;
         $numberPage = 1;
         if ($request->isPost()) {
             $query = Criteria::fromInput($this->di, 'Phalconvn\Models\FileStore', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
-        } 
-        else {
+        } else {
             $numberPage = $this->request->getQuery("page", "int");
         }
         $parameters =array("order" =>"created DESC");
         if ($this->persistent->searchParams == true) {
             $parameters = $this->persistent->searchParams;
-        } 
+        }
         $fileStore = FileStore::find($parameters);
         if (count($fileStore) == 0) {
             $this->flash->notice("The search did not find any FileStore");
@@ -122,8 +124,6 @@ class FilestoreController extends  ControllerBase
     }
     public function initialize()
     {
-    	$this->view->setTemplateBefore('private');
+        $this->view->setTemplateBefore('private');
     }
-
 }
-

@@ -3,7 +3,7 @@
 namespace Phalconvn\Controllers;
 
 use Phalconvn\Models\EmailConfirmations,
-	Phalconvn\Models\ResetPasswords;
+    Phalconvn\Models\ResetPasswords;
 
 /**
  * UserControlController
@@ -13,137 +13,136 @@ use Phalconvn\Models\EmailConfirmations,
 class UserControlController extends ControllerBase
 {
 
-	public function initialize()
-	{
-		if ($this->session->has('auth-identity')) {
-			$this->view->setTemplateBefore('private');
-		}
-	}
+    public function initialize()
+    {
+        if ($this->session->has('auth-identity')) {
+            $this->view->setTemplateBefore('private');
+        }
+    }
 
-	public function indexAction()
-	{
+    public function indexAction()
+    {
 
-	}
+    }
 
-	/**
+    /**
 	 * Confirms an e-mail, if the user must change its password then changes it
 	 */
-	public function confirmEmailAction()
-	{
-		$code = $this->dispatcher->getParam('code');
+    public function confirmEmailAction()
+    {
+        $code = $this->dispatcher->getParam('code');
 
-		$confirmation = EmailConfirmations::findFirstByCode($code);
+        $confirmation = EmailConfirmations::findFirstByCode($code);
 
-		if (!$confirmation) {
-			return $this->dispatcher->forward(array(
-				'controller' => 'index',
-				'action' => 'index'
-			));
-		}
+        if (!$confirmation) {
+            return $this->dispatcher->forward(array(
+                'controller' => 'index',
+                'action' => 'index'
+            ));
+        }
 
-		if ($confirmation->confirmed <> 'N') {
-			return $this->dispatcher->forward(array(
-				'controller' => 'session',
-				'action' => 'login'
-			));
-		}
+        if ($confirmation->confirmed <> 'N') {
+            return $this->dispatcher->forward(array(
+                'controller' => 'session',
+                'action' => 'login'
+            ));
+        }
 
-		$confirmation->confirmed = 'Y';
+        $confirmation->confirmed = 'Y';
 
-		$confirmation->user->active = 'Y';
+        $confirmation->user->active = 'Y';
 
-		/**
+        /**
 		 * Change the confirmation to 'confirmed' and update the user to 'active'
 		 */
-		if (!$confirmation->save()) {
+        if (!$confirmation->save()) {
 
-			foreach ($confirmation->getMessages() as $message) {
-				$this->flash->error($message);
-			}
+            foreach ($confirmation->getMessages() as $message) {
+                $this->flash->error($message);
+            }
 
-			return $this->dispatcher->forward(array(
-				'controller' => 'index',
-				'action' => 'index'
-			));
-		}
+            return $this->dispatcher->forward(array(
+                'controller' => 'index',
+                'action' => 'index'
+            ));
+        }
 
-		/**
+        /**
 		 * Identity the user in the application
 		 */
-		$this->auth->authUserById($confirmation->user->id);
+        $this->auth->authUserById($confirmation->user->id);
 
-		/**
+        /**
 		 * Check if the user must change his/her password
 		 */
-		if ($confirmation->user->mustChangePassword == 'Y') {
+        if ($confirmation->user->mustChangePassword == 'Y') {
 
-			$this->flash->success('The email was successfully confirmed. Now you must change your password');
+            $this->flash->success('The email was successfully confirmed. Now you must change your password');
 
-			return $this->dispatcher->forward(array(
-				'controller' => 'users',
-				'action' => 'changePassword'
-			));
-		}
+            return $this->dispatcher->forward(array(
+                'controller' => 'users',
+                'action' => 'changePassword'
+            ));
+        }
 
-		$this->flash->success('The email was successfully confirmed');
+        $this->flash->success('The email was successfully confirmed');
 
-		return $this->dispatcher->forward(array(
-			'controller' => 'users',
-			'action' => 'index'
-		));
+        return $this->dispatcher->forward(array(
+            'controller' => 'users',
+            'action' => 'index'
+        ));
 
-	}
+    }
 
-	public function resetPasswordAction()
-	{
-		$code = $this->dispatcher->getParam('code');
+    public function resetPasswordAction()
+    {
+        $code = $this->dispatcher->getParam('code');
 
-		$resetPassword = ResetPasswords::findFirstByCode($code);
+        $resetPassword = ResetPasswords::findFirstByCode($code);
 
-		if (!$resetPassword) {
-			return $this->dispatcher->forward(array(
-				'controller' => 'index',
-				'action' => 'index'
-			));
-		}
+        if (!$resetPassword) {
+            return $this->dispatcher->forward(array(
+                'controller' => 'index',
+                'action' => 'index'
+            ));
+        }
 
-		if ($resetPassword->reset <> 'N') {
-			return $this->dispatcher->forward(array(
-				'controller' => 'session',
-				'action' => 'login'
-			));
-		}
+        if ($resetPassword->reset <> 'N') {
+            return $this->dispatcher->forward(array(
+                'controller' => 'session',
+                'action' => 'login'
+            ));
+        }
 
-		$resetPassword->reset = 'Y';
+        $resetPassword->reset = 'Y';
 
-		/**
+        /**
 		 * Change the confirmation to 'reset'
 		 */
-		if (!$resetPassword->save()) {
+        if (!$resetPassword->save()) {
 
-			foreach ($resetPassword->getMessages() as $message) {
-				$this->flash->error($message);
-			}
+            foreach ($resetPassword->getMessages() as $message) {
+                $this->flash->error($message);
+            }
 
-			return $this->dispatcher->forward(array(
-				'controller' => 'index',
-				'action' => 'index'
-			));
-		}
+            return $this->dispatcher->forward(array(
+                'controller' => 'index',
+                'action' => 'index'
+            ));
+        }
 
-		/**
+        /**
 		 * Identity the user in the application
 		 */
-		$this->auth->authUserById($resetPassword->usersId);
+        $this->auth->authUserById($resetPassword->usersId);
 
-		$this->flash->success('Please reset your password');
+        $this->flash->success('Please reset your password');
 
-		return $this->dispatcher->forward(array(
-			'controller' => 'users',
-			'action' => 'changePassword'
-		));
+        return $this->dispatcher->forward(array(
+            'controller' => 'users',
+            'action' => 'changePassword'
+        ));
 
-	}
+    }
 
 }
-

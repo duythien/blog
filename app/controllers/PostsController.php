@@ -1,24 +1,29 @@
-<?php namespace Phalconvn\Controllers;
-use Phalcon\Tag,
-    Phalcon\Mvc\Model\Criteria,
-    Phalcon\Paginator\Adapter\Model as Paginator;
-use Phalconvn\Forms\LoginForm,
-	Phalconvn\Forms\PostsForm,
-    Phalconvn\Models\Posts;
-use Michelf\MarkdownExtra,
-    Michelf\Markdown;
+<?php
+
+namespace Phalconvn\Controllers;
+
+use Phalcon\Tag;
+use Phalcon\Mvc\Model\Criteria;
+use Phalcon\Paginator\Adapter\Model as Paginator;
+use Phalconvn\Forms\LoginForm;
+use Phalconvn\Forms\PostsForm;
+use Phalconvn\Models\Posts;
+
+use Michelf\MarkdownExtra;
+use Michelf\Markdown;
 
 require_once '../vendor/michelf/php-markdown/Michelf/Markdown.inc.php';
+
 /**
  * This is post page in backend.
- * 
+ *
  */
 class PostsController extends ControllerBase
 {
-	public function initialize()
+    public function initialize()
     {
-	   $this->view->setTemplateBefore('private');
-	}
+        $this->view->setTemplateBefore('private');
+    }
 
     public function indexAction()
     {
@@ -28,7 +33,7 @@ class PostsController extends ControllerBase
     }
     public function searchAction()
     {
-        
+
         $request = $this->request;
         $searchParams = null;
         $numberPage = 1;
@@ -36,14 +41,13 @@ class PostsController extends ControllerBase
             $query = Criteria::fromInput($this->di, 'Phalconvn\Models\Posts', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
 
-        } 
-        else {
+        } else {
             $numberPage = $this->request->getQuery("page", "int");
         }
         $parameters =array("order" =>"created DESC");
         if ($this->persistent->searchParams == true) {
             $parameters = $this->persistent->searchParams;
-        } 
+        }
         $posts = Posts::find($parameters);
         if (count($posts) == 0) {
             $this->flash->notice("The search did not find any Posts");
@@ -63,7 +67,7 @@ class PostsController extends ControllerBase
     }
     public function createAction()
     {
-    	$userId =  $this->auth->getIdentity();
+        $userId =  $this->auth->getIdentity();
         $request = $this->request;
         $form = new PostsForm(null);
 
@@ -85,9 +89,9 @@ class PostsController extends ControllerBase
                     $this->flash->success(_("Add Post success"));
                     Tag::resetInput();
                     return $this->dispatcher->forward(array('action' => 'index'));
-                } 
-            $this->flash->error($post->getMessages());
- 
+                }
+                $this->flash->error($post->getMessages());
+
             }
 
         }
@@ -101,7 +105,7 @@ class PostsController extends ControllerBase
             return $this->dispatcher->forward(array('action' => 'index'));
         }
         $request = $this->request;
-        $form = new PostsForm($post,array('edit'=>true));
+        $form = new PostsForm($post, array('edit'=>true));
         if ($request->isPost()) {
             if ($form->isValid($request->getPost()) ==true) {
                 $userId =  $this->auth->getIdentity();
@@ -122,7 +126,7 @@ class PostsController extends ControllerBase
                     Tag::resetInput();
                     return $this->dispatcher->forward(array('action' => 'index'));
                 }
-             $this->flash->error($post->getMessages());
+                $this->flash->error($post->getMessages());
             }
         }
 
@@ -148,6 +152,7 @@ class PostsController extends ControllerBase
     /**
      * Replace language-specific characters by ASCII-equivalents.
      * @param  [string] $s
+     * 
      * @return [string]
      */
     public static function normalizeChars($s)
@@ -271,7 +276,7 @@ class PostsController extends ControllerBase
             'Ũ' => 'u',
             'Ụ'  => 'u',
             'Ư' => 'u',
-             
+
             #---------------------------------a^
             'ấ'  => 'a',
             'ầ' => 'a',
@@ -315,7 +320,4 @@ class PostsController extends ControllerBase
             );
         return strtr($s, $replace);
     }
-    
-
 }
-

@@ -1,12 +1,12 @@
-<?php namespace Phalconvn\Controllers;
+<?php
+
+namespace Phalconvn\Controllers;
 
 class AboutController extends ControllerBase
 {
 
     public function indexAction()
     {
-    	$this->view->setTemplateBefore('public');
+        $this->view->setTemplateBefore('public');
     }
-
 }
-

@@ -2,14 +2,14 @@
 
 namespace Phalconvn\Controllers;
 
-use Phalcon\Tag,
-	Phalcon\Mvc\Model\Criteria,
-	Phalcon\Paginator\Adapter\Model as Paginator;
+use Phalcon\Tag;
+use Phalcon\Mvc\Model\Criteria;
+use Phalcon\Paginator\Adapter\Model as Paginator;
 
-use Phalconvn\Forms\ChangePasswordForm,
-	Phalconvn\Forms\UsersForm,
-	Phalconvn\Models\Users,
-	Phalconvn\Models\PasswordChanges;
+use Phalconvn\Forms\ChangePasswordForm;
+use Phalconvn\Forms\UsersForm;
+use Phalconvn\Models\Users;
+use Phalconvn\Models\PasswordChanges;
 
 /**
  * Phalconvn\Controllers\UsersController
@@ -21,189 +21,188 @@ class UsersController extends ControllerBase
 
     public function initialize()
     {
-    	$this->view->setTemplateBefore('private');
-	}
+        $this->view->setTemplateBefore('private');
+    }
 
-	/**
+    /**
 	 * Default action, shows the search form
 	 */
-	public function indexAction()
-	{
-		$this->persistent->conditions = null;
-		$this->view->form = new UsersForm();
-	}
+    public function indexAction()
+    {
+        $this->persistent->conditions = null;
+        $this->view->form = new UsersForm();
+    }
 
-	/**
+    /**
 	 * Searches for users
 	 */
-	public function searchAction()
-	{
-		$numberPage = 1;
-		if ($this->request->isPost()) {
-			$query = Criteria::fromInput($this->di, 'Phalconvn\Models\Users', $this->request->getPost());
-			$this->persistent->searchParams = $query->getParams();
-		} else {
-			$numberPage = $this->request->getQuery("page", "int");
-		}
+    public function searchAction()
+    {
+        $numberPage = 1;
+        if ($this->request->isPost()) {
+            $query = Criteria::fromInput($this->di, 'Phalconvn\Models\Users', $this->request->getPost());
+            $this->persistent->searchParams = $query->getParams();
+        } else {
+            $numberPage = $this->request->getQuery("page", "int");
+        }
 
-		$parameters = array();
-		if ($this->persistent->searchParams) {
-			$parameters = $this->persistent->searchParams;
-		}
+        $parameters = array();
+        if ($this->persistent->searchParams) {
+            $parameters = $this->persistent->searchParams;
+        }
 
-		$users = Users::find($parameters);
-		if (count($users) == 0) {
-			$this->flash->notice("The search did not find any users");
-			return $this->dispatcher->forward(array(
-				"action" => "index"
-			));
-		}
+        $users = Users::find($parameters);
+        if (count($users) == 0) {
+            $this->flash->notice("The search did not find any users");
+            return $this->dispatcher->forward(array(
+                "action" => "index"
+            ));
+        }
 
-		$paginator = new Paginator(array(
-			"data" => $users,
-			"limit" => 10,
-			"page" => $numberPage
-		));
+        $paginator = new Paginator(array(
+            "data" => $users,
+            "limit" => 10,
+            "page" => $numberPage
+        ));
 
-		$this->view->page = $paginator->getPaginate();
-	}
+        $this->view->page = $paginator->getPaginate();
+    }
 
-	/**
+    /**
 	 * Creates a User
 	 *
 	 */
-	public function createAction()
-	{
-		if ($this->request->isPost()) {
+    public function createAction()
+    {
+        if ($this->request->isPost()) {
 
-			$user = new Users();
+            $user = new Users();
 
-			$user->assign(array(
-				'username'  => $this->request->getPost('username', 'striptags'),
-				'fullName'	=> $this->request->getPost('fullName'),
-				'profilesId'=> $this->request->getPost('profilesId', 'int'),
-				'email' 	=> $this->request->getPost('email', 'email'),
-				'password' 	=> $this->security->hash($this->request->getPost('username')),
-			));
+            $user->assign(array(
+                'username'  => $this->request->getPost('username', 'striptags'),
+                'fullName'    => $this->request->getPost('fullName'),
+                'profilesId'=> $this->request->getPost('profilesId', 'int'),
+                'email'    => $this->request->getPost('email', 'email'),
+                'password'    => $this->security->hash($this->request->getPost('username')),
+            ));
 
-			if (!$user->save()) {
-				$this->flash->error($user->getMessages());
-			} else {
+            if (!$user->save()) {
+                $this->flash->error($user->getMessages());
+            } else {
 
-				$this->flash->success("User was created successfully");
+                $this->flash->success("User was created successfully");
 
-				Tag::resetInput();
-			}
-		}
+                Tag::resetInput();
+            }
+        }
 
-		$this->view->form = new UsersForm(null);
-	}
+        $this->view->form = new UsersForm(null);
+    }
 
-	/**
+    /**
 	 * Saves the user from the 'edit' action
 	 *
 	 */
-	public function editAction($id)
-	{
+    public function editAction($id)
+    {
 
-		$user = Users::findFirstById($id);
-		if (!$user) {
-			$this->flash->error("User was not found");
-			return $this->dispatcher->forward(array('action' => 'index'));
-		}
+        $user = Users::findFirstById($id);
+        if (!$user) {
+            $this->flash->error("User was not found");
+            return $this->dispatcher->forward(array('action' => 'index'));
+        }
 
-		if ($this->request->isPost()) {
+        if ($this->request->isPost()) {
 
-			$user->assign(array(
-				'username' => $this->request->getPost('username', 'striptags'),
-				'profilesId' => $this->request->getPost('profilesId', 'int'),
-				'email' => $this->request->getPost('email', 'email'),
-				'banned' => $this->request->getPost('banned'),
-				'suspended' => $this->request->getPost('suspended'),
-				'active' => $this->request->getPost('active')
-			));
+            $user->assign(array(
+                'username' => $this->request->getPost('username', 'striptags'),
+                'profilesId' => $this->request->getPost('profilesId', 'int'),
+                'email' => $this->request->getPost('email', 'email'),
+                'banned' => $this->request->getPost('banned'),
+                'suspended' => $this->request->getPost('suspended'),
+                'active' => $this->request->getPost('active')
+            ));
 
-			if (!$user->save()) {
-				$this->flash->error($user->getMessages());
-			} else {
+            if (!$user->save()) {
+                $this->flash->error($user->getMessages());
+            } else {
 
-				$this->flash->success("User was updated successfully");
+                $this->flash->success("User was updated successfully");
 
-				Tag::resetInput();
-			}
+                Tag::resetInput();
+            }
 
-		}
+        }
 
-		$this->view->user = $user;
+        $this->view->user = $user;
 
-		$this->view->form = new UsersForm($user, array('edit' => true));
-	}
+        $this->view->form = new UsersForm($user, array('edit' => true));
+    }
 
-	/**
+    /**
 	 * Deletes a User
 	 *
 	 * @param int $id
 	 */
-	public function deleteAction($id)
-	{
+    public function deleteAction($id)
+    {
 
-		$user = Users::findFirstById($id);
-		if (!$user) {
-			$this->flash->error("User was not found");
-			return $this->dispatcher->forward(array('action' => 'index'));
-		}
+        $user = Users::findFirstById($id);
+        if (!$user) {
+            $this->flash->error("User was not found");
+            return $this->dispatcher->forward(array('action' => 'index'));
+        }
 
-		if (!$user->delete()) {
-			$this->flash->error($user->getMessages());
-		} else {
-			$this->flash->success("User was deleted");
-		}
+        if (!$user->delete()) {
+            $this->flash->error($user->getMessages());
+        } else {
+            $this->flash->success("User was deleted");
+        }
 
-		return $this->dispatcher->forward(array('action' => 'index'));
-	}
+        return $this->dispatcher->forward(array('action' => 'index'));
+    }
 
-	/**
+    /**
 	 * Users must use this action to change its password
 	 *
 	 */
-	public function changePasswordAction()
-	{
-		$form = new ChangePasswordForm();
+    public function changePasswordAction()
+    {
+        $form = new ChangePasswordForm();
 
-		if ($this->request->isPost()) {
+        if ($this->request->isPost()) {
 
-			if (!$form->isValid($this->request->getPost())) {
+            if (!$form->isValid($this->request->getPost())) {
 
-				foreach ($form->getMessages() as $message) {
-					$this->flash->error($message);
-				}
+                foreach ($form->getMessages() as $message) {
+                    $this->flash->error($message);
+                }
 
-			} else {
+            } else {
 
-				$user = $this->auth->getUser();
+                $user = $this->auth->getUser();
 
-				$user->password = $this->security->hash($this->request->getPost('password'));
-				$user->mustChangePassword = 'N';
+                $user->password = $this->security->hash($this->request->getPost('password'));
+                $user->mustChangePassword = 'N';
 
-				$passwordChange = new PasswordChanges();
-				$passwordChange->user = $user;
-				$passwordChange->ipAddress = $this->request->getClientAddress();
-				$passwordChange->userAgent = $this->request->getUserAgent();
+                $passwordChange = new PasswordChanges();
+                $passwordChange->user = $user;
+                $passwordChange->ipAddress = $this->request->getClientAddress();
+                $passwordChange->userAgent = $this->request->getUserAgent();
 
-				if (!$passwordChange->save()) {
-					$this->flash->error($passwordChange->getMessages());
-				} else {
+                if (!$passwordChange->save()) {
+                    $this->flash->error($passwordChange->getMessages());
+                } else {
 
-					$this->flash->success('Your password was successfully changed');
+                    $this->flash->success('Your password was successfully changed');
 
-					Tag::resetInput();
-				}
+                    Tag::resetInput();
+                }
 
-			}
+            }
 
-		}
+        }
 
-		$this->view->form = $form;
-	}
-
+        $this->view->form = $form;
+    }
 }
