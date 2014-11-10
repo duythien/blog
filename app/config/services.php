@@ -76,33 +76,26 @@ $di->set('view', function () use ($config) {
  * Database connection is created based in the parameters defined in the configuration file
  */
 $di->set('db', function () use ($config) {
-    /*return new DbAdapter(array(
-		'host' => $config->database->host,
-		'username' => $config->database->username,
-		'password' => $config->database->password,
-		'dbname' => $config->database->dbname,
-		'charset'=> 'utf8'
-	));*/
     $eventsManager = new EventsManager();
 
-        $logger = new Phalcon\Logger\Adapter\File(__DIR__ ."/../log/debug.log");
-        //Listen all the database events
-        $eventsManager->attach('db', function ($event, $connection) use ($logger) {
-            if ($event->getType() == 'beforeQuery') {
-                $logger->log($connection->getSQLStatement(), Phalcon\Logger::ERROR);
-            }
-        });
-        $connection = new DbAdapter(array(
-            'host' => $config->database->host,
-            'username' => $config->database->username,
-            'password' => $config->database->password,
-            'dbname' => $config->database->dbname,
-            'charset'=> 'utf8'
-        ));
-        //Assign the eventsManager to the db adapter instance
-        $connection->setEventsManager($eventsManager);
+    $logger = new Phalcon\Logger\Adapter\File(APP_PATH ."/app/log/debug.log");
+    //Listen all the database events
+    $eventsManager->attach('db', function ($event, $connection) use ($logger) {
+        if ($event->getType() == 'beforeQuery') {
+            $logger->log($connection->getSQLStatement(), Phalcon\Logger::ERROR);
+        }
+    });
+    $connection = new DbAdapter(array(
+        'host' => $config->database->host,
+        'username' => $config->database->username,
+        'password' => $config->database->password,
+        'dbname' => $config->database->dbname,
+        'charset'=> 'utf8'
+    ));
+    //Assign the eventsManager to the db adapter instance
+    $connection->setEventsManager($eventsManager);
 
-        return $connection;
+    return $connection;
 });
 
 /**

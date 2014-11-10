@@ -13,28 +13,27 @@
  +--------------------------------------------------------------------------+
 */
 error_reporting(E_ALL);
-//ini_set('display_errors', 0);
-//setlocale(LC_ALL, 'vi_VN.UTF-8');
 
 
+define('APP_PATH', realpath('..'));
 
 try {
 
-    //include __DIR__ . "/../vendor/PDW/DebugWidget.php";
+    //include APP_PATH . "/../vendor/PDW/DebugWidget.php";
     /**
 	 * Read the configuration
 	 */
-    $config = include __DIR__ . "/../app/config/config.php";
+    $config = include APP_PATH . "/app/config/config.php";
 
     /**
 	 * Read auto-loader
 	 */
-    include __DIR__ . "/../app/config/loader.php";
+    include APP_PATH . "/app/config/loader.php";
 
     /**
 	 * Read services
 	 */
-    include __DIR__ . "/../app/config/services.php";
+    include APP_PATH . "/app/config/services.php";
 
     /**
 	 * Handle the request
