@@ -20,8 +20,8 @@ class ControllerBase extends Controller
         if ($this->acl->isPrivate($controllerName)) {
             $this->assets
             ->addCss('css/bootstrap2.css')
-            ->addCss('css/bootstrap-responsive.css');
-           // ->addCss('css/admin.css');
+            ->addCss('css/bootstrap-responsive2.css')
+            ->addCss('css/admin.css');
 
             //Get the current identity
             $identity = $this->auth->getIdentity();
@@ -61,6 +61,8 @@ class ControllerBase extends Controller
 
         } else{
             $this->assets
+                ->addCss('css/bootstrap.css')
+                ->addCss('css/bootstrap-responsive.css')
                 ->addCss('css/style.css');    
         }
         
