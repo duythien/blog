@@ -1,19 +1,16 @@
 <div class="navbar navbar-inverse">
-  <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          {{link_to('', 'class':'navbar-brand', t('Zphalcon'))}}
-      </div>
+  <div class="navbar-inner">
+    <div class="container" style="width: auto;">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      {{ link_to(null, 'class': 'brand', 'Phalconvn')}}
+        <div class="nav-collapse">
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-     <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav">
+
             {%- set menus = [
               'Home': null,
               'Users': 'users',
@@ -31,7 +28,9 @@
               <li>{{ link_to(value,t(key)) }}</li>
               {% endif %}
             {%- endfor -%}
+
           </ul>
+
         <ul class="nav pull-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ auth.getName() }} <b class="caret"></b></a>
@@ -43,10 +42,10 @@
           </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
+    </div>
   </div>
-  <!-- /.container -->
 </div>
+
 <div class="container main-container">
   {{ content() }}
 </div>

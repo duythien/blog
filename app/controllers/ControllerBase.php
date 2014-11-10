@@ -19,7 +19,10 @@ class ControllerBase extends Controller
         //Only check permissions on private controllers
         if ($this->acl->isPrivate($controllerName)) {
             $this->assets
-            ->addCss('css/admin-custom.css');
+            ->addCss('css/bootstrap2.css')
+            ->addCss('css/bootstrap-responsive.css');
+           // ->addCss('css/admin.css');
+
             //Get the current identity
             $identity = $this->auth->getIdentity();
 
