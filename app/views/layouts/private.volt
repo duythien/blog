@@ -1,16 +1,19 @@
 <div class="navbar navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container" style="width: auto;">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      {{ link_to(null, 'class': 'brand', 'Phalconvn')}}
-        <div class="nav-collapse">
+  <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          {{link_to('', 'class':'navbar-brand', t('Zphalcon'))}}
+      </div>
 
-          <ul class="nav">
-
+      <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
             {%- set menus = [
               'Home': null,
               'Users': 'users',
@@ -28,23 +31,22 @@
               <li>{{ link_to(value,t(key)) }}</li>
               {% endif %}
             {%- endfor -%}
-
           </ul>
-
         <ul class="nav pull-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ auth.getName() }} <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>{{ link_to('users/changePassword', 'Change Password') }}</li>
+                        <li>{{ link_to('session/logout', 'Logout') }}</li>
+
             </ul>
           </li>
-          <li>{{ link_to('session/logout', 'Logout') }}</li>
         </ul>
       </div>
-    </div>
+      <!-- /.navbar-collapse -->
   </div>
+  <!-- /.container -->
 </div>
-
 <div class="container main-container">
   {{ content() }}
 </div>

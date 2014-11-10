@@ -18,7 +18,8 @@ class ControllerBase extends Controller
 
         //Only check permissions on private controllers
         if ($this->acl->isPrivate($controllerName)) {
-
+            $this->assets
+            ->addCss('css/admin-custom.css');
             //Get the current identity
             $identity = $this->auth->getIdentity();
 
@@ -55,7 +56,17 @@ class ControllerBase extends Controller
                 return false;
             }
 
+        } else{
+            $this->assets
+                ->addCss('css/style.css');    
         }
+        
+        //adding js 
+        $this->assets
+            ->addJs('//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', false)
+            ->addJs('//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js', false)
+            ->addJs('//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', false);
+            
 
         //set language
         $locality = $this->session->get('language').'.UTF-8';
@@ -68,9 +79,6 @@ class ControllerBase extends Controller
 
         //Tell the application to use this text domain, or messages.mo.
         textdomain('messages');
-
-
-
     }
 
 }
