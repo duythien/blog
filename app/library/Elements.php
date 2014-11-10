@@ -11,7 +11,7 @@ use Phalcon\Mvc\User\Component,
 class Elements extends Component
 {
 
-    private $_headerMenu = array(
+    private $_headerMenuBackend = array(
         'pull-left' => array(
             'index' => array(
                 'caption' => '<img alt="Logo-small" src="/img/logo-title.png"/>',
@@ -43,6 +43,23 @@ class Elements extends Component
             ),
         )
     );
+    
+    private $_headerMenuFront = array(
+        'pull-right' => array(
+            'contact' => array(
+                'caption' => 'Contact',
+                'action' => 'index'
+            ),
+            'login' => array(
+                'caption' => 'Log In/Sign Up',
+                'action' => null
+            ),
+            'about' => array(
+                'caption' => 'About',
+                'action' => 'index'
+            ),
+        )
+    );
 
 
     /**
@@ -61,7 +78,7 @@ class Elements extends Component
         } else {
             unset($this->_headerMenu['pull-right']['users']);
         }
-        echo '<div class="nav-collapse">';
+        echo '<div class="nav navbar-nav navbar-right">';
         $controllerName = $this->view->getControllerName();
         foreach ($this->_headerMenu as $position => $menu) {
             echo '<ul class="nav ', $position, '">';
@@ -84,5 +101,33 @@ class Elements extends Component
         }
         echo '</div>';
 
+    }
+
+    /**
+     * Builds header menu with left and right items
+     *
+     * @return string
+     */
+    public function getMenuFront()
+    {
+    
+        $controllerName = $this->view->getControllerName();
+        foreach ($this->_headerMenuFront as $position => $menu) {
+            echo '<ul class="nav navbar-nav navbar-right">';
+            foreach ($menu as $controller => $option) {
+                if ($controllerName == $controller) {
+                    echo '<li class="active">';
+                } else {
+                    echo '<li>';
+                }
+                if ($controller=="search") {
+                echo $option['caption'];
+                } else{
+                echo \Phalcon\Tag::linkTo($controller.'/'.$option['action'], _($option['caption']));
+                }
+                echo '</li>';
+            }
+            echo '</ul>';
+        }
     }
 }
