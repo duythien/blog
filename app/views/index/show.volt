@@ -1,6 +1,5 @@
 
 {{content()}}
-{% include 'layouts/baner.volt' %}
 <div class="row">
   <!-- categories sidebar left -->
   <div class="span1"></div>

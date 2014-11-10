@@ -1,17 +1,36 @@
+<!-- Footer -->
 <footer>
-Made with love by the Phalcon VN Team
-
-    {{ link_to("privacy", "Privacy Policy") }}
-    {{ link_to("terms", "Terms") }}
-   
-
-© {{ date('Y') }} Phalcon VN Team.
- <p class="pull-right">
-    	Language: 
-    	    		{{link_to("set-language/de_DE","VietNam")}}
-
-    		{{ link_to("set-language/en_US", "English") }}|
-    		
-    </p>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted">Powered by Phalcon @{{ date('Y') }}</p>
+            </div>
+        </div>
+    </div>
 </footer>
