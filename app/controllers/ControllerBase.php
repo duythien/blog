@@ -65,7 +65,9 @@ class ControllerBase extends Controller
                 ->addCss('css/bootstrap-responsive.css')
                 ->addCss('css/style.css');    
         }
-        
+        $this->assets
+            ->addCss('//fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic,400italic,500italic&amp;subset=latin,cyrillic-ext', false)
+            ->addCss('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', false);
         //adding js 
         $this->assets
             ->addJs('//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', false)

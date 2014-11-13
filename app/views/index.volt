@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<meta charset="utf-8"/>
+<html lang="en" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tutplus</title>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300italic,400italic,500italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>	
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	    {{ this.assets.outputCss() }}
- 	
- 	</head>
-	<body>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Zphalcon TEAM">
+    <link rel="shortcut icon" href="{{ url('images/favicon.png') }}">
+    <meta property="og:title" content="Zphalcon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://www.Zphalcon.com">
+    <title>Zphalcon</title>
 
-		{{ content() }}
+	{{ this.assets.outputCss() }}
 
-		{{ this.assets.outputJs() }}
-		{% block scripts %}{% endblock %}
-	</body>
+</head>
+<body>
+
+	{{ content() }}
+
+	{{ this.assets.outputJs() }}
+	
+	{% block scripts %}{% endblock %}
+</body>
 </html>

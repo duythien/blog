@@ -50,14 +50,15 @@ Element in project & Tests
 I use (Acl, Auth, Security) in [vokuro](https://github.com/phalcon/vokuro) project 	and I use editor Markdown in post content, also  used bootrsap 2.3.2 frontend and backend
 
 
-How to use project:
+How to use project: go to url below 
+
 http://localhost/login
 
-	username:admin@gmail.com
-	pass	:eduapp!@#$%
-Note
-------
-I am use Nginx webserver, If problem css change 'baseUri' in config
+	username:test@zphalcon
+	pass	:zphalcon
+	
+Note that I am use Nginx webserver, If problem css change 'baseUri' in config
+
 Thank You
 ---------
 Thank you Phalcon forum suport, and more...

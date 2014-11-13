@@ -102,13 +102,12 @@ class Posts extends Model
     }
     public function beforeDelete()
     {
-        //$id = $this->getDI()->getSession()->get('auth-identity');
-        $id = $_SESSION['auth-identity'];
-        if ($this->userId != $id['id']) {
-            echo "The Post is not owner, it can't be deleted";
-            return false;
+        $profile = $this->getDI()->getShared('session')->get('auth-identity');
+        if ($this->userId == $profile['id'] || $profile['profile'] == 'Administrators') {
+            return true;
         }
-        return true;
+        $this->getDI()->getFlash()->error('The Post is not owner, it can\'t be deleted');
+        return false;
     }
 
    /**
