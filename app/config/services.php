@@ -33,7 +33,14 @@ $di->set('config', $config);
  */
 $di->set('url', function () use ($config) {
     $url = new UrlResolver();
-    $url->setBaseUri($config->application->baseUri);
+    
+    if (!$config->application->debug) {
+        $url->setBaseUri($config->application->production->baseUri);
+        $url->setStaticBaseUri($config->application->production->staticBaseUri);
+    } else {
+        $url->setBaseUri($config->application->development->baseUri);
+        $url->setStaticBaseUri($config->application->development->staticBaseUri);
+    }
     return $url;
 }, true);
 
@@ -55,7 +62,7 @@ $di->set('view', function () use ($config) {
                 'compiledSeparator' => '_'
             );
             //debug
-            if ('1' != $config->application->debug) {
+            if ($config->application->debug) {
                     $voltOptions['compileAlways'] = true;
             }
             $volt->setOptions($voltOptions);
@@ -178,7 +185,4 @@ $di->set('acl', function () {
 $di->set('elements',function () {
     return new Elements();
 });
-/*if (PHALCONDEBUG == true) {
 
-    $debugWidget = new \PDW\DebugWidget($di);
-}*/
