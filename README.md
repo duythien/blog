@@ -32,7 +32,7 @@ Get Started
 
 To run this application on your machine, you need at least:
 
-* >= PHP 5.3.3
+* PHP >= 5.3.3
 * Apache Web Server with mod rewrite enabled
 * Latest Phalcon Framework extension installed/enabled
 
