@@ -1,4 +1,4 @@
-box: duythien/phalcon@1.0.0
+box: duythien/phalcon@1.2.7
 services:
   - duythien/rethinkdb@0.2.0
 build:
