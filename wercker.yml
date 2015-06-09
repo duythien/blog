@@ -3,9 +3,9 @@ services:
   - duythien/rethinkdb@0.2.0
 build:
   steps:
-    - script:
-        name: Add php.ini
-        code: echo 'extension=phalcon.so' >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    #- script:
+        #name: Add php.ini
+        #code: echo 'extension=phalcon.so' >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
     - script:
         name: install dependencies
         code: composer self-update
