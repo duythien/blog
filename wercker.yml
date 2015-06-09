@@ -1,23 +1,61 @@
 box: duythien/phalcon@1.2.7
-services:
-  - duythien/rethinkdb@0.2.0
+no-response-timeout: 25
 build:
-  steps:
-    #- script:
-        #name: Add php.ini
-        #code: echo 'extension=phalcon.so' >> $HOME/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-    - script:
-        name: install dependencies
-        code: composer self-update
-    - script:
-        name: Serve application for integration tests
-        code: php -S localhost:8000 >> /dev/null &
-    - script:
-        name: PHPUnit integration tests
-        code: phpunit --configuration phpunit.xml
+    steps:
+        - bundle-install
+        - script:
+            name: install dependencie
+            code: composer install
+        - script:
+            name: Serve application for integration tests
+            code: php -S localhost:8000 >> /dev/null &
+        - script:
+            name: PHPUnit integration tests
+            code: phpunit --configuration phpunit.xml
+        #- script:
+         #   name: sass compile
+            #code: bundle exec sass --style compressed assets/scss/styles.scss:assets/css/styles.min.css --debug-info
+          #  code: compass compile sass-test
+        #Code Style Check
+        - mbrevda/phpcs:
+            directory: src
+            standard: PSR2
+            ignore: tests
+            report: full
+        - script:
+            #name: my deploy
+            #code: ./deploy.sh
+            code: export
   #send messages into hipchat
-  after-steps:
-    - hipchat-notify:
-        token: 515331b35c68161893f57ab564580f
-        room-id: 739722
-        from-name: wercker
+    after-steps:
+        - hipchat-notify:
+            token: 515331b35c68161893f57ab564580f
+            room-id: 739722
+            from-name: wercker
+        - sherzberg/slack-notify:
+            subdomain: wercker
+            token: $SLACK_TOKEN
+            channel: general
+deploy :
+    steps:
+      # Execute the s3sync deploy step, a step provided by wercker
+        - s3sync:
+              key_id: $AWS_ACCESS_KEY_ID
+              key_secret: $AWS_SECRET_ACCESS_KEY
+              bucket_url: $AWS_BUCKET_URL
+              source_dir: build/
+        - script:
+            name: backup
+            code: |-
+                rsync -avz "$WERCKER_SOURCE_DIR/" "$WERCKER_OUTPUT_DIR"
+                pwd
+                ls
+    after-steps:
+        - hipchat-notify:
+            token: 515331b35c68161893f57ab564580f
+            room-id: 739722
+            from-name: wercker
+        #- sherzberg/slack-notify:
+            #subdomain: wercker
+            #token: $SLACK_TOKEN
+            #channel: general
